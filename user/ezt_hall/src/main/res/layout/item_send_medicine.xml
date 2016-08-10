@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:padding="@dimen/medium_margin" >
+
+    <ImageView
+        android:id="@+id/iv_informate_img"
+        android:layout_margin="@dimen/large_margin"
+        android:layout_width="@dimen/img_width_normal"
+        android:layout_height="@dimen/img_height_normal"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_info_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_informate_img"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_toRightOf="@id/iv_informate_img"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品名称"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/medium_size"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/item_sales_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="本月销量："
+                android:textColor="@color/main_txt_color" />
+
+            <TextView
+                android:id="@+id/tv_item_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/item_sales_title"
+                android:layout_toRightOf="@id/item_sales_title"
+                android:text="1024"
+                android:textColor="@color/main_txt_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_sales_title"
+            android:layout_below="@id/item_sales_title"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="$900"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+</RelativeLayout>

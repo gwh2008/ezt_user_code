@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/large_margin" >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2014/12/01 14:00"
+        android:textSize="@dimen/medium_size" />
+
+    <TextView
+        android:id="@+id/examName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="生化全项+免疫四项"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/medium_size" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="center_vertical"
+        android:text="李丽"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/medium_size" />
+
+</RelativeLayout>

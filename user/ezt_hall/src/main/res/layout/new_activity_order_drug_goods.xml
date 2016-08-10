@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/new_activity_title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_color_gray"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_drug_content"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@color/bg_white">
+
+            <TextView
+                android:id="@+id/text_order_hosiptal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/order_hospital"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_order_hosiptal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/text_order_hosiptal"
+                android:text="@string/first_hospital"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_order_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_order_hosiptal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/order_office"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_order_office_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_order_hosiptal_name"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/text_order_hosiptal"
+                android:text="院内制剂"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_order_drug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_order_office"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/order_drug"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_order_drug_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_order_office_name"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/text_order_hosiptal"
+                android:text="舒筋节利"
+
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/line_color_gray"></View>
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rl_order_person"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:text="@string/text_person"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/orderPersonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_right_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:drawablePadding="@dimen/medium_margin"
+                android:drawableRight="@drawable/new_right_arrow"
+                android:text="王倩倩"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color_gray"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_order_time"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="@dimen/height_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:text="@string/order_time"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/orderTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_right_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:drawablePadding="@dimen/medium_margin"
+                android:drawableRight="@drawable/new_right_arrow"
+                android:text="2016-03-10 9:00-9:30"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_de_color"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_way"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:text="@string/pay_way"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_right_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:text="到院缴费"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_de_color"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_health_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:text="@string/health_type"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/costTypeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_right_15"
+                android:layout_marginTop="@dimen/margin_left_15"
+                android:drawablePadding="@dimen/medium_margin"
+                android:drawableRight="@drawable/new_right_arrow"
+                android:text="自费"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_weight="1"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:id="@+id/rl_commit"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/btn_order_commit"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_left_10"
+            android:background="#ff9e05"
+            android:text="提交"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

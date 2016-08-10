@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"></include>
+
+    <include layout="@layout/new_activity_view_margin_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:text="@string/name"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/big_size_16" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:background="@null"
+                android:text="Lina"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/big_size_16" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:text="@string/sex"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/big_size_16" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:background="@null"
+                android:text="女"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/big_size_16" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:text="@string/health_insurance_id"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/big_size_16" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:background="@null"
+                android:text="2655656612"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/big_size_16" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:id="@+id/id_number_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:src="@drawable/new_id_number_star_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/id_number_image"
+                android:text="@string/id_number" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:background="@null"
+                android:text="1102252248487646546"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/big_size_16" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:text="@string/social_security_region"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/big_size_16" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:background="@null"
+                android:text="河北省"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/big_size_16" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:text="@string/telephone"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/big_size_16" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:background="@null"
+                android:text="51558855222"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/big_size_16" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/verify_code_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:text="@string/verify_code"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/big_size_16" />
+
+            <TextView
+                android:id="@+id/get_code_hint_tx"
+                android:layout_width="@dimen/get_code_width_73"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:text="获取验证码"
+                android:textColor="@color/text_color_gray" />
+
+            <View
+                android:id="@+id/get_code_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:layout_toLeftOf="@id/get_code_hint_tx"
+                android:background="@color/background"></View>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_bottom_20"
+                android:layout_toLeftOf="@id/get_code_line"
+                android:layout_toRightOf="@id/verify_code_tx"
+                android:background="@null"
+                android:hint="输入验证码"
+                android:textSize="@dimen/big_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="@dimen/margin_top_13"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/patient_details_hint"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/normal_size_14" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

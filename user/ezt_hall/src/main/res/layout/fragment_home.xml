@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_footer_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/layout_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height_size"
+                android:orientation="horizontal" >
+
+                <!-- 哪个城市 -->
+
+                <TextView
+                    android:id="@+id/homeLocationTV"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/large_margin"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:drawableLeft="@drawable/home_location"
+                    android:drawablePadding="5dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/main_txt_color" />
+                <!-- 中间搜索 -->
+                <!-- android:background="@android:color/transparent" -->
+                <!-- 右边弹窗 -->
+
+                <ImageView
+                    android:id="@+id/homeRMenuIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/more2_large_margin"
+                    android:src="@drawable/home_menu_btn" />
+
+                <LinearLayout
+                    android:id="@+id/homeImgSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/large_margin"
+                    android:layout_marginRight="@dimen/large_margin"
+                    android:layout_marginTop="@dimen/large_margin"
+                    android:layout_toLeftOf="@id/homeRMenuIV"
+                    android:layout_toRightOf="@id/homeLocationTV"
+                    android:background="@drawable/selector_home_search_bg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:src="@drawable/home_search" />
+                    <!-- android:text="医院/科室/专家..." -->
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginRight="@dimen/large_margin"
+                        android:text="医院/科室/专家..."
+                        android:textColor="@color/main_txt_color" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 新闻头条 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.eztcn.user.eztcn.customView.MyViewPager
+                        android:id="@+id/homeMsgViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </com.eztcn.user.eztcn.customView.MyViewPager>
+
+                    <ImageView
+                        android:id="@+id/homeMsgLoadingImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/msgpagerbg" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/homeMsgText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/home_search_height"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:background="@drawable/selector_bg"
+                    android:gravity="center"
+                    android:src="@drawable/msglastest" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/homeMsgTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/homeMsgText"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="3dip"
+                    android:layout_toRightOf="@id/homeMsgText"
+                    android:gravity="center"
+                    android:src="@drawable/red"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_search_height"
+                    android:layout_alignBottom="@id/layout_pager"
+                    android:background="#33000000" >
+
+                    <TextView
+                        android:id="@+id/homeMsgTitle"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:text="122e"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/homeMsgPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/medium_margin"
+                        android:text="2e2r"
+                        android:visibility="gone"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- 功能模块 -->
+
+            <GridView
+                android:id="@+id/homeFunctionHLV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:numColumns="4" >
+            </GridView>
+
+            <!-- 名医谷 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/title_bar_bg_grey"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:drawableLeft="@drawable/home_grab_doc"
+                    android:gravity="center_vertical"
+                    android:text="名医谷" />
+
+                <TextView
+                    android:id="@+id/homeDocMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:background="@drawable/selector_bg"
+                    android:visibility="gone"
+                    android:text="更多 >" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/homeDocHorList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:numColumns="2"
+                android:scrollbars="none" >
+            </GridView>
+
+            <!-- 健康龙卡 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="@color/title_bar_bg_grey"
+                android:visibility="visible" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_setting_item_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/homeImgCard"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/card" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

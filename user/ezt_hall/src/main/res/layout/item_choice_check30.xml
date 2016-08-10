@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/choice_check_item_height"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/choice_check_order_status_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:background="@drawable/bt_main_bg_normal"
+            android:gravity="center_horizontal"
+            android:text="待支付"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/small_size" />
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/user_head"
+            android:layout_width="@dimen/head_icon_size"
+            android:layout_height="@dimen/head_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/check_order_userman_icon"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/head_icon_name_margin_left"
+            android:layout_toRightOf="@id/user_head"
+            android:text="用户姓名"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/medium_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_telphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/user_name"
+            android:layout_marginLeft="@dimen/head_icon_name_margin_left"
+            android:layout_toRightOf="@id/user_name"
+            android:text="13655265956"
+            android:textColor="@color/font_unclick_color"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/choice_check_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/head_icon_name_margin_left"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:layout_toRightOf="@id/user_head"
+            android:maxLines="2"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:text="您的申请预约检查订单,\n需要您提前支付检查费用"
+            android:textColor="@color/font_unclick_color"
+            android:textSize="@dimen/small_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small_margin"
+            android:src="@drawable/user_arrow_icon_gray" />
+    </RelativeLayout>
+
+</RelativeLayout>

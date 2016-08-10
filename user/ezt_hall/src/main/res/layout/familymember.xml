@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/activity_title_bar" />
+
+    <Button
+        android:id="@+id/addFamilyBtn"
+        style="@style/activity_belowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:text="添加就诊人" />
+
+    <RelativeLayout
+        android:id="@+id/all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addFamilyBtn"
+        android:layout_below="@id/title_bar"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/memberList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/memberCount"
+            android:layout_alignParentTop="true"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/medium_margin"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/memberCount"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:textColor="@color/dark_gray" />
+    </RelativeLayout>
+
+</RelativeLayout>

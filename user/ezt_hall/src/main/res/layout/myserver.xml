@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/myServerDragonCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:background="@drawable/selector_setting_item_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/large_margin" >
+
+        <!-- 健康医指通龙卡 -->
+
+        <TextView
+            android:id="@+id/dragonCardTV"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wallet_icon3"
+            android:drawablePadding="@dimen/small_margin"
+            android:text="医指通龙卡" />
+    </LinearLayout>
+
+    <com.eztcn.user.eztcn.customView.PullToRefreshListView
+        android:id="@+id/serverList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/medium_margin"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" >
+    </com.eztcn.user.eztcn.customView.PullToRefreshListView>
+
+</LinearLayout>

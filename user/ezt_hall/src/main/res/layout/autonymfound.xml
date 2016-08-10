@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号" />
+
+        <EditText
+            android:id="@+id/idCard"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目前使用手机" />
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin"
+        android:weightSum="2" >
+
+        <FrameLayout
+            android:id="@+id/idCard_front_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@color/dark_gray" >
+
+            <ImageView
+                android:id="@+id/idCard_frontImg"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/idCard_front_hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="身份证原件正面照片"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/medication_front_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@color/dark_gray" >
+
+            <ImageView
+                android:id="@+id/medication_frontImg"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/medication_front_hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="医保卡原件正面照片"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hintTxt"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/medium_margin"
+        android:text="@string/autonymString"
+        android:textColor="@color/dark_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/smallText"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="照片示例" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_example" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:gravity="center"
+        android:text="提交" />
+
+</LinearLayout>

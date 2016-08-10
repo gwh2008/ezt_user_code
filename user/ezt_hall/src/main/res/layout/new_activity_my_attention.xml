@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/new_activity_title_bar"></include>
+
+   <com.eztcn.user.eztcn.customView.PullToRefreshListView
+       android:id="@+id/my_attention_listView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </com.eztcn.user.eztcn.customView.PullToRefreshListView>
+    <ImageView
+        android:id="@+id/no_data_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/new_no_data_icon"
+        android:layout_marginTop="150dp"
+        android:visibility="visible"
+        />
+</LinearLayout>

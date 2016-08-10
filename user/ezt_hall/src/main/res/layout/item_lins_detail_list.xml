@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 检验报告详情 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin" >
+
+        <!-- 检验报告详情名称 -->
+
+        <TextView
+            android:id="@+id/tvInsDName"
+            style="@style/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/small_margin" >
+
+        <TextView
+            android:id="@+id/tvReportResult"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/main_txt_color" />
+        <!-- 中间调整布局用的view -->
+
+        <View
+            android:id="@+id/centerview"
+            android:layout_width="1dip"
+            android:layout_height="5dip"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvReportRange"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/more2_large_margin"
+            android:layout_toRightOf="@+id/centerview"
+            android:text=""
+            android:textColor="@color/main_txt_color" />
+    </RelativeLayout>
+
+</LinearLayout>

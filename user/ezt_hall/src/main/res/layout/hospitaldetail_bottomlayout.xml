@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/medium_margin"
+    android:paddingLeft="@dimen/more_large_margin"
+    android:paddingRight="@dimen/more_large_margin"
+    android:paddingTop="@dimen/medium_margin"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <LinearLayout
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2ecc71"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/introImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/hos_intro_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="医院简介"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deptDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="#f1c40f"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/deptImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/hos_dept_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="科室医生"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+<!-- android:background="#00b8ff" -->
+        <LinearLayout
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="#9b59b6"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/orderImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/hos_order_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="预约挂号"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/orderRegiste" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_marginLeft="@dimen/small_margin" -->
+<!--             android:layout_marginTop="@dimen/small_margin" -->
+<!--             android:layout_weight="1" -->
+<!--             android:background="#9b59b6" -->
+<!--             android:gravity="center" > -->
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/regImg" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:scaleType="centerInside" -->
+<!--                 android:src="@drawable/hos_reg_icon" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="@dimen/medium_margin" -->
+<!--                 android:text="预约登记" -->
+<!--                 android:textColor="@android:color/white" -->
+<!--                 android:textSize="@dimen/medium_size" /> -->
+<!--         </LinearLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_weight="4"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/mapNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_main_btn_bg"
+            android:text="地图导航"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+</LinearLayout>

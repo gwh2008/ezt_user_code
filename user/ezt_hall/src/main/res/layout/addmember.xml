@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/photoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="头像" />
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/doc_img_width_normal"
+            android:layout_height="@dimen/doc_img_width_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/userdefault"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关系" />
+
+        <Spinner
+            android:id="@+id/relation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingRight="@dimen/medium_margin"
+            android:textColor="#aaaaaa" />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:maxLength="5"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号" />
+
+        <EditText
+            android:id="@+id/idCard"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/sex"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/medium_margin"
+            android:text="男"
+            android:textColor="#aaaaaa" />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医保" />
+
+        <EditText
+            android:id="@+id/medicalNo"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:inputType="numberSigned"
+            android:maxLength="20"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机" />
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:inputType="phone"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="药物过敏史" />
+
+        <EditText
+            android:id="@+id/drug"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:maxLength="20"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

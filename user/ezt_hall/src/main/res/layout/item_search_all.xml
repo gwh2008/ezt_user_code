@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_margin" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_search_title_hos"
+                style="@style/largeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="医院"
+                android:textColor="@color/main_color" />
+
+            <com.eztcn.user.eztcn.customView.MyListView
+                android:id="@+id/item_search_hos_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/medium_margin"
+                android:listSelector="@drawable/selector_listitem_bg" >
+            </com.eztcn.user.eztcn.customView.MyListView>
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/item_search_title_dept"
+                style="@style/largeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="科室"
+                android:textColor="@color/main_color" />
+
+            <com.eztcn.user.eztcn.customView.MyListView
+                android:id="@+id/item_search_dept_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/medium_margin"
+                android:listSelector="@drawable/selector_listitem_bg" >
+            </com.eztcn.user.eztcn.customView.MyListView>
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/item_search_title_professor"
+                style="@style/largeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="专家"
+                android:textColor="@color/main_color" />
+
+            <com.eztcn.user.eztcn.customView.MyListView
+                android:id="@+id/item_search_professor_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/medium_margin"
+                android:listSelector="@drawable/selector_listitem_bg" >
+            </com.eztcn.user.eztcn.customView.MyListView>
+
+            <include layout="@layout/hor_line"  />
+
+            <TextView
+                android:id="@+id/item_search_title_knowlib"
+                style="@style/largeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="知识库 "
+                android:textColor="@color/main_color"
+                 />
+
+            <com.eztcn.user.eztcn.customView.MyListView
+                android:id="@+id/item_search_knowlib_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/medium_margin"
+                android:listSelector="@drawable/selector_listitem_bg"
+                android:visibility="visible" >
+            </com.eztcn.user.eztcn.customView.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

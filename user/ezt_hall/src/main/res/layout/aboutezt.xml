@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_margin" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/activity_title_bar" />
+      <View 
+          android:id="@+id/line"
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/light_gray"
+          android:layout_below="@id/title_bar"
+          />
+    <com.eztcn.user.eztcn.customView.OverScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView11"
+        android:layout_below="@+id/line"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/more_large_margin"
+                    android:src="@drawable/login_logo" />
+
+                <TextView
+                    android:id="@+id/about_vnum_tv"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:text="医指通v2.01"
+                    android:textColor="@color/main_txt_color" />
+
+                <include layout="@layout/hor_line" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/smallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/large_margin"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/large_margin"
+                    android:text="@string/aboutezt_intro"
+                    android:textColor="@color/main_txt_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/about_grade_tv"
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:layout_marginTop="@dimen/large_margin"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawableRight="@drawable/right_arrows"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:visibility="gone"
+                android:text="去评分" />
+
+            <include layout="@layout/hor_line"
+                android:visibility="gone"
+                 />
+
+            <TextView
+                android:id="@+id/about_function_intr_tv"
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawableRight="@drawable/right_arrows"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:visibility="gone"
+                android:text="功能介绍" />
+
+            <include layout="@layout/hor_line"
+                android:visibility="gone"
+                 />
+
+            <TextView
+                android:id="@+id/about_suggest_tv"
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawableRight="@drawable/right_arrows"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:visibility="gone"
+                android:text="建议或投诉" />
+
+            <include layout="@layout/hor_line" 
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:id="@+id/versionUpdate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg" 
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/versionUpdate"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/large_margin"
+                    android:text="检查更新" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/large_margin"
+                    android:src="@drawable/right_arrows" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/hor_line"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/about_share_tv"
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawableRight="@drawable/right_arrows"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:text="我要分享"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </com.eztcn.user.eztcn.customView.OverScrollView>
+
+    <TextView
+        android:id="@+id/textView11"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hotLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="时代华纳集团\t版权所有"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/hotLine"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="客服热线：400-0800-666"
+        android:textColor="@color/dark_gray" />
+
+</RelativeLayout>

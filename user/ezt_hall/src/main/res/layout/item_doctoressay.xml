@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_margin" >
+
+    <ImageView
+        android:id="@+id/essayImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/essayName"
+        style="@style/mediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_toRightOf="@+id/essayImg"
+        android:singleLine="true"
+        android:text="冬季胃火旺便秘不妨喝杯麦冬茶" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/essayImg"
+        android:layout_alignLeft="@+id/essayName" >
+
+        <TextView
+            android:id="@+id/publishTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19分钟前"
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:text="|"
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来源："
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/publishSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜狐新闻"
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/msg_icon"
+        android:text="218"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp" />
+
+</RelativeLayout>

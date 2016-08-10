@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/ezt_iv"
+                    android:layout_width="222dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/height_35"
+                    android:src="@drawable/new_ezt_logo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="9dp"
+                    android:text="@string/about_ezt_text"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_14" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/new_team_photo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="医指通团队剪影"
+                    android:layout_marginTop="@dimen/margin_left_5"
+                    android:textColor="@color/colorDark"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+                <TextView
+                    android:id="@+id/version_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="医指通移动医疗科技(北京)有限公司 版权所有"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_size_12" />
+                <TextView
+                    android:id="@+id/telphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/version_info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginTop="5dp"
+                    android:text="客服热线: 400-0800-666"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

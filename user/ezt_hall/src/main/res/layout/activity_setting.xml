@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <com.eztcn.user.eztcn.customView.OverScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_light_gray_height"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/accountManager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawableRight="@drawable/user_arrow_icon_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/user_margin_right"
+                android:paddingRight="@dimen/user_margin_right"
+                android:text="@string/account_management"
+                android:textColor="@color/user_item_tx_color"
+                android:textSize="@dimen/medium_size"
+                android:visibility="gone" />
+            <!-- <include layout="@layout/hor_line" /> -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_light_gray_height"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@color/user_name_color"
+                android:paddingLeft="@dimen/user_margin_right"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    style="@style/mediumText30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="新消息提醒" />
+
+                <!--
+                     <com.eztcn.user.eztcn.customView.SwitchButton
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="SwitchButton" />
+                -->
+
+                <ToggleButton
+                    android:id="@+id/switchButton30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/ios7_btn"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_white_bg"
+                android:paddingLeft="@dimen/user_margin_right"
+                android:paddingRight="@dimen/user_margin_right" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="清除缓存" />
+
+                <TextView
+                    style="@style/smallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_border_small_white"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/small_margin"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="@dimen/small_margin"
+                    android:text="清 除"
+                    android:textColor="@color/dark_black"
+                    android:visibility="gone" />
+<!-- android:layout_toLeftOf="@+id/clear" -->
+                <TextView
+                    android:id="@+id/cache_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/large_margin"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/versionUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/user_margin_right"
+                android:text="@string/check_update"
+                android:textColor="@color/user_item_tx_color"
+                android:textSize="@dimen/medium_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_light_gray_height"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/aboutEZT_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg" >
+
+                <TextView
+                    android:id="@+id/aboutEZT"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/user_margin_right"
+                    android:text="@string/about_ezt" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/user_margin_right"
+                    android:src="@drawable/user_arrow_icon_gray" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/statement"
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawableRight="@drawable/user_arrow_icon_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/user_margin_right"
+                android:paddingRight="@dimen/user_margin_right"
+                android:text="@string/ezt_statement" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_light_gray_large_height"
+                android:background="@color/light_gray" />
+<!--     android:text="@string/exit" -->
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:gravity="center"
+                android:text="退出当前账号"
+                android:textColor="@color/user_item_tx_color"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+    </com.eztcn.user.eztcn.customView.OverScrollView>
+
+</LinearLayout>

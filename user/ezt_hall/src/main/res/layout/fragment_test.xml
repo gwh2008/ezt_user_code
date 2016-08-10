@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_footer_bg" >
+
+    <com.eztcn.user.eztcn.customView.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height_size"
+                    android:background="@color/title_bar_bg_grey"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/home_img_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dialog_title_bar_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginRight="@dimen/medium_margin"
+                            android:src="@drawable/home_serch_icon" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/medium_margin"
+                            android:text="医院/科室/专家..."
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+
+                    <com.eztcn.user.eztcn.customView.IGroup
+                        android:id="@+id/home_layout_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom|center_horizontal"
+                            android:padding="@dimen/large_margin" >
+
+                            <ImageView
+                                android:id="@+id/home_message_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_msg" />
+                        </LinearLayout>
+                    </com.eztcn.user.eztcn.customView.IGroup>
+                </RelativeLayout>
+        </LinearLayout>
+    </com.eztcn.user.eztcn.customView.MyScrollView>
+
+</FrameLayout>

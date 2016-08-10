@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="就诊人"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="王倩倩"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="住院号"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_15" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入住院号"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="选择入院日期"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="2015-03-03"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="选择出院日期"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="2015-06-01"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="填写复印病历的份数"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="2"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="保存病历"
+                    android:textColor="@color/border_line"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="选择取病历日期"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_10"
+                    android:gravity="center_vertical"
+                    android:text="点击选择"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:src="@drawable/new_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_choose_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="选择时间段"
+
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/show_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:hint="点击选择"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:src="@drawable/new_right_arrow" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@color/background"
+                android:gravity="center"
+                android:padding="@dimen/margin_left_15"
+                android:text="@string/copy_case_text"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_layout_height_65"
+        android:layout_marginTop="@dimen/line_height_0.5"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@drawable/new_oval_button_commit_orange"
+            android:text="提交预约单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_size_18" />
+
+    </LinearLayout>
+</LinearLayout>

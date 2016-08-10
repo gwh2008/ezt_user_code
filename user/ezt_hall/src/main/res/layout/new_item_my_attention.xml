@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/doctor_head"
+            android:layout_width="@dimen/view_height_55"
+            android:layout_height="@dimen/view_height_55"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:src="@drawable/default_doc_img"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="@dimen/margin_top_18"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张雪丽"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/big_size_16"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/doctor_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_9"
+                    android:text="主任医师"
+                    android:textSize="@dimen/normal_size_14"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/doctor_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:text="北京中医药大学血管科"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/big_size_16"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/be_good_at_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/be_good_at"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/big_size_16"
+                    />
+
+                <TextView
+                    android:id="@+id/doctor_be_good_at_skill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_9"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="血液治疗疾病的治疗经纬度lemfoedoedkedkewodedked么么哒"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/big_size_16"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

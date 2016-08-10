@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_margin" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/activity_title_bar" />
+
+<!--     <View -->
+<!--         android:id="@+id/line" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="0.5dp" -->
+<!--         android:background="@color/light_gray" /> -->
+
+    <ListView
+        android:id="@+id/drugLv"
+        style="@style/lvStyle"
+        android:background="@color/bg_white"
+        android:layout_marginLeft="0dp"
+        android:divider="@color/line_margin_widget_color"
+        android:layout_marginRight="0dp"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

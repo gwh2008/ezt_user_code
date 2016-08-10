@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_intro_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_margin" >
+
+        <ImageView
+            android:id="@+id/intro_img"
+            android:layout_width="@dimen/img_width_normal"
+            android:layout_height="@dimen/img_height_normal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/healthcard_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/card_title_tv"
+                style="@style/largeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textColor="@color/main_color" />
+
+            <TextView
+                android:id="@+id/cardnum_tv"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_title_tv"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="卡号"
+                android:textColor="@color/font_unclick_color" />
+
+            <TextView
+                android:id="@+id/card_state_tv"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/card_title_tv"
+                android:layout_alignParentRight="true"
+                android:text="未使用"
+                android:textColor="@color/main_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_date_tv"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardnum_tv"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="有效期"
+                android:textColor="@color/font_unclick_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableTop="@drawable/platform_icon"
+            android:gravity="center"
+            android:text="平台验证"
+            android:textColor="@color/font_unclick_color" />
+
+        <include layout="@layout/ver_line" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableTop="@drawable/team_icon"
+            android:gravity="center"
+            android:text="专业团队"
+            android:textColor="@color/font_unclick_color" />
+
+        <include layout="@layout/ver_line" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableTop="@drawable/train_icon"
+            android:gravity="center"
+            android:text="严格训练"
+            android:textColor="@color/font_unclick_color" />
+    </LinearLayout>
+
+    <com.eztcn.user.eztcn.customView.MyListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="@android:color/white"
+        android:listSelector="@drawable/selector_listitem_bg" >
+    </com.eztcn.user.eztcn.customView.MyListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/itemsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:text="| 服务内容"
+            android:textColor="@color/light_main_color"
+            android:textSize="@dimen/large_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/service_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:textColor="@color/font_unclick_color"
+            android:textSize="@dimen/medium_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/processLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:text="| 服务流程"
+            android:textColor="@color/light_main_color"
+            android:textSize="@dimen/large_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/service_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:textColor="@color/font_unclick_color"
+            android:textSize="@dimen/medium_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/noticeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:text="| 服务须知"
+            android:textColor="@color/light_main_color"
+            android:textSize="@dimen/large_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/service_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:textColor="@color/font_unclick_color"
+            android:textSize="@dimen/medium_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

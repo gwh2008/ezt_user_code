@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+              android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/new_activity_title_bar"
+        ></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/copy_person_hint_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:background="@color/new_red"
+                >
+
+                <TextView
+                    android:id="@+id/my_registration_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="@string/order_details_hint_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_size_14"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@drawable/new_module_border"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/new_patient"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/patient_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="王倩倩"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/telephone_number_gap"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/patient_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="15245263541"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/id_number"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/id_card_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="130265321442125896"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@drawable/new_module_border"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/attend_doctor"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/doctor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="张国良"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/search_height_30"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/attend_department"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/dept_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="消化科门诊"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/search_height_30"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/at_hospital"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/hospital_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="天津市第一中心医院"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/search_height_30"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/payment_way"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/pay_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="到院缴费"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/search_height_30"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/registration_free"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                    <TextView
+                        android:id="@+id/registration_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="26.00"
+                        android:textColor="@color/new_red"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/search_height_30"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="@string/waiting_doctor_time"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/registration_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:text="2016/09/14 12：-13:00"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/big_size_16"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@drawable/new_module_border"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:text="@string/warm_prompt"
+                    android:textSize="@dimen/big_size_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:background="@color/background"
+
+                    ></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_left_10"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/margin_left_9"
+                    android:lineSpacingExtra="7dp"
+                    android:text="@string/order_details_warm_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/big_size_16"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/cancel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_layout_height_65"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        >
+
+        <Button
+            android:id="@+id/cancel_order_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_left_10"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="@dimen/margin_left_10"
+            android:layout_weight="1"
+            android:background="@drawable/new_cancel_order_bt_bg"
+            android:text="@string/cancel_order_hint"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/large_size_18"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tit"
+        layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="168dp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_hook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="37dp"
+                        android:src="@drawable/new_order_checking" />
+
+                    <TextView
+                        android:id="@+id/text_order_success"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_hook"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="37dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/audit"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/text_size_15" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/rl_drug_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_order_hosiptal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/order_hospital"
+                            android:textColor="@color/text_color_deep_gray"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <TextView
+                            android:id="@+id/text_show_hosiptal_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/text_name"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_13" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_one_case"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/one_case"
+                            android:textColor="@color/text_color_deep_gray"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <TextView
+                            android:id="@+id/text_show_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text_show_hosiptal_name"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="入院:2015-05-06"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/text_show_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:text="出院:2015-06-02"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:text="2份"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_two_case"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/two_case"
+                            android:textColor="@color/text_color_deep_gray"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="入院:2015-05-06"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:text="出院:2015-06-02"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:text="2份"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/line_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/rl_drug_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_order_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/see_patient"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/text_order_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="20dp"
+                    android:text="王小二"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_order_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:text="@string/in_hospital_number"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/text_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:text="256302555889"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_15" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/case_text"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/line_color_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/text"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color_gray" />
+
+
+            <include layout="@layout/new_copy_case_result_module" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/line_color_gray" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+

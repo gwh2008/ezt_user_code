@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/large_margin"
+    android:descendantFocusability="afterDescendants"
+    android:paddingBottom="@dimen/medium_margin"
+    android:paddingTop="@dimen/medium_margin" >
+
+    <TextView
+        android:id="@+id/item_sub_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="订阅" />
+
+    <ImageView
+        android:id="@+id/item_sub_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_toLeftOf="@+id/item_sub_hint"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_sub_title"
+        style="@style/mediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/item_sub_img"
+        android:text="医指通要闻" />
+
+    <TextView
+        android:id="@+id/item_sub_num"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_sub_img"
+        android:layout_alignParentLeft="true"
+        android:text="12305人订阅"
+        android:textColor="@color/dark_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/activity_title_bar" />
+
+    <Button
+        android:id="@+id/affirmOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:gravity="center"
+        android:text="预约挂号"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/affirmOrder"
+        android:layout_below="@id/titleLayout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/hospitalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊医院"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/hospital"
+                    android:maxEms="10"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/deptLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="科室类型"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/deptType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/doctorLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊医生"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/doctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="苏里"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:id="@+id/costLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/costLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="挂号费用"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/costTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="@color/main_bg_color" />
+
+            <RelativeLayout
+                android:id="@+id/personLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="就诊人" />
+
+                <TextView
+                    android:id="@+id/personName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:text="李力（儿子）"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/reRequest_person_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:background="@drawable/shape_border_small_white"
+                    android:paddingBottom="@dimen/small_margin"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="@dimen/small_margin"
+                    android:text="重新获取"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:id="@+id/timeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:clickable="false"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊时间"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:layout_toLeftOf="@+id/time"
+                    android:text="2015-12-12"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="12:12"
+                    android:textColor="@color/dark_gray"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/reRequest_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:background="@drawable/shape_border_small_white"
+                    android:paddingBottom="@dimen/small_margin"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="@dimen/small_margin"
+                    android:text="重新获取"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊状态" />
+
+                <TextView
+                    android:id="@+id/state_Tv"
+                    style="@style/mediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:drawableRight="@drawable/czt"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:text="初诊"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+                <!-- <com.eztcn.user.eztcn.customView.TxtSwitchButton -->
+                <!-- android:id="@+id/state_sbt" -->
+                <!-- style="@style/Switch" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentRight="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:clickable="true" /> -->
+            </RelativeLayout>
+
+            <include
+                layout="@layout/hor_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/cardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    layout="@layout/hor_line" />
+
+                <TextView
+                    android:id="@+id/cardLebal"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:text="一卡通" />
+
+                <EditText
+                    android:id="@+id/hosCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_toRightOf="@+id/cardLebal"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入一卡通号码"
+                    android:inputType="number"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" >
+                </EditText>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/specialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="复诊号" />
+
+                <EditText
+                    android:id="@+id/secondOrder"
+                    style="@style/mediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:hint="复诊号"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传病历" />
+
+                <TextView
+                    android:id="@+id/illRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/right_arrows"
+                    android:gravity="center_vertical|right"
+                    android:text="LX441620141202"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/hor_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/zzms"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="症状描述" />
+
+                <EditText
+                    android:id="@+id/info_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zzms"
+                    android:background="#ffffff"
+                    android:gravity="top|left"
+                    android:padding="@dimen/large_margin"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/info_et" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:background="#ffffff" -->
+            <!-- android:gravity="top|left" -->
+            <!-- android:hint="请您尽可能详细的描述您的症状、疾病和身体状况，以便得到医生更好的治疗" -->
+            <!-- android:maxLength="100" -->
+            <!-- android:maxLines="10" -->
+            <!-- android:padding="@dimen/large_margin" -->
+            <!-- android:textColor="@color/dark_gray" -->
+            <!-- android:textSize="@dimen/small_size" /> -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="@color/main_bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="缴费方式" />
+
+                <TextView
+                    android:id="@+id/pay_style_spr"
+                    style="@style/mediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:text="到院缴费"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <LinearLayout
+                android:id="@+id/typeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医保类型" />
+
+                <TextView
+                    android:id="@+id/typeValue"
+                    style="@style/mediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:drawableRight="@drawable/czt"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:text="自费"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+
+            <!-- <Button -->
+            <!-- android:id="@+id/affirmOrder" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="@dimen/medium_margin" -->
+            <!-- android:layout_marginRight="@dimen/medium_margin" -->
+            <!-- android:layout_marginTop="@dimen/large_margin" -->
+            <!-- android:background="@drawable/selector_main_btn_bg" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="确认预约" -->
+            <!-- android:textColor="@android:color/white" -->
+            <!-- android:textSize="@dimen/large_size" /> -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

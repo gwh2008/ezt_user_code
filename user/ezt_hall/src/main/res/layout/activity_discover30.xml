@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/user_item_tx_color"
+            android:text="@string/discovery"
+            android:textSize="@dimen/discovery_size"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/light_gray"
+        android:orientation="vertical" 
+        android:layout_weight="1"
+        >
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/discovery_item_height"
+            android:layout_marginTop="@dimen/discovery_gray_view_height"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:background="@drawable/selector_setting_item_bg"
+            >
+            <ImageView 
+                android:id="@+id/discovery_help_support_image"
+                android:layout_width="@dimen/discovery_icon_height_width"
+                android:layout_height="@dimen/discovery_icon_height_width"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_centerVertical="true"
+                android:src="@drawable/discovery_help_support_icon"
+                />
+            
+            <TextView 
+                android:id="@+id/discovery_help_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_toRightOf="@id/discovery_help_support_image"
+                android:text="@string/discovery_help_support"
+                android:layout_alignTop="@id/discovery_help_support_image"
+                android:textSize="@dimen/discovery_title_big_tx_size"
+                android:textColor="@color/user_item_tx_color"
+                />
+            
+            <TextView 
+                android:id="@+id/discovery_help_support_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discovery_help_support_hint_tx"
+                android:layout_toRightOf="@id/discovery_help_support_image"
+                android:layout_below="@id/discovery_help_support"
+                android:layout_marginTop="@dimen/discovery_tx_top_margin"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_alignBottom="@id/discovery_help_support_image"
+                android:textSize="@dimen/discovery_title_little_tx_size"
+                android:textColor="@color/discovery_title_little_tx_color"
+                />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:src="@drawable/user_arrow_icon_gray"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/discovery_item_height"
+            android:layout_marginTop="@dimen/discovery_gray_view_height"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:background="@drawable/selector_setting_item_bg"
+            >
+            
+            <ImageView 
+                android:id="@+id/discovery_financial_medical_service_image"
+                android:layout_width="@dimen/discovery_icon_height_width"
+                android:layout_height="@dimen/discovery_icon_height_width"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_centerVertical="true"
+                android:src="@drawable/discovery_financial_medical_service_icon"
+                />
+            
+            <TextView 
+                android:id="@+id/discovery_financial_medical_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_toRightOf="@id/discovery_financial_medical_service_image"
+                android:text="@string/discovery_financial_medical_service"
+                android:layout_alignTop="@id/discovery_financial_medical_service_image"
+                android:textSize="@dimen/discovery_title_big_tx_size"
+                android:textColor="@color/user_item_tx_color"
+                />
+            
+            <TextView 
+                android:id="@+id/discovery_financial_medical_service_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discovery_financial_medical_service_hint_tx"
+                android:layout_toRightOf="@id/discovery_financial_medical_service_image"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_alignBottom="@id/discovery_financial_medical_service_image"
+                android:layout_marginTop="@dimen/discovery_tx_top_margin"
+                android:textSize="@dimen/discovery_title_little_tx_size"
+                android:textColor="@color/discovery_title_little_tx_color"
+                />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:src="@drawable/user_arrow_icon_gray"
+                android:layout_centerVertical="true"
+                />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/discovery_item_height"
+            android:layout_marginTop="@dimen/discovery_gray_view_height"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:background="@drawable/selector_setting_item_bg"
+            >
+            <ImageView 
+                android:id="@+id/discovery_medical_ask_for_doctor_image"
+                android:layout_width="@dimen/discovery_icon_height_width"
+                android:layout_height="@dimen/discovery_icon_height_width"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_centerVertical="true"
+                android:src="@drawable/discovery_medical_ask_for_doctor_icon"
+                />
+            
+            <TextView 
+                android:id="@+id/medical_ask_for_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discovery_medical_ask_for_doctor"
+                android:layout_toRightOf="@id/discovery_medical_ask_for_doctor_image"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_alignTop="@id/discovery_medical_ask_for_doctor_image"
+                android:textSize="@dimen/discovery_title_big_tx_size"
+                android:textColor="@color/user_item_tx_color"
+                />
+            
+            <TextView 
+                android:id="@+id/medical_ask_for_doctor_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discovery_ask_for_doctor_hint_tx"
+                android:layout_toRightOf="@id/discovery_medical_ask_for_doctor_image"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_marginTop="@dimen/discovery_tx_top_margin"
+                android:layout_below="@id/medical_ask_for_doctor"
+                android:textSize="@dimen/discovery_title_little_tx_size"
+                android:textColor="@color/discovery_title_little_tx_color"
+                />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:src="@drawable/user_arrow_icon_gray"
+                android:layout_centerVertical="true"
+                />
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+    

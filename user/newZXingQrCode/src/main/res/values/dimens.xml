@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- ++大间距 -->
+    <dimen name="more2_large_margin">24dp</dimen>
+    <!-- +大间距 -->
+    <dimen name="more_large_margin">16dp</dimen>
+    <!-- 大间距 -->
+    <dimen name="large_margin">12dp</dimen>
+    <!-- 中间距 -->
+    <dimen name="medium_margin">8dp</dimen>
+    <!-- 小间距 -->
+    <dimen name="small_margin">4dp</dimen>
+
+</resources>

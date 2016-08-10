@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="请填写"
+            android:maxLength="5"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号" />
+
+        <EditText
+            android:id="@+id/idCard"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:digits="0123456789xX"
+            android:gravity="center_vertical|right"
+            android:hint="请填写"
+            android:inputType="text"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/sex"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/medium_margin"
+            android:text="男"
+            android:textColor="#aaaaaa" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_main_btn_bg"
+        android:gravity="center"
+        android:text="认 证"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_size" />
+
+</LinearLayout>

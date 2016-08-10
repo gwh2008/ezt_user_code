@@ -1,0 +1,4 @@
+include ':imageLib', ':xutils_db_library'
+include ':newZXingQrCode'
+include ':ezt_hall'
+include ':FlycoTabLayout_Lib'

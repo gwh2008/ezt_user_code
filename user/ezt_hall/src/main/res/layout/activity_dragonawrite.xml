@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drug_btn_bg_h"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/title_line_grey" />
+
+        <Button
+            android:id="@+id/bindDragonCardBtn"
+            android:layout_width="@dimen/drug_btn_w"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:layout_centerInParent="true"
+            android:background="@color/border_line"
+            android:gravity="center"
+            android:text="绑定龙卡"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen18sp" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/commitDrugLayout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/drug_btn_bg_h" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:background="@color/bg_white" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/commitDrugBtn" -->
+    <!-- style="@style/activity_belowBtn" -->
+    <!-- android:layout_width="@dimen/drug_btn_w" -->
+    <!-- android:layout_height="@dimen/drug_w_item_height" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:text="提交" -->
+    <!-- android:textSize="@dimen/drug_text_super_large_size" > -->
+    <!-- </Button> -->
+    <!-- </RelativeLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomLayout"
+        android:layout_below="@id/title"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen45"
+            android:layout_marginTop="@dimen/dimen10"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen15"
+                android:text="姓名"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/dimen16sp" />
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen45"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen63"
+                android:layout_toRightOf="@id/name"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:textColor="@color/dragon_grey"
+                android:textSize="@dimen/dimen16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_de_color" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/sexLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen45"
+            android:background="@drawable/selector_white_bg" >
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen15"
+                android:text="性别"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/dimen16sp" />
+
+            <TextView
+                android:id="@+id/sexTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen45"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen63"
+                android:layout_toRightOf="@id/sex"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请选择"
+                android:textColor="@color/dragon_grey"
+                android:textSize="@dimen/dimen16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen15"
+                android:src="@drawable/dragonarrawri" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_de_color" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen45"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:id="@+id/idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen15"
+                android:text="身份证号"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/dimen16sp" />
+
+            <EditText
+                android:id="@+id/idcardEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen45"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_toRightOf="@id/idcard"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入身份证号"
+                android:textColor="@color/dragon_grey"
+                android:textSize="@dimen/dimen16sp" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_de_color" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:id="@+id/dragonCard"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen45"
+                android:layout_marginLeft="@dimen/dimen15"
+                android:gravity="center_vertical"
+                android:text="龙卡卡号"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/dimen16sp" />
+
+            <EditText
+                android:id="@+id/dragonCardEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen45"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_toRightOf="@id/dragonCard"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入卡号"
+                android:numeric="integer"
+                android:textColor="@color/dragon_grey"
+                android:textSize="@dimen/dimen16sp" />
+
+            <View
+                android:id="@+id/dargonLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/dragonCard"
+                android:background="@color/item_de_color" >
+            </View>
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen45"
+                android:layout_below="@id/dargonLine"
+                android:layout_marginLeft="@dimen/dimen15"
+                android:gravity="center_vertical"
+                android:text="手机号"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/dimen16sp" />
+
+            <View
+                android:id="@+id/mobileLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/mobile"
+                android:background="@color/item_de_color" >
+            </View>
+
+            <TextView
+                android:id="@+id/yzm"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen45"
+                android:layout_below="@id/mobileLine"
+                android:layout_marginLeft="@dimen/dimen15"
+                android:gravity="center_vertical"
+                android:text="验证码"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/dimen16sp" />
+
+            <EditText
+                android:id="@+id/yzmEt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen45"
+                android:layout_alignLeft="@id/dragonCardEt"
+                android:layout_alignTop="@id/yzm"
+                android:layout_toRightOf="@id/mobile"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:textColor="@color/dragon_grey"
+                android:textSize="@dimen/dimen16sp" />
+
+            <RelativeLayout
+                android:id="@+id/yzmLayout"
+                android:layout_width="@dimen/dimen115"
+                android:layout_height="@dimen/dimen45"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/yzm"
+                android:background="@drawable/selector_bg" >
+
+                <View
+                    android:id="@+id/tempLine"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/item_de_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen18"
+                    android:layout_toRightOf="@id/tempLine"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/dragon_grey"
+                    android:textSize="@dimen/dimen16sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/mobileEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen45"
+                android:layout_alignLeft="@+id/dragonCardEt"
+                android:layout_below="@+id/dargonLine"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:numeric="integer"
+                android:textColor="@color/dragon_grey"
+                android:textSize="@dimen/dimen16sp" >
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

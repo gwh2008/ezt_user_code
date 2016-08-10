@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_setting_item_bg"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/medium_margin"
+    android:paddingTop="@dimen/medium_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/doctor_img"
+            android:layout_width="@dimen/doc_img_width_normal"
+            android:layout_height="@dimen/doc_img_width_normal"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_doc_img"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin" >
+
+                <!-- android:textStyle="bold" -->
+
+                <TextView
+                    android:id="@+id/doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:text="名称"
+                    android:textColor="@color/dark_black"
+                    android:textSize="@dimen/medium_size" />
+                <!-- 是否可以预约按钮 -->
+
+                <TextView
+                    android:id="@+id/canRegView"
+                    android:layout_width="@dimen/dimen60"
+                    android:layout_height="@dimen/dimen30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:background="@drawable/conners_green"
+                    android:gravity="center"
+                    android:text="预约"
+                    android:textColor="@android:color/white" />
+                <!-- android:layout_below="@id/canRegView" android:layout_toLeftOf="@+id/doc_ranking" -->
+
+                <TextView
+                    android:id="@+id/doc_hos_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/doc_name"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/more2_large_margin"
+                    android:layout_toLeftOf="@id/canRegView"
+                    android:singleLine="false"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/doc_dept_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/doc_hos_name"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_toLeftOf="@id/canRegView"
+                    android:layout_toRightOf="@id/doc_hos_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/ghf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/doc_hos_name"
+                    android:layout_below="@id/doc_hos_name"
+                    android:text="挂号费:"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="gone" />
+                <!-- 挂号费用 -->
+
+                <TextView
+                    android:id="@+id/doc_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ghf"
+                    android:layout_alignTop="@id/ghf"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_toRightOf="@id/ghf"
+                    android:singleLine="true"
+                    android:text="￥122"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/doc_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/doc_name"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_toRightOf="@+id/doc_name"
+                    android:background="@drawable/shape_main_color_broder_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:singleLine="true"
+                    android:text="职位"
+                    android:textColor="@color/light_main_color"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="gone" />
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/doc_dept_name" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignBottom="@+id/doc_position" -->
+                <!-- android:layout_toLeftOf="@id/canRegView" -->
+                <!-- android:layout_toRightOf="@+id/doc_position" -->
+                <!-- android:ellipsize="end" -->
+                <!-- android:singleLine="true" -->
+                <!-- android:text="科室" -->
+                <!-- android:textColor="@color/main_txt_color" -->
+                <!-- android:textSize="@dimen/small_size" /> -->
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,1163 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eztcn.user"
+    android:versionCode="34"
+    android:versionName="3.0.0">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- renren sso Permission for Unit Test -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- end -->
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+   <!-- <uses-permission android:name="android.permission.RESTART_PACKAGES" />-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 个推SDK权限配置开始 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+ <!--   <uses-permission android:name="android.permission.GET_TASKS" />-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 2016-1-25百度用户偏好统计新加权限  程序可以读取设备外部存储空间（内置SDcard和外置SDCard）的文件 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CALL_PRIVLEGED" />
+    <!-- 自定义权限 -->
+    <!--
+    <permission
+        android:name="getui.permission.GetuiService.第三方包名"
+        android:protectionLevel="normal" >
+    </permission>
+    -->
+    <permission
+        android:name="getui.permission.GetuiService.com.eztcn.user"
+        android:protectionLevel="normal"></permission>
+    <permission android:name="android.permission.INSTALL_PACKAGES" />
+    <!-- 个推SDK权限配置结束 -->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <!-- android:icon="@drawable/ezt_window" -->
+
+    <application
+        android:name=".eztcn.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ezt_logo_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zxing.activity.QrcodeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.QuickAppointActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ChoiceHosActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyRecordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.DoctorListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.DoctorList30Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eztcn.activity.home.BigDoctorList30Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".eztcn.activity.home.AlreadyRegDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyWalletActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ChoiceNoopsycheActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"></activity>
+        <activity
+            android:name=".eztcn.activity.home.TelDoctorListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.SucHintActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.AppointConsultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.TradeDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.HealthBookActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.RechargeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyMedicalRecordListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MRDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.UserInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.AppointCheckInActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.MsgManageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.FamilyMemberActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.AddMemberActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.SettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.PWDModifyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.UserLoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.UserRegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.InputPasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.ForgetPasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.AutonymFoundActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.SubscriptionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.RimHospitalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.MapRimHosActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.DoctorIndexActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.DoctorIndex30Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eztcn.activity.home.DoctorInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.OrderRegistrationActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 肿瘤医院免责声明20151130 -->
+        <activity
+            android:name=".eztcn.activity.home.TumorCaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.PromptlyCallActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ImgTxtActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.UserEvaluateListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ThanksLetterListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.DoctorEssayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.ChoiceCityActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.OrderRegWaitActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.SymptomSelfActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.SymptomDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.EvaluateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.OrderDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.WriteLetterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.InformationDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.InformationCommentListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.AttentDocActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.ShowWebImageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.SeeIllRecordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyHealthCardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.HealthCardDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.AboutEZTActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.MessageChildListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.ModifyPhoneActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.ModifyEmailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.StatementActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyMedicalRecordCreateOneActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyMedicalRecordCreateTwoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyMedicalRecordCreateThreeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.AutonymAuthActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" 去除该属性，则不会有Duang~ 的视效 -->
+
+        <activity
+            android:name=".eztcn.activity.GuidanceActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.UnEvaluateListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.TicklingContentActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.InformationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.AllSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"></activity>
+        <activity
+            android:name=".eztcn.activity.home.PhoneRecordDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ChoiceDeptByHosActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.PhoneDoctorActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.SystemMsgInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.ForeignPatientActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.ForeignPatient_QuickHelpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.ForeignPatient_MailCaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.AppointCheckIn_ChoiceAreaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/leftInTheme"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.MicroStoreActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.ShoppingCarActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.ForeignPatient_RecoveryCaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.ProductDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.BuyPayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.ExamReportActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.ExamReportDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.EztCurrencyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.SeeDocRouteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.CCBUserActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.HealthCardActivateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.BuyHealthCardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.DiseaseDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.ForeignPatient_RCDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.PatientExchangeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.CentreIntroActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ChildOrderActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.TumourServicePackageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.ForeignPatient_TPDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.BigDataReadActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.HealthCardServiceDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyOrderListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyOrderDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.SendMedicineActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.HospitalListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.HospitalDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.fdoc.HospitalIntroActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.AttentHosActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyCouponsActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <!-- alipay sdk end -->
+
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置第三方Receiver -门诊ezthall的key  com.igexin.sdk.action.xuwrs068CC8JbzwX5cdEU5 -->
+        <!-- eztuser       <action android:name="com.igexin.sdk.action.rEKsPStM4U6OAmKy9T7cfA" /> -->
+        <receiver
+            android:name="com.eztcn.user.eztcn.broadcast.PushGeTuiReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.xuwrs068CC8JbzwX5cdEU5" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice"></service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.eztcn.user"
+            android:process=":pushservice" />
+        <!-- android:authorities="downloads.第三方包名" -->
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.xuwrs068CC8JbzwX5cdEU5" />
+                <!-- eztuser      <action android:name="com.igexin.sdk.action.rEKsPStM4U6OAmKy9T7cfA" /> -->
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+
+        <!-- 个推SDK配置结束 -->
+
+
+        <!-- *************************    分享相关的注册 START **************************** -->
+        <!-- 分享内容编辑页 -->
+        <!-- <activity -->
+        <!-- android:name="com.umeng.socialize.view.ShareActivity" -->
+        <!-- android:configChanges="orientation|keyboard" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:noHistory="true" -->
+        <!-- android:theme="@style/Theme.UMDialog" -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize" > -->
+        <!-- </activity> -->
+
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <!-- <activity -->
+        <!-- android:name="com.tencent.tauth.AuthActivity" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:noHistory="true" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+        <!-- <data android:scheme="tencent100424468" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.tencent.connect.common.AssistActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.eztcn.user.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+
+        <!-- 接听电话receiver声明 -->
+        <receiver android:name="com.eztcn.user.eztcn.broadcast.PhoneBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="142943#ezt" />
+        <!-- 声明sdk所需的service -->
+        <!-- <service -->
+        <!-- android:name="com.easemob.chat.EMChatService" -->
+        <!-- android:exported="true" /> -->
+        <!-- 声明sdk所需的receiver -->
+        <!-- <receiver android:name="com.easemob.chat.EMMonitorReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_REMOVED" /> -->
+
+
+        <!-- <data android:scheme="package" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- <action android:name="android.intent.action.USER_PRESENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 2015-12-22############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent1104451178" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <!--
+        友盟AppKey
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4eaee02c527015373b000003" >
+        </meta-data>
+        -->
+
+
+        <!-- 友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="566a4488e0f55abd73000697"></meta-data>
+
+        <!-- 配置个推的第三方参数属性   xuwrs068CC8JbzwX5cdEU5  ezthall -->
+        <!-- 配置个推的第三方参数属性   rEKsPStM4U6OAmKy9T7cfA  eztUser -->
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="xuwrs068CC8JbzwX5cdEU5" />
+
+        <!-- p0UMqbmelU8Dbw3yNF3GE5  ezthall -->
+        <!-- oUGR0LLHZj92k4T8CMpZf6  eztUser -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="p0UMqbmelU8Dbw3yNF3GE5" />
+        <!-- VLYUOOUatv6MObguIJruj1  ezthall -->
+        <!-- mWONpZ6eOw8MvzhJWpHve7  eztUser -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="VLYUOOUatv6MObguIJruj1" />
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+
+        <!-- 百度地图key wo:TZ6VAWQduTrpDi11jY8hUsPM 正式：SfCbtlAThlycZzNOvcGgoKS9 我：ZAsRePH0G8hKCbNR1c5eXqr7 -->
+        <!-- ezthall sHssqa6UaBrTZrE45tPYwwOEAimQBWvl -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="SfCbtlAThlycZzNOvcGgoKS9" />
+
+        <!-- 2016-1-25 百度用户偏好meta设置开始 -->
+
+
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="9dff0b012d" /> <!-- a9e2ad84a2 -->
+        <!-- 渠道商编号  只需修改value -->
+        <!-- <meta-data -->
+        <!-- android:name="BaiduMobAd_CHANNEL" -->
+        <!-- android:value="Baidu Market" /> -->
+
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <!-- 2016-1-25 百度用户偏好meta设置结束 -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <activity
+            android:name=".eztcn.activity.home.CallENurseActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- <activity -->
+        <!-- android:name=".eztcn.activity.mine.MyDragonCardActivity" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".eztcn.activity.mine.MyDragonCardActivateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".eztcn.activity.home.PhoneDoctorTimeActivity"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.CardUsedActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.CardMealDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MemberCenterActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- <activity -->
+        <!-- android:name=".eztcn.activity.mine.DiDi_CouponActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustResize" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".eztcn.activity.mine.MyDragonCard_ChoiceProjectAvtivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 宝宝疫苗 -->
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.home.BabyVaccineActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 我的服务 -->
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.home.Home_MyServiceActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="org.fireking.app.imagelib.widget.PicSelectActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.home.Activity_Dargon"
+            android:screenOrientation="portrait"></activity>
+        <!-- 检验报告小项目详情 -->
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.mine.InsDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 输入健康卡号准备激活界面 -->
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.mine.DragonToActiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eztcn.activity.mine.DragonCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eztcn.activity.mine.DiDi_CouponActivity"
+            android:screenOrientation="portrait" />
+        <!-- 医护帮Activity -->
+        <activity
+            android:name=".eztcn.activity.home.ENurseHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eztcn.activity.mine.MyCollectionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.NewMyRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eztcn.activity.EztTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eztcn.activity.home.HosHomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.RegSuccActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.HelpActivity30"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.SuggestFeedBackActivity30"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.HosHomeMoreActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.mine.MyServiceActivity30"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ordercheck.ChoiceCheckItemActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ordercheck.ChoiceCheckStatusActivity30"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ordercheck.WrittingOrderActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ordercheck.CheckItemPayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ordercheck.CheckOrderDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.ordercheck.ChoiceCheckOrderListActivity30"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.drug.DrugListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.drug.DrugWriteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.drug.RegDrugSuccActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.drug.MyOrderDrugDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.dragoncard.ActivityDragonCard"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.home.orderbed.OrderBedStatusActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.home.orderbed.OrderBedDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.eztcn.user.eztcn.activity.home.orderbed.MyOrderBedListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.dragoncard.DragonToActive30Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.dragoncard.DragonWriteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.orderbed.ActivityOrderBedWrite"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.orderbed.OrderBedPayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.orderbed.OrderBedNoticeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.message.ActivityMessageList"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.home.message.ActivityMessageDetail"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eztcn.activity.discover.InformationDetail30Activity"
+            android:screenOrientation="portrait"></activity>
+        <!---******************************2.0新的界面*********************************-->
+        <!---******************************2.0新的界面*********************************-->
+        <!---******************************2.0新的界面*********************************-->
+        <!---******************************2.0新的界面*********************************-->
+        <!--配置glide图片框架的内存缓存和磁盘缓存规则-->
+        <meta-data
+            android:name="com.eztcn.user.hall.common.CustomCachingGlideModule"
+            android:value="GlideModule" />
+        <!--配置glide图片框架的内存缓存和磁盘缓存规则-->
+
+        <activity
+            android:name=".hall.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <!--    3.0    =========================-->
+
+        <!-- 以下是预约挂号模块的页面-->
+
+        <!-- 预约挂号里面的选择城市页面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.SelectCityActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 首页里面的选择所有城市页面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.SelectAllCityActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 预约挂号里面的医院的筛选页面-->
+        <activity
+            android:name=".hall.activity.SelectHospitalRuleActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 预约挂号里面的医生的筛选页面-->
+        <activity
+            android:name=".hall.activity.SelectDoctorRuleActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 搜索页面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.SearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 预约挂号首页面-->
+        <activity
+            android:name=".hall.activity.AppointmentMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 选择科室页面-->
+        <activity
+            android:name=".hall.activity.SelectDepartmentActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 医院首页面-->
+        <activity
+            android:name=".hall.activity.HospitalHomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 选择医生页面-->
+        <activity
+            android:name=".hall.activity.SelectDoctorsListActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 医生首页面-->
+        <activity
+            android:name=".hall.activity.DoctorHomePageActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 预约量排行榜页面-->
+        <activity
+            android:name=".hall.activity.DoctorRankingActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 选择预约时间页面-->
+        <activity
+            android:name=".hall.activity.SelectAppointmentTimeActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <!-- 确认预约页面-->
+        <activity
+            android:name=".hall.activity.ConfirmAppointmentActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 验证手机页面-->
+        <activity
+            android:name=".hall.activity.PhoneValidationActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 预约成功页面-->
+        <activity
+            android:name=".hall.activity.AppointmentResultSuccessActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 预约失败页面-->
+        <activity
+            android:name=".hall.activity.AppointmentResultFailureActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 医院简介页面-->
+        <activity
+            android:name=".hall.activity.HospitalSimpleIntroActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 新建就诊人页面-->
+        <activity
+            android:name=".hall.activity.AddCasesPatientActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 正在预约中页面-->
+        <activity
+            android:name=".hall.activity.AppointmentIngActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!--个人中心模块界面-->
+
+        <!--我的复印列表界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyCaseCopyListActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的预约服务界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyServiceActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--预约检查列表页面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.ChoiceCheckOrderListActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--复印病历预约单-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.CopyCaseOrderActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--复印病历预约结果-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.CopyCaseSubscribeResultActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--特色服务-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.FeatureServiceActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--预约复印病历-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.OrderCopyCaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--预约药品页面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.OrderDrugActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--预约药品订单-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.OrderDrugGoodsActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--预约药品预约结果-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.OrderDrugSubscribeResultActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的复印详情界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyCaseCopyDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--个人中心界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.PersonInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 就诊人管理界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.PatientManagerActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 就诊人详情界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.PatientDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--   我的关注界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyAttentionActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的药品清单-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyDrugListActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的药品详情界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyDrugDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的挂号列表界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyRegistrationListActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的预约挂号详情界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.MyRegistrationDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--我的龙卡界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.dragonCard.MyDragonCardActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 我的龙卡服务详情界面.-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.dragonCard.DragonCardServiceDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 意见反馈界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.loginSetting.FeedbackActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--帮助界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.loginSetting.HelpActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--设置界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.loginSetting.SettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--更改成功界面-->
+        <activity
+            android:name=".hall.activity.loginSetting.ChangeSuccessActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--更改帐号界面-->
+        <activity
+            android:name=".hall.activity.loginSetting.ChangeMobileActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--关于医指通界面-->
+        <activity
+            android:name=".hall.activity.loginSetting.AboutEZTActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--设置手机号界面-->
+        <activity
+            android:name=".hall.activity.loginSetting.SetNewMobileActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--使用协议和免责声明界面-->
+        <activity
+            android:name=".hall.activity.loginSetting.StatementActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--一千零医夜-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.OneThousandDoctorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme.NoActionBar"></activity>
+
+        <!--完善个人信息界面-->
+        <activity
+            android:name=".hall.activity.loginSetting.CompletePersonalInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--找回密码界面-->
+        <activity
+            android:name=".hall.activity.loginSetting.FindBackPasswordActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!-- 注册界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.loginSetting.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            ></activity>
+
+        <!--我的特权界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.dragonCard.MyPrivilegeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme.NoActionBar"></activity>
+        <!--登录界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.loginSetting.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            ></activity>
+        <!-- 账号管理界面-->
+        <activity
+            android:name="com.eztcn.user.hall.activity.loginSetting.AccountManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!--WebView界面-->
+        <activity
+            android:name=".hall.activity.WebViewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--强势入驻界面-->
+        <activity
+            android:name=".hall.activity.EnterActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+       <!-- 注册成功结果页-->
+        <activity
+            android:name=".hall.activity.loginSetting.RegisterResultActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--医疗卡详情界面-->
+        <activity
+            android:name=".hall.activity.MedicalCardDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+</manifest>

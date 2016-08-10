@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:paddingTop="@dimen/medium_margin"
+    android:paddingBottom="@dimen/medium_margin"
+   >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/img_height_normal"
+            android:layout_height="@dimen/img_width_normal"
+            android:src="@drawable/logo_1" />
+
+        <TextView
+            android:id="@+id/titie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_toRightOf="@id/image"
+            android:layout_toLeftOf="@+id/bt"
+            android:singleLine="true"
+            android:text="标题标题标题标题标题标题标题标题标题标题标题"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_size" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/titie"
+            android:layout_below="@+id/titie"
+            android:layout_toRightOf="@id/image"
+            android:gravity="bottom"
+            android:text="更新时间 2015/02/14"
+            android:textColor="#ca9942"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_main_btn_bg"
+            android:padding="@dimen/small_margin"
+            android:text="立即更新"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

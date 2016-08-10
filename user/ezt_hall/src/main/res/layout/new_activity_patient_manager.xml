@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/new_activity_title_bar"></include>
+
+    <include layout="@layout/new_activity_view_margin_bar"></include>
+   <ListView
+       android:id="@+id/my_patient_listView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background"
+        android:layout_weight="1"
+        >
+    </View>
+</LinearLayout>

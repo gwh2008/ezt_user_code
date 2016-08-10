@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen50"
+    android:background="@color/bg_white" >
+
+    <RelativeLayout
+        android:id="@+id/orderDetailLContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen45" >
+
+        <TextView
+            android:id="@+id/itemCheckNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxEms="10"
+            android:singleLine="false"
+            android:text="血沉检查血沉检查血沉检查血沉检查"
+            android:textSize="@dimen/dimen17sp" />
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="@dimen/more2_large_margin"
+            android:layout_height="1dip"
+            android:layout_centerHorizontal="true" >
+        </View>
+
+        <ImageView
+            android:id="@+id/downBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/more2_large_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin"
+            android:src="@drawable/arrowdown"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/costTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/downBtn"
+            android:text="检查费：48.5元"
+            android:textColor="@color/drug_light_tx_color"
+            android:textSize="@dimen/dimen17sp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/orderDetailLContentLayout"
+        android:background="@color/title_line_grey"></View>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/medium_margin"
+    android:paddingTop="@dimen/medium_margin" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/tumour_package_layout_width"
+        android:layout_height="@dimen/tumour_package_layout_height"
+        android:background="@drawable/selector_dark_gray_bg" >
+
+        <TextView
+            android:id="@+id/item_package_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/small_margin"
+            android:gravity="center"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/item_package_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_package_price"
+            android:layout_below="@+id/item_package_title"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/item_package_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_package_time"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/item_package_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:textSize="@dimen/small_size" />
+
+        <include
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/item_package_buy"
+            android:layout_marginTop="@dimen/small_margin"
+            layout="@layout/hor_line" />
+
+        <TextView
+            android:id="@+id/item_package_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_listitem_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="添加购物车"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+</LinearLayout>

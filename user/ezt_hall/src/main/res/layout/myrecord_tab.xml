@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/more_light_gray"
+        android:baselineAligned="true"
+        android:fadingEdge="none"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/regRecordTV"
+            style="@style/largeText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="预约挂号"
+            android:textColor="@color/main_color" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_black" />
+
+        <TextView
+            android:id="@+id/regCheckRecordTV"
+            style="@style/largeText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="预约检查"
+            android:textColor="@color/tab_footer_textcolor" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_black" />
+
+        <TextView
+            android:id="@+id/regBedRecordTV"
+            style="@style/largeText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="预约病床"
+            android:textColor="@color/tab_footer_textcolor" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_black" />
+
+        <TextView
+            android:id="@+id/telDocRecordTV"
+            style="@style/largeText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="电话医生"
+            android:textColor="@color/tab_footer_textcolor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/dark_black" >
+    </View>
+
+</LinearLayout>

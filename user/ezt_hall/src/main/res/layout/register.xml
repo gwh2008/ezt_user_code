@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/user_margin_right" >
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="@dimen/medium_margin" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        
+        android:weightSum="13" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/securityCode"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="number"
+            android:paddingRight="@dimen/small_margin" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/getSecurityCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" 
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:padding="@dimen/user_margin_right" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:digits="@string/register_digits"
+            android:gravity="center_vertical|right"
+            android:maxLength="20"
+            android:hint="点击输入"
+            android:inputType="textPassword" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:padding="@dimen/user_margin_right" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码" />
+
+        <EditText
+            android:id="@+id/affirmPwd"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:digits="@string/register_digits"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:maxLength="20"
+            android:inputType="textPassword" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <Button
+        android:id="@+id/affirmReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:gravity="center"
+        android:text="确认注册"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_size" />
+
+</LinearLayout>

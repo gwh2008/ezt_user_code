@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/dialog_exit1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:background="@drawable/selector_listitem_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:text="注销账户"
+        android:textSize="@dimen/large_size"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/dialog_exit_line"
+        layout="@layout/hor_line"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dialog_exit2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:background="@drawable/selector_listitem_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:text="退出应用"
+        android:textSize="@dimen/large_size" />
+
+</LinearLayout>

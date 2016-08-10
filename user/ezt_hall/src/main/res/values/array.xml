@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="app_introduce">
+        <item>简洁实用的个性化桌面，主题丰富，视觉效果细腻，功能贴心，性能极度流畅，完美你的android体验。</item>
+        <item>微信是一款手机通信软件，支持通过手机网络发送语音短信、视频、图片和文字，支持视频聊天，还能根据地理位置找到附近的人，以及通过朋友圈分享自己的生活，带给朋友们全新的移动沟通体验。</item>
+        <item>新浪微博官方客户端。看微博、收评论、好友聊天，更有炫彩换色、@联想输入等贴心功能。</item>
+        <item>车友汇违章查询是一款支持全国交通违章查询的android平台应用，同时可以查看洗车指数、油价查询、一键查询周边加油站、停车场等信息，包含紧急救援、事故报案、保险测算等实用工具，是每位车主的必备软件。</item>
+        <item>去哪儿旅行包含机票、航班、酒店、火车票、旅游度假、团购、景点市场上【最炫酷最全】的“旅游、出行应用”，特价机票、酒店特价房预订；12,000条国内国际航线查询起落状态一览无遗、180天机票价格趋势实时查看；身边地图式酒店查询预订、每日6点后尾房抢订；周边景点、本地旅游团购，实惠多多：出行最好帮手“机票预订、机场航班 、度假旅行、折扣酒店 、火车票查询、出境游团购、优惠网购、娱乐休闲打折信息”应有尽有</item>
+        <item>手机暴风影音继承暴风影音“万能”播放的优势，支持多达82种媒体，您现在可以将电脑里的众多视频直接传到手机中播放，无需转换，非常方便。</item>
+        <item>戏曲迷是为广大戏曲爱好者提供的欣赏精彩片段的应用,我国各民族地区的戏曲剧种,约有三百六十多种,传统剧目数以万计.中华人民共和国成立后又出现许多改编的传统剧目,新编历史剧和表现现代生活题材的现代戏,都受广大观众热烈欢迎.</item>
+        <item>一款来自韩国的聊天机器人应用，以吉祥物“小鸡鸡”自居。Simsimi机器人的界面非常可爱，深受女生欢迎，最近网络上还刮起了1阵和Simsimi机器人对话的旋风。</item>
+        <item>婚礼?聚会?联谊?同学会，实时也好回忆也好，在照片上简单加效果！是款无限扩展照片种种可能的超级应用程序！！</item>
+        <item>陌陌是一款基于地理位置的移动社交应用,在上面可以发现身边的陌生人或者朋友,创建或加入附近各种好玩的群组，免费发送语音、信息、图片、地图位置,方便人与人之间更便捷和及时的联系。</item>
+    </array>
+    <array name="pop_symptom_choices">
+
+        <!-- <item>收藏病症</item> -->
+
+        <item>常见病</item>
+        <item>症状查询</item>
+        <item>疾病查询</item>
+    </array>
+
+    <string-array name="question">
+        <item>自助退号！</item>
+        <item>关于投诉问题？</item>
+        <item>客服电话相关问题？</item>
+        <item>未收到预约短信、查询验证码？</item>
+        <item>会员号和密码问题丢失问题？</item>
+    </string-array>
+    <string-array name="replyContent">
+        <item>用户如需退号，请点击本站网页顶部【登陆】，选择【个人登录】，输入用户会员号、密码以及验证码，点击登录。登陆成功后，点击本站网页顶部【进入我的医指通】，选择【退号】，点击退号即可。</item>
+        <item>我们会及时将您的问题向相关部门汇报，并以二次答复的形式告知您处理结果。</item>
+        <item>医指通云就医平台承载了天津市大多数公立医院的预约诊疗服务工作，每日使用4006511800服务热线进行咨询和预约的用户众多，因此会出现线路不畅的情况。对此，我们正在积极解决，敬请谅解。
+4006511800热线服务时间：7：30至18:00，周一至周日。
+您可以尝试选择使用医指通云就医网（www.eztcn.com）享受24小时自助服务。</item>
+        <item>用户预约成功后，如果在1分钟内未收到手机提示短信，请点击本站网页顶部【登陆】，选择【个人登录】，输入用户会员号、密码以及验证码，点击登录。登陆成功后，点击本站网页顶部【进入我的医指通】，选择【挂号信息】，查看相应挂号信息并牢记凭证码，于就诊当日，到医院打印就诊凭条，正常就诊即可。</item>
+        <item>会员号及密码找回，请登陆本站，点击网页顶部【忘记密码】，按照相关提示完成操作即可。</item>
+    </string-array>
+    <string-array name="chat_other_choice">
+        <item>功能1</item>
+        <item>功能2</item>
+        <item>功能3</item>
+        <item>功能4</item>
+        <item>功能5</item>
+        <item>功能6</item>
+        <item>功能7</item>
+    </string-array>
+    <string-array name="appoint_city_name">
+        <item>全国</item>
+        <item>天津</item>
+        <item>北京</item>
+        <item>沈阳</item>
+        <item>深圳</item>
+        <item>广州</item>
+        <item>长沙</item>
+        <item>惠州</item>
+    </string-array>
+    <string-array name="appoint_city_id">
+        <item/>
+        <item>2</item>
+        <item>1</item>
+        <item>37</item>
+        <item>199</item>
+        <item>197</item>
+        <item>183</item>
+        <item>207</item>
+    </string-array>
+    <string-array name="pay_hos_id">
+        <item>2</item>
+    </string-array>
+
+    <!-- 我_预约挂号 -->
+    <string-array name="user_orderRecord">
+        <item>已预约</item>
+        <item>已登记</item>
+        <item>已就诊</item>
+        <item>爽约</item>
+        <item>已退号</item>
+    </string-array>
+    <!-- 我_电话医生 -->
+    <string-array name="user_phoneRecord">
+        <item>已预约</item>
+        <item>已通话</item>
+        <item>已关闭</item>
+    </string-array>
+    <!-- 我_图文问诊 -->
+    <string-array name="user_textAskRecord">
+        <item>未回复</item>
+        <item>已回复</item>
+    </string-array>
+    <!-- 症状自查_部位 -->
+    <string-array name="parts">
+        <item>全身症状</item>
+        <item>头部</item>
+        <item>颈部</item>
+        <item>胸部</item>
+        <item>腹部</item>
+        <item>上肢</item>
+        <item>生殖部位</item>
+        <item>下肢</item>
+        <item>腰部</item>
+        <item>背部</item>
+        <item>臀部</item>
+    </string-array>
+    <!-- 常见疾病类型 -->
+    <string-array name="disease_type">
+        <item>常见病</item>
+        <item>男性</item>
+        <item>女性</item>
+        <item>老人</item>
+        <item>儿童</item>
+        <item>职业病</item>
+    </string-array>
+
+    <!-- 上传病历图片类型 -->
+    <string-array name="emr_type">
+        <item>纸质病历</item>
+        <item>纸质检查报告</item>
+        <item>发病部位病况</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="orderTime">
+        <item>08:00-08:30</item>
+        <item>08:30-09:00</item>
+        <item>09:30-10:00</item>
+        <item>10:00-10:30</item>
+        <item>10:30-11:00</item>
+        <item>11:00-11:30</item>
+        <item>11:30-12:00</item>
+        <item>12:00-12:30</item>
+        <item>12:30-13:00</item>
+        <item>13:00-13:30</item>
+        <item>13:30-14:00</item>
+        <item>14:00-14:30</item>
+        <item>14:30-15:00</item>
+        <item>15:00-15:30</item>
+        <item>15:30-16:00</item>
+        <item>16:00-16:30</item>
+        <item>16:30-17:00</item>
+        <item>17:00-17:30</item>
+        <item>17:30-18:00</item>
+        <item>18:00-20:30</item>
+    </string-array>
+
+    <!-- 外患服务套餐 栏目id -->
+    <string-array name="tumour_service_id">
+        <item>404</item>
+        <item>405</item>
+        <item>406</item>
+        <item>407</item>
+    </string-array>
+
+    <!-- 热词列表 -->
+    <string-array name="hot_word_list">
+        <item>肿瘤</item>
+        <item>月经量少</item>
+        <item>肥胖综合症</item>
+        <item>腰间盘突出</item>
+        <item>血压</item>
+        <item>血糖</item>
+        <item>血脂</item>
+        <item>头痛</item>
+        <item>发热</item>
+    </string-array>
+
+    <!-- 银行列表 -->
+    <string-array name="bank_list">
+        <item>建设银行专享</item>
+        <item>天津银行专享</item>
+        <item>农商银行专享</item>
+        <item>招商银行专享</item>
+        <item>渤海银行专享</item>
+        <item>交通银行专享</item>
+        <item>中国银行专享</item>
+        <item>民生银行专享</item>
+        <item>工商银行专享</item>
+        <item>浦发银行专享</item>
+        <item>光大银行专享</item>
+        <item>中信银行专享</item>
+    </string-array>
+
+    <!-- 银行列表图标 -->
+    <string-array name="bank_list_icon">
+        <item>@drawable/bank_jianshe</item>
+        <item>@drawable/bank_tianjin</item>
+        <item>@drawable/bank_nongshang</item>
+        <item>@drawable/bank_zhaoshang</item>
+        <item>@drawable/bank_bohai</item>
+        <item>@drawable/bank_jiaotong</item>
+        <item>@drawable/bank_zhongguo</item>
+        <item>@drawable/bank_minsheng</item>
+        <item>@drawable/bank_gongshang</item>
+        <item>@drawable/bank_pufa</item>
+        <item>@drawable/bank_guangda</item>
+        <item>@drawable/bank_zhongxin</item>
+    </string-array>
+
+</resources>

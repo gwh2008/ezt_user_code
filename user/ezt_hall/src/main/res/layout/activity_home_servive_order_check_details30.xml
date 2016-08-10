@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/service_check_details_title_bar"
+        layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_check_details_title_bar"
+        android:layout_marginBottom="@dimen/drug_btn_bg_h"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/order_bed_commodity" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/appoint_doctor_hint_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/user_margin_right"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/order_bed_hint"
+                    android:textColor="@color/user_item_tx_color"
+                    android:textSize="@dimen/medium_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/appoint_doctor_hint_tx"
+                    android:layout_marginLeft="@dimen/user_margin_right"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/five_star_service_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/five_star_service"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_small_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/servive_authentication_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/platform_authentication"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_small_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/service_full_time_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/full_time_man"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_small_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/user_margin_right"
+                    android:text="@string/free"
+                    android:textColor="@color/new_light_orange"
+                    android:textSize="@dimen/large_size"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/main_bg_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/light_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/service_details_switch_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@color/bg_white" >
+
+                    <TextView
+                        android:id="@+id/service_introduce_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="66dp"
+                        android:layout_marginTop="8dp"
+                        android:text="服务介绍"
+                        android:textColor="@color/border_line" />
+
+                    <TextView
+                        android:id="@+id/service_notice_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="66dp"
+                        android:layout_marginTop="8dp"
+                        android:text="服务须知"
+                        android:textColor="@color/drug_black" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@color/border_line" />
+
+                    <View
+                        android:id="@+id/service_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_alignLeft="@id/service_introduce_tx"
+                        android:layout_alignRight="@id/service_introduce_tx"
+                        android:layout_below="@id/service_introduce_tx"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/border_line" />
+
+                    <View
+                        android:id="@+id/service_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_alignLeft="@id/service_notice_tx"
+                        android:layout_alignRight="@id/service_notice_tx"
+                        android:layout_below="@id/service_notice_tx"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/border_line"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/switch_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/service_details_switch_layout"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:id="@+id/service_introduce_tx_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/switch_line"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/bg_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen22"
+                    android:paddingRight="@dimen/dimen22"
+                    android:visibility="visible"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_introduce_one" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/service_introduce_two" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/service_introduce_three" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/service_introduce_four" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/service_introduce_five" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/service_introduce_six" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/service_process_notice_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/switch_line"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/bg_white"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/choose_hospital_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="@dimen/user_margin_right"
+                        android:src="@drawable/choose_hospital_icon" />
+
+                    <TextView
+                        android:id="@+id/choose_hospital_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/choose_hospital_icon"
+                        android:text="选择医院"
+                        android:textColor="#4c4c4c"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/choose_hospital_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/choose_hospital_tx"
+                        android:layout_below="@id/choose_hospital_tx"
+                        android:layout_marginTop="4dp"
+                        android:text="选择预约病床的医院"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/choose_hospital_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="29dp"
+                        android:layout_below="@id/choose_hospital_icon"
+                        android:layout_marginLeft="22dp"
+                        android:background="#74e5d4" />
+
+                    <ImageView
+                        android:id="@+id/choose_department_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/choose_hospital_line"
+                        android:layout_marginLeft="@dimen/user_margin_right"
+                        android:src="@drawable/choose_department_icon" />
+
+                    <TextView
+                        android:id="@+id/choose_department_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/choose_department_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/choose_department_icon"
+                        android:text="选择科室"
+                        android:textColor="#4c4c4c"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/choose_department_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/choose_department_tx"
+                        android:layout_below="@id/choose_department_tx"
+                        android:layout_marginTop="4dp"
+                        android:text="选择对应的就医科室"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/choose_department_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="29dp"
+                        android:layout_below="@id/choose_department_icon"
+                        android:layout_marginLeft="22dp"
+                        android:background="#74e5d4" />
+
+                    <ImageView
+                        android:id="@+id/fill_info_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/choose_department_line"
+                        android:layout_marginLeft="@dimen/user_margin_right"
+                        android:src="@drawable/fill_info_icon" />
+
+                    <TextView
+                        android:id="@+id/fill_info_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/fill_info_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/fill_info_icon"
+                        android:text="填写信息"
+                        android:textColor="#4c4c4c"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/fill_info_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/fill_info_tx"
+                        android:layout_below="@id/fill_info_tx"
+                        android:layout_marginTop="4dp"
+                        android:text="填写患者信息（描述及资料尽量完整）"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/fill_info_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="29dp"
+                        android:layout_below="@id/fill_info_icon"
+                        android:layout_marginLeft="22dp"
+                        android:background="#74e5d4" />
+
+                    <ImageView
+                        android:id="@+id/pay_cost_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/fill_info_line"
+                        android:layout_marginLeft="@dimen/user_margin_right"
+                        android:src="@drawable/pay_cost_icon" />
+
+                    <TextView
+                        android:id="@+id/pay_cost_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/pay_cost_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/pay_cost_icon"
+                        android:text="支付费用"
+                        android:textColor="#4c4c4c"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pay_cost_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/pay_cost_tx"
+                        android:layout_below="@id/pay_cost_tx"
+                        android:layout_marginTop="4dp"
+                        android:text="在线支付医院所需挂号费用"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/pay_cost_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="29dp"
+                        android:layout_below="@id/pay_cost_icon"
+                        android:layout_marginLeft="22dp"
+                        android:background="#74e5d4" />
+
+                    <ImageView
+                        android:id="@+id/wait_consult_result_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/pay_cost_line"
+                        android:layout_marginLeft="@dimen/user_margin_right"
+                        android:src="@drawable/wait_consult_result_icon" />
+
+                    <TextView
+                        android:id="@+id/wait_consult_result_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/wait_consult_result_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/wait_consult_result_icon"
+                        android:text="等候咨询结果"
+                        android:textColor="#4c4c4c"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/wait_consult_result_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/wait_consult_result_tx"
+                        android:layout_below="@id/wait_consult_result_tx"
+                        android:layout_marginTop="4dp"
+                        android:text="健康秘书沟通患者情况咨询住院信息"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/wait_consult_result_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="29dp"
+                        android:layout_below="@id/wait_consult_result_icon"
+                        android:layout_marginLeft="22dp"
+                        android:background="#74e5d4" />
+
+                    <ImageView
+                        android:id="@+id/inform_result_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/wait_consult_result_line"
+                        android:layout_marginLeft="@dimen/user_margin_right"
+                        android:src="@drawable/inform_result_icon" />
+
+                    <TextView
+                        android:id="@+id/inform_result_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/inform_result_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/inform_result_icon"
+                        android:text="告知预约结果"
+                        android:textColor="#4c4c4c"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/inform_result_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/inform_result_tx"
+                        android:layout_below="@id/inform_result_tx"
+                        android:layout_marginTop="4dp"
+                        android:text="电话通知患者告知咨询结果"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/inform_result_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="29dp"
+                        android:layout_below="@id/inform_result_icon"
+                        android:layout_marginLeft="22dp"
+                        android:background="#74e5d4" />
+
+                    <ImageView
+                        android:id="@+id/in_hospital_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/inform_result_line"
+                        android:layout_marginLeft="@dimen/user_margin_right"
+                        android:src="@drawable/in_hospital_icon" />
+
+                    <TextView
+                        android:id="@+id/in_hospital_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/in_hospital_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/in_hospital_icon"
+                        android:text="住院就诊"
+                        android:textColor="#4c4c4c"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/in_hospital_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/in_hospital_tx"
+                        android:layout_below="@id/in_hospital_tx"
+                        android:layout_marginTop="4dp"
+                        android:text="协助符合条件的患者住院就诊"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentBottom="true" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/order_check_bt" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="45dp" -->
+    <!-- android:layout_gravity="center_horizontal" -->
+    <!-- android:layout_marginBottom="10dp" -->
+    <!-- android:layout_marginLeft="@dimen/user_margin_right" -->
+    <!-- android:layout_marginRight="@dimen/user_margin_right" -->
+    <!-- android:background="@drawable/selector_main_btn_bg" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="@string/order_bed_at_once" -->
+    <!-- android:textColor="@android:color/white" -->
+    <!-- android:textSize="@dimen/login_button_tx_size" > -->
+    <!-- </Button> -->
+    <!-- </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/commitDrugLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drug_btn_bg_h"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white" >
+
+        <View
+            android:id="@+id/btnLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/title_line_grey" />
+
+        <Button
+            android:id="@+id/order_check_bt"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:layout_centerInParent="true"
+            android:text="@string/order_bed_at_once"
+            android:textSize="@dimen/drug_text_super_large_size"
+            android:background="@color/new_orange"
+            android:textColor="@color/colorWhite"
+            >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

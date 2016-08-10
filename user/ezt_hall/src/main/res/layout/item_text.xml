@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.0dip" >
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/whiteTextView"
+        android:layout_height="@dimen/title_height_size"
+        android:layout_width="match_parent"
+        android:layout_margin="0dip" 
+        />
+
+</RelativeLayout>

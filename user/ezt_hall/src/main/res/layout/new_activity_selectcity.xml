@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="当前城市"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_12"/>
+
+        <TextView
+            android:id="@+id/new_activity_selectCity_currentCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:text="北京"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_15"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_0.5"
+        android:background="@color/line_color_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/new_activity_selectCity_left_listView"
+            android:layout_width="@dimen/listView_width_106"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:listSelector="@android:color/transparent"/>
+        <ListView
+            android:id="@+id/new_activity_selectCity_right_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/background"
+            android:listSelector="@android:color/transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

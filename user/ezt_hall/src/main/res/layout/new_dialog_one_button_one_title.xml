@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/new_white_ground">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_color_deep_gray"
+        android:textSize="@dimen/text_size_16"
+        android:layout_marginLeft="@dimen/margin_left_30"
+        android:layout_marginRight="@dimen/margin_left_30"
+        android:layout_marginTop="@dimen/margin_left_30"
+        android:layout_marginBottom="@dimen/margin_left_15"
+        android:text="请先完善您的个人信息"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_0.5"
+        android:background="@color/line_color_gray"/>
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:textColor="@color/color_157efb"
+        android:textSize="@dimen/large_size_18"
+        android:gravity="center"
+        android:text="知道了"/>
+
+</LinearLayout>

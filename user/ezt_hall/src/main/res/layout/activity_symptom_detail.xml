@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <com.eztcn.user.eztcn.customView.MyScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/medium_margin" >
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/small_margin"
+                        android:text="概述"
+                        android:textSize="@dimen/medium_size" />
+
+                    <include
+                        android:id="@+id/v_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt2"
+                        layout="@layout/hor_line" />
+
+                    <TextView
+                        android:id="@+id/intro_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/v_line"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="描述信息"
+                        android:textColor="@color/main_txt_color"
+                        android:textSize="@dimen/medium_size" />
+
+                    <TextView
+                        android:id="@+id/dept_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/intro_tv"
+                        android:layout_marginTop="@dimen/large_margin"
+                        android:gravity="bottom"
+                        android:text="科室"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/small_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/symptom_hor_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/more_light_gray"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/small_margin"
+                        android:paddingLeft="@dimen/medium_margin"
+                        android:paddingTop="@dimen/small_margin"
+                        android:text="可能患有疾病"
+                        android:textSize="@dimen/medium_size" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <com.eztcn.user.eztcn.customView.HorizontalListView
+                            android:id="@+id/disease_hor_lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/user_title_layout_height_small"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/white"
+                            android:visibility="visible" >
+                        </com.eztcn.user.eztcn.customView.HorizontalListView>
+
+                        <ProgressBar
+                            android:id="@+id/progress3"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/large_margin"
+                            android:layout_marginTop="@dimen/large_margin"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about_symptom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/more_light_gray"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/small_margin"
+                        android:paddingLeft="@dimen/medium_margin"
+                        android:paddingTop="@dimen/small_margin"
+                        android:text="相关症状"
+                        android:textSize="@dimen/medium_size" />
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/large_margin"
+                        android:layout_marginTop="@dimen/large_margin"
+                        android:visibility="gone" />
+
+                    <com.eztcn.user.eztcn.customView.MyGridView
+                        android:id="@+id/about_symptom_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:numColumns="auto_fit" >
+                    </com.eztcn.user.eztcn.customView.MyGridView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/more_light_gray"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/more_light_gray"
+                        android:paddingBottom="@dimen/small_margin"
+                        android:paddingLeft="@dimen/medium_margin"
+                        android:paddingTop="@dimen/small_margin"
+                        android:text="相关博文"
+                        android:textSize="@dimen/medium_size" />
+
+                    <ListView
+                        android:id="@+id/detail_article_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:listSelector="@drawable/selector_setting_item_bg"
+                        android:visibility="gone" >
+                    </ListView>
+
+                    <include
+                        android:id="@+id/none_layout"
+                        layout="@layout/item_none_data"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progress2"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/large_margin"
+                        android:layout_marginTop="@dimen/large_margin"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.eztcn.user.eztcn.customView.MyScrollView>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/more_light_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/body_pic_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:text="人体图"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/symptom_form_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:text="症状表"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/disease_form_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:text="疾病表"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_buttom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp" />
+
+    <include layout="@layout/hor_line" />
+
+    <com.eztcn.user.eztcn.customView.NoScrollViewPager
+        android:id="@+id/symptom_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        android:visibility="visible" />
+
+</LinearLayout>

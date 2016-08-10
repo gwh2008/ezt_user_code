@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin_left_10">
+
+        <ImageView
+            android:id="@+id/new_activity_doctor_home_headPic"
+            android:layout_width="@dimen/head_height_60"
+            android:layout_height="@dimen/head_height_60"
+            android:layout_margin="@dimen/margin_left_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_default_head_pic"/>
+
+        <TextView
+            android:id="@+id/new_activity_doctor_home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left_15"
+            android:layout_toRightOf="@+id/new_activity_doctor_home_headPic"
+            android:text="张医生"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_16"/>
+
+        <ImageView
+            android:id="@+id/new_activity_doctor_home_doctor_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_marginTop="@dimen/margin_top_18"
+            android:layout_toRightOf="@+id/new_activity_doctor_home_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_chief_doctor_orange"/>
+
+        <TextView
+            android:id="@+id/new_activity_doctor_home_hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_activity_doctor_home_name"
+            android:layout_marginTop="@dimen/search_margin_top_3"
+            android:layout_toRightOf="@+id/new_activity_doctor_home_headPic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="天津市第一中心医院"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/new_activity_doctor_home_department_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_activity_doctor_home_hospital_name"
+            android:layout_marginBottom="@dimen/margin_left_2"
+            android:layout_marginTop="@dimen/search_margin_top_3"
+            android:layout_toRightOf="@+id/new_activity_doctor_home_headPic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="消化门诊科"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_14"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:layout_marginTop="@dimen/line_height_0.5"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="预约量"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:gravity="center_vertical"
+                android:text="500"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_height_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/line_color_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="关注"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:gravity="center_vertical"
+                android:text="300"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_activity_doctor_home_open_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:layout_marginTop="@dimen/line_height_0.5"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_good_at"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="擅长"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_16"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_down_arrow"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/new_activity_doctor_home_good_at_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/line_height_0.5"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:padding="@dimen/margin_left_15"
+        android:text="手动王金佛山电话佛山 说的佛寺设计费 说的佛山石佛寺及  活动费ISO自己佛教 说的佛事说的佛寺设计费 搜房奇偶缩水奇偶is佛is奇偶 时间佛我将是否iOSOS就是json时间佛教时间佛山大家时间佛教哦时间佛教 就搜房奇偶涉及到佛"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_14"/>
+
+    <LinearLayout
+        android:id="@+id/new_activity_doctor_home_rank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:layout_marginTop="@dimen/margin_left_10"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_doctor_rank"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="排行"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_16"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_right_arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textView_width_80"
+        android:layout_marginTop="@dimen/line_height_0.5"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="本周排行"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/search_margin_top_7"
+                android:drawablePadding="@dimen/margin_left_5"
+                android:drawableRight="@drawable/new_rank_add"
+                android:gravity="center_vertical"
+                android:text="50"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="本月排行"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/search_margin_top_7"
+                android:drawablePadding="@dimen/margin_left_5"
+                android:drawableRight="@drawable/new_rank_add"
+                android:gravity="center_vertical"
+                android:text="200"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="年度排行"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/search_margin_top_7"
+                android:drawablePadding="@dimen/margin_left_5"
+                android:drawableRight="@drawable/new_rank_reduce"
+                android:gravity="center_vertical"
+                android:text="30"
+                android:textColor="@color/text_color_deep_gray"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

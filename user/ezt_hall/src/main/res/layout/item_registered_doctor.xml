@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/medium_margin" >
+
+    <com.eztcn.user.eztcn.customView.RoundImageView
+        android:id="@+id/head_pic"
+        android:layout_width="@dimen/doc_img_width_normal"
+        android:layout_height="@dimen/doc_img_height_normal"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_doc_img"
+        imagecontrol:border_outside_color="@color/more_light_gray"
+        imagecontrol:border_thickness="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/d_name"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王小飞"
+           android:textStyle="bold"
+            android:textColor="@color/dark_black" />
+
+        <TextView
+            android:id="@+id/d_title"
+              style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_toLeftOf="@+id/affirmOrder"
+              android:layout_marginRight="@dimen/small_margin"
+            android:layout_alignBaseline="@+id/d_name"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@+id/d_name"
+            android:text="主任医师"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/hos_name"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_name"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:singleLine="true"
+            android:text="天津第一人民医院"
+            android:textColor="@color/dark_gray" />
+        
+        <TextView
+            android:id="@+id/reg_time_tv"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hos_name"
+            android:layout_alignLeft="@+id/hos_name"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:singleLine="true"
+            android:text="就诊时间"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/dept"
+            style="@style/smallText"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/hos_name"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@+id/hos_name"
+            android:layout_toLeftOf="@+id/affirmOrder"
+            android:minWidth="30dp"
+            android:singleLine="true"
+            android:text="内科"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/affirmOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rimhos_bt_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_small_button_bg"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="确认预约"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/small_size" />
+    </RelativeLayout>
+
+</LinearLayout>

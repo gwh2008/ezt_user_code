@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/commitBedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drug_btn_bg_h"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/title_line_grey" />
+
+        <Button
+            android:id="@+id/commitBedOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/search_height_30"
+            android:layout_marginRight="@dimen/search_height_30"
+            android:text="提交订单"
+            android:textSize="@dimen/drug_text_super_large_size"
+            android:textColor="@color/colorWhite"
+            android:background="@color/new_orange"
+            >
+        </Button>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/commitBedLayout"
+        android:layout_below="@id/titleLayout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/drug_w_mtline"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_w_item_height"
+                    android:paddingLeft="@dimen/drug_list_item_l1"
+                    android:paddingRight="@dimen/drug_list_item_l1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/drug_w_text_mt1"
+                        android:text="咨询挂号"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/drug_list_item_large_sp" />
+
+                    <TextView
+                        android:id="@+id/costTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/drug_w_text_mt1"
+                        android:text="挂号费用￥133.00"
+                        android:textColor="@color/new_light_orange"
+                        android:textSize="@dimen/drug_list_item_large_sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/item_de_color" />
+
+                <RelativeLayout
+                    android:id="@+id/patientRLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_w_item_height"
+                    android:background="@drawable/selector_bg"
+                    android:paddingLeft="@dimen/drug_list_item_l1"
+                    android:paddingRight="@dimen/drug_list_item_l1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/drug_w_text_mt1"
+                        android:drawableLeft="@drawable/bxx"
+                        android:drawablePadding="@dimen/medium_margin"
+                        android:text="就诊人"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/drug_list_item_large_sp" />
+
+                    <TextView
+                        android:id="@+id/patientTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/medium_margin"
+                        android:drawableRight="@drawable/czt"
+                        android:text="必选"
+                        android:textColor="@color/main_txt_color" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/item_de_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_w_item_height"
+                    android:paddingLeft="@dimen/drug_list_item_l1"
+                    android:paddingRight="@dimen/drug_list_item_l1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/drug_w_text_mt1"
+                        android:drawableLeft="@drawable/bxx"
+                        android:drawablePadding="@dimen/medium_margin"
+                        android:text="联系电话"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/drug_list_item_large_sp" />
+
+                    <EditText
+                        android:gravity="right"
+                        android:id="@+id/telEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:minEms="5"
+                        android:numeric="integer"
+                        android:textColor="@color/main_txt_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drug_w_mtline" />
+            <!-- 病例信息 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/more2_large_margin"
+                android:background="@color/bg_white"
+                android:paddingLeft="@dimen/drug_list_item_l1"
+                android:paddingRight="@dimen/drug_list_item_l1" >
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:drawableLeft="@drawable/bxx"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:text="病历信息"
+                    android:textColor="@color/drug_black"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <com.eztcn.user.eztcn.customView.MyHorizontalListView
+                    android:id="@+id/imgLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:orientation="horizontal" >
+                </com.eztcn.user.eztcn.customView.MyHorizontalListView>
+
+                <TextView
+                    android:id="@+id/ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgLayout"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:text="备注：单张图片容量最多不可超过5M"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <TextView
+                    android:id="@+id/zzms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ts"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right|top"
+                    android:text="症状描述"
+                    android:textColor="@color/drug_black"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <RelativeLayout
+                    android:id="@+id/zzmsRLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zzms"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@drawable/conners_w_txt" >
+
+                    <TextView
+                        android:id="@+id/zzmsTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:drawableLeft="@drawable/check_edit"
+                        android:text="请您详细描述患者病情"
+                        android:textColor="@color/main_txt_color"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/zzmsEt"
+                        style="@style/mediumText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:minLines="5"
+                        android:padding="@dimen/medium_margin"
+                        android:singleLine="false"
+                        android:textColor="@color/main_txt_color"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tsyq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zzmsRLayout"
+                    android:text="特殊要求"
+                    android:textColor="@color/drug_black"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <RelativeLayout
+                    android:id="@+id/tsyqRLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tsyq"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@drawable/conners_w_txt" >
+
+                    <TextView
+                        android:id="@+id/tsyqTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:drawableLeft="@drawable/check_edit"
+                        android:text="例如希望在上午10点前进行检查等"
+                        android:textColor="@color/main_txt_color"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/tsyqEt"
+                        style="@style/mediumText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:minLines="5"
+                        android:padding="@dimen/medium_margin"
+                        android:singleLine="false"
+                        android:textColor="@color/main_txt_color"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/hintbo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tsyqRLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen7"
+                    android:text="您提供的病患信息越完善,预约病床的成功率就越高"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/dimen12sp" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="@dimen/medium_margin"
+                    android:layout_below="@id/hintbo"
+                    android:background="@android:color/white" >
+                </View>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

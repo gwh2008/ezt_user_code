@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff171b19"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <org.fireking.app.imagelib.view.ScrollViewPager
+            android:id="@+id/imagebrowser_svp_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/topbanner" />
+
+        <RelativeLayout
+            android:id="@+id/topbanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:background="@color/title_bar_bg" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="图片预览"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/more_large_size" />
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_back_btn_bg"
+                android:drawableLeft="@drawable/back_icon_down"
+                android:drawablePadding="4dp"
+                android:paddingLeft="@dimen/more_large_margin"
+                android:paddingRight="@dimen/more_large_margin"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/large_margin"
+                android:src="@drawable/ic_del"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <org.fireking.app.imagelib.view.PhotoTextView
+            android:id="@+id/imagebrowser_ptv_page"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="11/11"
+            android:textColor="#ffcdcdcd"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+</LinearLayout>

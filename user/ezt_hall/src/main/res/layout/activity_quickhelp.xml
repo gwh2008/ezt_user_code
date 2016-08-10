@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="姓名"
+            android:textSize="@dimen/medium_size" />
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv"
+            android:background="@null"
+            android:gravity="right|center"
+            android:hint="请输入您的姓名"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin" >
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="手机"
+            android:textSize="@dimen/medium_size" />
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_tel"
+            android:background="@null"
+            android:gravity="right|center"
+            android:hint="请输入您的手机号码"
+            android:numeric="integer"
+            android:maxLength="11"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <EditText
+        android:id="@+id/ill_describe_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:hint="病情简单描述"
+        android:lines="3"
+        android:maxLines="3"
+        android:padding="@dimen/medium_margin"
+        android:textSize="@dimen/medium_size" >
+    </EditText>
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:text="快速求助"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_size" />
+
+</LinearLayout>

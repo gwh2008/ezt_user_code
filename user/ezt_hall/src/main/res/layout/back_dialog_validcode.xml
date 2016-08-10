@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/conners_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/user_margin_right"
+        android:paddingTop="@dimen/user_margin_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:text="输入验证码"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/large_size" />
+
+        <ImageView
+            android:id="@+id/closeMe"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dimen15"
+            android:src="@drawable/dialog_close" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:orientation="vertical" >
+
+        <!-- 短信验证码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hor_height"
+            android:layout_marginTop="@dimen/large_margin"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin" >
+
+            <EditText
+                android:id="@+id/message_et"
+                style="@style/mediumText"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="请输入验证码"
+                android:background="@drawable/conners_code"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/large_size" />
+
+            <View
+                android:layout_width="@dimen/medium_margin"
+                android:layout_height="1dip" />
+
+            <Button
+                android:id="@+id/gainMsg"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_main_btn_bg"
+                android:gravity="center"
+                android:text="获取短信验证码"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/more2_large_margin" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/more2_large_margin" >
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_main_btn_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

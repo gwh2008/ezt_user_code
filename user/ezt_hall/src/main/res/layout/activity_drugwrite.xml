@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/activity_title_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/commitDrugLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drug_btn_bg_h"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white" >
+
+        <Button
+            android:id="@+id/commitDrugBtn"
+            style="@style/activity_belowBtn"
+            android:layout_width="@dimen/drug_btn_w"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:layout_centerInParent="true"
+            android:text="提交"
+            android:textSize="@dimen/drug_text_super_large_size" >
+        </Button>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/commitDrugLayout"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/commitDrugLayout"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/small_margin" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/drug_list_item_l1"
+                android:layout_marginTop="@dimen/drug_w_text_mt1"
+                android:text="预约医院"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/drug_list_item_large_sp" />
+
+            <TextView
+                android:id="@+id/hosNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/drug_list_item_l1"
+                android:layout_marginTop="@dimen/drug_w_text_mt1"
+                android:text="天津市第一医院"
+                android:textColor="@color/drug_grey"
+                android:textSize="@dimen/drug_list_item_large_sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_de_color" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/drug_list_item_l1"
+                android:layout_marginTop="@dimen/drug_w_text_mt1"
+                android:text="预约科室"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/drug_list_item_large_sp" />
+
+            <TextView
+                android:id="@+id/deptTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/drug_list_item_l1"
+                android:layout_marginTop="@dimen/drug_w_text_mt1"
+                android:text="院内制剂"
+                android:textColor="@color/drug_grey"
+                android:textSize="@dimen/drug_list_item_large_sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_de_color" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/drug_list_item_l1"
+                android:layout_marginTop="@dimen/drug_w_text_mt1"
+                android:text="预约药品"
+                android:textColor="@color/drug_black"
+                android:textSize="@dimen/drug_list_item_large_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/drug_list_item_l1"
+                android:layout_marginTop="@dimen/drug_w_text_mt1"
+                android:text="舒筋节利"
+                android:textColor="@color/drug_grey"
+                android:textSize="@dimen/drug_list_item_large_sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drug_w_mtline"
+            android:background="@color/item_de_color" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/orderPersonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drug_w_item_height"
+                android:background="@drawable/selector_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:text="预约人"
+                    android:textColor="@color/drug_black"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <TextView
+                    android:id="@+id/orderPersonTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:drawableRight="@drawable/czt"
+                    android:text="王倩倩"
+                    android:textColor="@color/drug_grey"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/item_de_color" >
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/orderTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drug_w_item_height"
+                android:background="@drawable/selector_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:text="预约时间"
+                    android:textColor="@color/drug_black"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <TextView
+                    android:id="@+id/orderTimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:drawableRight="@drawable/czt"
+                    android:text="2016-03-10 9:00-9:30"
+                    android:textColor="@color/drug_grey"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/item_de_color" >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drug_w_item_height"
+                android:background="@color/bg_white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:text="缴费方式"
+                    android:textColor="@color/drug_black"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:text="到院缴费"
+                    android:textColor="@color/drug_grey"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/item_de_color" >
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/costTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drug_w_item_height"
+                android:background="@color/bg_white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:text="医保类型"
+                    android:textColor="@color/drug_black"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+
+                <TextView
+                    android:id="@+id/costTypeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/drug_list_item_l1"
+                    android:layout_marginTop="@dimen/drug_w_text_mt1"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:drawableRight="@drawable/czt"
+                    android:text="自费"
+                    android:textColor="@color/drug_grey"
+                    android:textSize="@dimen/drug_list_item_large_sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

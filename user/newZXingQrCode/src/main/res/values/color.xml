@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主色 -->
+    <color name="main_color">#00b0f0</color>
+    <color name="light_main_color">#2499e6</color>
+
+    <!-- 黑色 -->
+    <color name="dark_black">#313131</color>
+    <!-- 灰色 -->
+    <color name="dark_gray">#959595</color>
+    <!-- 淡灰色 -->
+    <color name="light_gray">#d2d2d2</color>
+    <color name="qrcode_color">#36d3f6</color>
+    
+     <!-- 顶部导航栏背景颜色 -->
+    <color name="title_bar_bg">#28a8fd</color>
+
+    <!-- 二维码扫描 -->
+    <color name="viewfinder_mask">#66000000</color>
+    <color name="result_view">#b0000000</color>
+
+</resources>

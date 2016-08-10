@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_38"
+                    android:visibility="visible"
+                    android:src="@drawable/new_appointment_result_sucess"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="恭喜您预约成功"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:layout_marginTop="@dimen/margin_left_15">
+
+                    <ImageView
+                        android:id="@+id/new_activity_appointment_result_head1"
+                        android:layout_width="@dimen/head_height_60"
+                        android:layout_height="@dimen/head_height_60"
+                        android:layout_weight="1"
+                        android:src="@drawable/new_default_head_pic"/>
+
+                    <ImageView
+                        android:id="@+id/new_activity_appointment_result_head2"
+                        android:layout_width="@dimen/head_height_60"
+                        android:layout_height="@dimen/head_height_60"
+                        android:layout_weight="1"
+                        android:src="@drawable/new_default_head_pic"/>
+
+                    <ImageView
+                        android:id="@+id/new_activity_appointment_result_head3"
+                        android:layout_width="@dimen/head_height_60"
+                        android:layout_height="@dimen/head_height_60"
+                        android:layout_weight="1"
+                        android:src="@drawable/new_default_head_pic"/>
+
+                    <ImageView
+                        android:id="@+id/new_activity_appointment_result_head4"
+                        android:layout_width="@dimen/head_height_60"
+                        android:layout_height="@dimen/head_height_60"
+                        android:layout_weight="1"
+                        android:src="@drawable/new_default_head_pic"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="我们的线下健康秘书团队将竭诚为您服务"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12"/>
+                <TextView
+                    android:id="@+id/new_activity_appointment_result_detail"
+                    android:layout_width="@dimen/width_110"
+                    android:layout_height="@dimen/height_35"
+                    android:layout_marginTop="@dimen/margin_top_20"
+                    android:layout_marginBottom="@dimen/margin_top_20"
+                    android:gravity="center"
+                    android:text="查看详情"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:background="@drawable/new_oval_textview_white"
+                    android:textSize="@dimen/text_size_16"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="我们还为您提供以下服务"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_12"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_famous_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_16"
+                        android:src="@drawable/new_famous_doctor_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:text="大牌名医"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/text_size_16"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/line_height_0.5"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_16"
+                        android:src="@drawable/new_appointment_check_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:text="预约检查"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/text_size_16"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <LinearLayout
+                    android:id="@+id/linearLayout_drug"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_16"
+                        android:src="@drawable/new_appointment_drag_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:text="预约药品"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/text_size_16"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/line_height_0.5"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_bed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_16"
+                        android:src="@drawable/new_appointment_bed_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:text="预约病床"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/text_size_16"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_copy_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_16"
+                        android:src="@drawable/new_copy_patient_info_small"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:text="复印病历"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/text_size_16"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/line_height_0.5"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

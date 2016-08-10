@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 填充 -->
+    <solid android:color="@color/search_background" /> <!-- 定义填充的颜色值 -->
+
+    <!-- 描边 -->
+    <stroke
+        android:width="@dimen/line_height_0.5"
+        android:color="@color/search_background" /> <!-- 定义描边的宽度和描边的颜色值 -->
+
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp" /> <!-- 设置四个角的半径 -->
+
+</shape>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/money_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="@drawable/selector_setting_item_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:text="医通币数量" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/money" -->
+        <!-- android:textSize="@dimen/medium_size" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:background="@android:color/transparent" -->
+        <!-- android:enabled="false" -->
+        <!-- android:gravity="right|center_vertical" -->
+        <!-- android:hint="请选择金额" -->
+        <!-- android:drawablePadding="@dimen/medium_margin" -->
+        <!-- android:drawableRight="@drawable/right_arrows" -->
+        <!-- android:paddingRight="@dimen/medium_margin" > -->
+        <!-- </TextView> -->
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            android:hint="请输入医通币数量"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:textSize="@dimen/medium_size" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+         android:id="@+id/money_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more2_large_margin"
+        android:gravity="center|right"
+        android:textSize="@dimen/small_size"
+        android:paddingRight="@dimen/large_margin"
+        android:textColor="@color/dark_gray"
+        android:text="(消费金额：0元)"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/alipay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/alipay_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/imageView1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:text="支付宝支付"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="推荐安装支付宝客户端用户使用"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" 
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/unionpay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin" 
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/weixin_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/imageView2"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:text="银联手机在线快捷支付"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="推荐开通银联手机支付业务的客户使用"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/blue_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/unionpay_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/imageView3"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:text="信用卡支付"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="推荐信用卡持卡人进行支付"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

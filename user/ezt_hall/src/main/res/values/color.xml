@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主色#28a8fd -->
+    <color name="main_color">#23c2aa</color>
+
+    <!-- 文字未点击时候的颜色 -->
+    <color name="font_unclick_color">#666666</color>
+    <!-- #74c6fc -->
+    <color name="light_main_color">#23c2aa</color>
+    <color name="main_bg_color">#f3f4f6</color>
+
+    <!-- 引导框半透明 -->
+    <color name="half_tran_color">#99000000</color>
+
+    <!-- 底部导航栏字体未选中颜色 -->
+    <color name="tab_footer_textcolor">@color/dark_gray</color>
+    <!-- 底部导航栏字体选中颜色 #28a8fd -->
+    <color name="tab_footer_textcolor_select">#23c2aa</color>
+    <!-- 底部导航栏背景色 dcf1f9/eaf5f9/e9f1f4/f1f2f2/e9f1f4 -->
+    <color name="tab_footer_bg">#fcfcfc</color>
+
+    <!-- 顶部导航栏背景颜色  #28a8fd -->
+    <color name="title_bar_bg">#23c2aa</color>
+
+    <!-- 顶部导航栏背景颜色 （灰） -->
+    <color name="title_bar_bg_grey">#EEEEEE</color>
+
+    <!-- 顶部返回按钮点击颜色#2499e6 -->
+    <color name="title_bar_back_bg">#23c2aa</color>
+
+    <!-- 绿色 -->
+    <color name="green">#a4cd4b</color>
+
+    <!-- 深绿 -->
+    <color name="dark_green">#54bb45</color>
+
+    <!-- 红色 -->
+    <color name="red">#cd344b</color>
+
+    <!-- 黑色 -->
+    <color name="dark_black">#313131</color>
+
+    <!-- 主要字体颜色 (灰) -->
+    <color name="main_txt_color">#a1a1a1</color>
+
+    <!-- 灰色 -->
+    <color name="dark_gray">#ababab</color>
+    <!-- 灰色 2 -->
+    <color name="dark_gray2">#c0c0c0</color>
+    <!-- 淡灰色 #E0E0E0 -->
+    <color name="light_gray">#f3f4f6</color>
+    <!-- +淡灰色 -->
+    <color name="more_light_gray">#f1eff2</color>
+
+    <!-- 消息条数 -->
+    <color name="msg_count_red">#ff2233</color>
+
+    <!-- 半透明_黑色 -->
+    <color name="tab_black_half_transparent">#22000000</color>
+    <!-- orange -->
+    <color name="orange">#FFAE3F</color>
+    <!-- 个人中心 -->
+    <color name="user_item_tx_color">#333333</color>
+    <color name="discovery_title_little_tx_color">#999999</color>
+    <color name="user_name_color">#ffffff</color>
+    <color name="view_margin_widget_color">#f3f4f6</color>
+    <color name="line_margin_widget_color">#e5e5e5</color>
+    <color name="test">#e5e5e500</color>
+
+    <!--首页界面color-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <!-- 修改手机号 -->
+    <color name="obtain_verification_code">#66d6d5</color>
+    <!-- 约检查的几种tx背景状态颜色 -->
+
+    <color name="wait_pay">#ef5d71</color>
+    <color name="wait_check">#fa96a4</color>
+    <color name="wait_order">#72d0c2</color>
+    <color name="pay_time_out">#a0a0a0</color>
+    <color name="check_refuse">#a0a0a0</color>
+    <color name="order_succeed">#23c2aa</color>
+    <color name="order_unnormal">#979797</color>
+    <color name="order_normal">#23c0a8</color>
+    <color name="notice_tx_color">#eb6072</color>
+
+    <!-- drug -->
+    <color name="drug_light_tx_color">#666666</color>
+    <color name="drug_deep_tx_color">#333333</color>
+
+    <!-- 预约药品的灰色 -->
+    <color name="drug_grey">#666666</color>
+    <color name="drug_black">#333333</color>
+    <color name="dragon_grey">#999999</color>
+    <!-- 标题栏下面的线 -->
+    <color name="title_line_grey">#cccccc</color>
+    <!-- 每一条点击模块下面线的灰色 -->
+    <color name="item_de_color">#e5e5e5</color>
+
+    <!-- 黑色 -->
+    <color name="home_font_black">#333333</color>
+    <color name="msg_grey">#bdbdbd</color>
+    <color name="choicehoiceAll">#D9D9D9</color>
+    <color name="F0F1F2">#F0F1F2</color>
+	<color name="titleline">#ededed</color>
+
+
+    ////////////////////////////////////////////////////////////////////////////////////
+<!--门诊大厅2.0color-->
+    <color name="colorDivision">#B3B3B3</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorDark">#999999</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="text_color_gray">#666666</color>
+    <color name="text_color_deep_gray">#333333</color>
+    <color name="line_color_gray">#e5e5e5</color>
+    <color name="background">#ededed</color>
+    <color name="border_line">#20d129</color>
+    <color name="search_background">#eeeeee</color>
+    <color name="apply_success">#ff6633</color>
+    <!-- 主色#28a8fd -->
+    <color name="new_main_color">#23c2aa</color>
+    <color name="new_red">#cd344b</color>
+    <color name="button_color_gray">#a6a6a6</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_20d129">#20d129</color>
+    <color name="button_color_orange">#ff9e05</color>
+    <color name="color_5e5e5e">#5e5e5e</color>
+    <color name="color_ff6633">#ff6633</color>
+
+    <color name="new_orange">#ff9e05</color>
+    <color name="new_light_orange">#ff6633</color>
+    <color name="color_157efb">#157efb</color>
+    <color name="color_ff8535">#ff8535</color>
+    <color name="income_all_color">#666666</color>
+    <color name="land_line_color">#e5e5e5</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="black">#000000</color>
+    <color name="new_choose_eara_item_press_color">#f4f4f4</color>
+    <color name="new_no_color">#00000000</color>
+    <color name="agreement_not_receive_text_color">#a6a6a6</color>
+    <color name="agreement_not_receive_background_color">#e5e5e5</color>
+    <color name="sub_transparent_color">#e0000000</color>
+    <color name="transparent_color">#00000000</color>
+
+</resources>

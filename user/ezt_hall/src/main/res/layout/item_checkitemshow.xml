@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/selector_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/checkitemIv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:background="@drawable/cimr" />
+
+    <TextView
+        android:id="@+id/itemTitleTv"
+        style="@style/mediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkitemIv"
+        android:layout_alignTop="@id/checkitemIv"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/itemAddressTv"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/itemTitleTv"
+        android:layout_centerVertical="true"
+        android:textColor="@color/main_txt_color" 
+        />
+
+    <TextView
+        android:id="@+id/itemcostTypeTv"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/checkitemIv"
+        android:layout_alignLeft="@id/itemTitleTv"
+        android:text="检查费:"
+        android:textColor="@color/main_txt_color" 
+        />
+
+    <TextView
+        android:id="@+id/itemCostValTv"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/itemcostTypeTv"
+        android:layout_alignBottom="@+id/itemcostTypeTv"
+        android:layout_toRightOf="@+id/itemcostTypeTv"
+        android:textColor="@color/red" 
+        />
+
+    <!-- <CheckBox -->
+    <!-- android:id="@+id/itemcheck" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginRight="@dimen/more2_large_margin" -->
+    <!-- android:background="@drawable/selector_check_big_style" -->
+    <!-- android:button="@null" -->
+    <!-- android:checked="false" -->
+    <!-- android:clickable="false" -->
+    <!-- android:enabled="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:gravity="center" -->
+    <!-- android:textColor="@color/main_color" /> -->
+
+    <TextView
+        android:id="@+id/itemcheck_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@dimen/medium_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/more2_large_margin" 
+        />
+
+</RelativeLayout>
+
+</LinearLayout>

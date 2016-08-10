@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/medium_margin"
+    android:paddingLeft="@dimen/user_margin_right"
+    android:paddingTop="@dimen/medium_margin" >
+
+    <com.eztcn.user.eztcn.customView.RoundImageView
+        android:id="@+id/head_pic"
+        android:layout_width="@dimen/doc_img_width_normal"
+        android:layout_height="@dimen/doc_img_height_normal"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/userman"
+        imagecontrol:border_outside_color="@color/more_light_gray"
+        imagecontrol:border_thickness="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="@dimen/user_margin_right"
+            >
+
+            <TextView
+                android:id="@+id/recordName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LBY503220141201"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/medium_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="@dimen/user_margin_right"
+                android:text="2014/12/01 14:00"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin" >
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘冰漪"
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_size"
+                android:text="就诊于  "
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天津市妇科医院 "
+                android:textColor="@color/main_txt_color"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/dept"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="内科"
+                android:textColor="@color/main_txt_color"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/bankEnter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="@drawable/selector_setting_item_bg"
+        android:gravity="center"
+        android:text="建行用户专享通道"
+        android:textSize="@dimen/medium_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingTop="@dimen/more_large_margin" >
+
+        <TextView
+            android:id="@+id/name_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="@dimen/more_large_margin" >
+
+        <Button
+            android:id="@+id/activate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:text="激 活"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:text="购 买"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="包含服务："
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/medium_size" />
+
+    <com.eztcn.user.eztcn.customView.MyListView
+        android:id="@+id/card_service_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </com.eztcn.user.eztcn.customView.MyListView>
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="服务介绍："
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/medium_size" />
+
+    <com.eztcn.user.eztcn.customView.MyListView
+        android:id="@+id/card_service_intro_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </com.eztcn.user.eztcn.customView.MyListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="@dimen/large_margin" >
+
+        <TextView
+            android:id="@+id/serverNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务详情"
+            android:textColor="#0000ff"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/applyHos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:text="适用医院"
+            android:textColor="#0000ff"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+</LinearLayout>

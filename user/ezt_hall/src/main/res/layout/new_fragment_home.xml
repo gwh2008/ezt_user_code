@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/title_home"
+                layout="@layout/new_item_title_home" />
+            <!--  <include layout="@layout/new_refresh_header" />-->
+            <com.eztcn.user.hall.views.EztBannerView
+                android:id="@+id/home_fragment_banner"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/new_module_border"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="135dp"
+                />
+            <include layout="@layout/new_item_module_home" />
+            <ImageView
+                android:id="@+id/home_fragment_dragon_pic"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/new_dragon_card"
+                android:scaleType="fitXY"
+                />
+            <include layout="@layout/new_item_content_bottom_home" />
+            <include layout="@layout/new_item_content_home" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

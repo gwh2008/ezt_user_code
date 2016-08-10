@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"/>
+
+    <com.ant.liao.GifView
+        android:id="@+id/gifView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_115"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_left_15"
+        android:text="健康秘书正在努力为您挂号"
+        android:textColor="@color/text_color_deep_gray"
+        android:textSize="@dimen/text_size_16" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/search_margin_top_7"
+        android:text="请稍等..."
+        android:textColor="@color/text_color_deep_gray"
+        android:textSize="@dimen/text_size_16" />
+
+
+</LinearLayout>
+

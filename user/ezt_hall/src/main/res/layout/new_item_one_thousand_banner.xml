@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_module_border"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/new_item_one_thousand_banner_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_module_border"
+
+        />
+    <!--android:background="@drawable/new_icon_default_img"-->
+
+    <TextView
+        android:id="@+id/new_item_one_thousand_banner_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:background="#60000000"
+        android:text="我赚钱了"
+        android:paddingLeft="15dp"
+        android:textColor="@color/bg_white"
+        android:paddingBottom="18dp"/>
+
+</RelativeLayout>

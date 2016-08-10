@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <com.eztcn.user.eztcn.customView.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <!-- <include -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- layout="@layout/microstore_ad" /> -->
+
+                <ImageView
+                      android:id="@+id/top_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pic01" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/quick_help_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_hor_height"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_border_small_white"
+                        android:gravity="center"
+                        android:text="快速求助"
+                        android:textSize="@dimen/medium_size" />
+
+                    <TextView
+                        android:id="@+id/quick_tel_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_hor_height"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_border_small_white"
+                        android:gravity="center"
+                        android:text="肿瘤服务电话"
+                        android:textSize="@dimen/medium_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:paddingBottom="@dimen/small_margin"
+                            android:paddingLeft="@dimen/medium_margin"
+                            android:paddingTop="@dimen/small_margin"
+                            android:text="肿瘤服务项目"
+                            android:textSize="@dimen/medium_size" />
+
+                        <include layout="@layout/hor_line" />
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/project_hor_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/user_title_layout_height"
+                            android:layout_gravity="center"
+                            android:flipInterval="30"
+                            android:persistentDrawingCache="animation"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_margin"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:text="肿瘤服务介绍"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="\t为来本院就诊的肿瘤患者，提供全流程有偿定制服务：" />
+
+                    <TextView
+                        android:id="@+id/inside_service_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="\t院内服务：为患者提供预约专家挂号、预约各项检查、全程陪诊服务、代取报告服务、病历邮寄服务、复诊时间安排等；"
+                        android:textColor="@color/dark_gray" />
+
+                    <TextView
+                        android:id="@+id/outside_service_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="\t院外服务：为患者提供接站服务 、周边食宿推荐、就医注意事项提醒、就诊行程安排等；"
+                        android:textColor="@color/dark_gray" />
+
+                    <TextView
+                        android:id="@+id/in_hos_service_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/medium_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="\t住院服务：为患者提供住院床位预约等;"
+                        android:textColor="@color/dark_gray" />
+                </LinearLayout>
+
+                <include layout="@layout/hor_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_large"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/medium_margin"
+                    android:paddingTop="@dimen/medium_margin"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/recovery_case_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/large_margin"
+                            android:background="@drawable/selector_border_small_white"
+                            android:paddingBottom="@dimen/medium_margin"
+                            android:paddingLeft="@dimen/large_margin"
+                            android:paddingRight="@dimen/large_margin"
+                            android:paddingTop="@dimen/medium_margin"
+                            android:text="康复病例"
+                            android:textSize="@dimen/medium_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/patient_exchange_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_border_small_white"
+                            android:paddingBottom="@dimen/medium_margin"
+                            android:paddingLeft="@dimen/large_margin"
+                            android:paddingRight="@dimen/large_margin"
+                            android:paddingTop="@dimen/medium_margin"
+                            android:text="患友交流"
+                            android:textSize="@dimen/medium_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>  
+    </com.eztcn.user.eztcn.customView.MyScrollView>
+
+</LinearLayout>

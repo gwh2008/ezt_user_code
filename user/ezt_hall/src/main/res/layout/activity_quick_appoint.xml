@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/quick_hos_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hor_height_large"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingLeft="@dimen/large_margin" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_fdoc"
+                android:drawablePadding="@dimen/small_margin"
+                android:text="医院" />
+
+            <TextView
+                android:id="@+id/quick_hos_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_toLeftOf="@+id/rim_hos_distance_img"
+                android:layout_toRightOf="@+id/textView1"
+                android:gravity="center_vertical|right"
+                android:hint="选择医院" />
+
+            <ImageView
+                android:id="@+id/rim_hos_distance_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:src="@drawable/location_icon_black" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <RelativeLayout
+            android:id="@+id/quick_dept_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hor_height_large"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingBottom="@dimen/large_margin"
+            android:paddingLeft="@dimen/large_margin"
+            android:paddingTop="@dimen/large_margin" >
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_fdept"
+                android:drawablePadding="@dimen/small_margin"
+                android:text="科室" />
+
+            <TextView
+                android:id="@+id/quick_dept_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/textView22"
+                android:gravity="center_vertical|right"
+                android:hint="选择科室" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:src="@drawable/right_arrows"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:id="@+id/bt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin" >
+
+            <Button
+                android:id="@+id/quick_find_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:layout_marginLeft="@dimen/large_size"
+                android:layout_marginRight="@dimen/large_size"
+                android:layout_marginTop="@dimen/large_margin"
+                android:background="@drawable/selector_main_btn_bg"
+                android:text="去挂号"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_size" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hor_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:id="@+id/home_bt_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hor_height"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:background="@drawable/selector_setting_item_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_check_in_small"
+                android:drawablePadding="@dimen/medium_margin"
+                android:gravity="center_vertical"
+                android:text="预约登记"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recommendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_bar_size"
+            android:layout_marginTop="@dimen/large_margin"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/medium_margin"
+            android:text="你可能感兴趣的医生"
+            android:textColor="@color/main_color"
+            android:visibility="gone" />
+
+        <com.eztcn.user.eztcn.customView.PullToRefreshListView
+            android:id="@+id/quick_recommend_lt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+        </com.eztcn.user.eztcn.customView.PullToRefreshListView>
+    </LinearLayout>
+
+</LinearLayout>

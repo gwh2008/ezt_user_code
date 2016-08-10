@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/view_light_gray_height"
+         android:background="@color/light_gray" />
+    <LinearLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@drawable/selector_setting_item_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:paddingRight="@dimen/user_margin_right" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/user_item_tx_color"
+            android:text="手机" />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/medium_margin"
+            android:drawableRight="@drawable/right_arrows"
+            android:gravity="center_vertical|right"
+            android:text="13855200126"
+/>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@drawable/selector_setting_item_bg"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:paddingRight="@dimen/user_margin_right" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/user_item_tx_color"
+            android:text="邮箱" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="@dimen/medium_margin"
+            android:drawableRight="@drawable/right_arrows"
+            android:textColor="@color/light_gray"
+             />
+    </LinearLayout>
+  <include layout="@layout/hor_line" />
+    <TextView
+        android:id="@+id/pwdModify"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@drawable/selector_setting_item_bg"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:paddingRight="@dimen/user_margin_right"
+        android:textColor="@color/user_item_tx_color"
+        android:text="修改密码" />
+
+</LinearLayout>

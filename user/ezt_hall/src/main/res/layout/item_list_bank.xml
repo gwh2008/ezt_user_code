@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin" >
+
+    <ImageView
+        android:id="@+id/bank_Img"
+        android:layout_width="@dimen/item_all_height"
+        android:layout_height="@dimen/item_all_height"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/bankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="银行"
+        android:textSize="@dimen/small_size" 
+        android:textColor="@color/font_unclick_color"/>
+
+</LinearLayout>

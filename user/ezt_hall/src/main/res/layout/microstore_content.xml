@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/medium_margin" >
+
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="就医服务"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/medium_size" />
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+              />
+<!--    android:src="@drawable/micro_server_1" -->
+            <TextView
+                android:id="@+id/server_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="让天下父母"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/server_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/server_text1"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:text="老有所依"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/medium_size" />
+        </RelativeLayout>
+
+        <include layout="@layout/ver_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+<!--  android:src="@drawable/micro_servercard" -->
+                <TextView
+                    android:id="@+id/servercard_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:text="金秋回馈\n先买先得"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="他们的爱来\n不及回馈\n金秋回馈"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    />
+<!--                 android:src="@drawable/micro_server_2"  -->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="健康管理"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/medium_size" />
+
+    <include layout="@layout/hor_line" />
+
+    <com.eztcn.user.eztcn.customView.MyGridView
+        android:id="@+id/hmanagerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp" >
+    </com.eztcn.user.eztcn.customView.MyGridView>
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="可穿戴设备"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/medium_size" />
+
+    <include layout="@layout/hor_line" />
+
+    <com.eztcn.user.eztcn.customView.MyGridView
+        android:id="@+id/wearList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:verticalSpacing="1dp" >
+    </com.eztcn.user.eztcn.customView.MyGridView>
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="热门产品推荐"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/medium_size" />
+
+    <include layout="@layout/hor_line" />
+
+    <com.eztcn.user.eztcn.customView.MyGridView
+        android:id="@+id/hotProList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:verticalSpacing="1dp" >
+    </com.eztcn.user.eztcn.customView.MyGridView>
+
+</LinearLayout>

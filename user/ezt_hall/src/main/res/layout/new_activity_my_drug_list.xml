@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/new_activity_title_bar"></include>
+
+    <include layout="@layout/new_activity_view_margin_bar"></include>
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/new_no_data_icon"
+       android:layout_marginTop="100dp"
+       />
+</LinearLayout>

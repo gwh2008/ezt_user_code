@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/medium_margin"
+    android:paddingTop="@dimen/medium_margin" >
+
+    <ImageView
+        android:id="@+id/micro_hm_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        />
+<!--     android:src="@drawable/micro_wear_img"  -->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="智能腕表"
+        android:textSize="@dimen/small_size" />
+
+    <TextView
+        android:id="@+id/wearPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000元"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/small_size" />
+
+</LinearLayout>

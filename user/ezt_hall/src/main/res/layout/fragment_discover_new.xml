@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/discovery"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/discovery_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_bg_color" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/long_card_icon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/discover_image_height"
+            android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+            android:layout_weight="1"
+            android:src="@drawable/discovery_long_card_service_icon" />
+
+        <ImageView
+            android:id="@+id/discovery_drug"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/discover_image_height"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:layout_weight="1"
+            android:src="@drawable/discovery_drug_service_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp" >
+
+        <ImageView
+            android:id="@+id/discovery_union"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/discover_image_height"
+            android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+            android:layout_weight="1"
+            android:src="@drawable/discovery_union_service_icon" />
+
+        <ImageView
+            android:id="@+id/discovery_instrument_mall"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/discover_image_height"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:layout_weight="1"
+            android:src="@drawable/discovery_instrument_mall_service_icon" />
+    </LinearLayout>
+
+</LinearLayout>

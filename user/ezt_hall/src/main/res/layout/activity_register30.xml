@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+      <include layout="@layout/activity_title_bar" />
+
+    <include layout="@layout/activity_view_margin_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/password_item_height_mediue"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="@dimen/modify_telphone_tx_length"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/user_margin_right"
+            android:textSize="@dimen/password_large_tx_size"
+            android:text="@string/telphone"
+            android:textColor="@color/user_item_tx_color"
+            />
+	<EditText
+     		android:id="@+id/email"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:digits="@string/register_digits"
+            android:gravity="center_vertical|left"
+            android:hint="@string/input_telphone"
+            android:maxLength="20"
+            android:paddingRight="@dimen/medium_margin" 
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColorHint="@color/discovery_title_little_tx_color"
+            >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="13" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/securityCode"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:paddingRight="@dimen/medium_margin"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="number" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/getSecurityCode"
+            style="@style/smallText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@android:color/white" />
+    </LinearLayout> -->
+    
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/password_item_height_mediue"
+        android:orientation="horizontal"
+        android:background="@color/bg_white"
+        >
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="@dimen/modify_telphone_tx_length"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/user_margin_right"
+            android:text="@string/verification_code" 
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColor="@color/user_item_tx_color"
+            />
+        <EditText
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:hint="@string/input_verification_code"
+            android:textColor="@color/user_item_tx_color"
+            android:maxLength="11"
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColorHint="@color/discovery_title_little_tx_color"
+             >
+        </EditText>
+        <View 
+            android:layout_width="@dimen/password_line"
+            android:layout_height="match_parent"
+            android:background="@color/line_margin_widget_color"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/obtain_verification_code"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:text="@string/obtain_verification_code"
+            android:textSize="@dimen/password_large_tx_size"
+             />
+    </LinearLayout>
+<include layout="@layout/hor_line" />
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/password_item_height_mediue"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin" >
+        <TextView
+            android:layout_width="@dimen/modify_telphone_tx_length"
+            android:layout_height="wrap_content"
+            android:text="@string/password" 
+            android:paddingLeft="@dimen/user_margin_right"
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColor="@color/user_item_tx_color"
+            />
+<!--  android:inputType="numberPassword" 2015-12-25 密码不能只是纯数字-->
+
+        <EditText
+            android:id="@+id/vPassword"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:digits="@string/register_digits"
+            android:gravity="center_vertical|left"
+            android:hint="@string/input_password"
+            android:maxLength="20"
+            android:paddingRight="@dimen/medium_margin" 
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColorHint="@color/discovery_title_little_tx_color"
+            >
+        </EditText>
+    </LinearLayout>
+    <include layout="@layout/hor_line" />
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/password_item_height_mediue"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin" >
+        <TextView
+            android:layout_width="@dimen/modify_telphone_tx_length"
+            android:layout_height="wrap_content"
+            android:text="@string/sure_password" 
+            android:paddingLeft="@dimen/user_margin_right"
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColor="@color/user_item_tx_color"
+            />
+<!--  android:inputType="numberPassword" 2015-12-25 密码不能只是纯数字-->
+
+        <EditText
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:digits="@string/register_digits"
+            android:gravity="center_vertical|left"
+            android:hint="@string/input_sure_password"
+            android:maxLength="20"
+            android:paddingRight="@dimen/medium_margin" 
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColorHint="@color/discovery_title_little_tx_color"
+            >
+        </EditText>
+    </LinearLayout>
+     
+      <Button
+        android:id="@+id/affirmModify"
+        style="@style/largeText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/password_item_height_mediue"
+        android:layout_marginLeft="@dimen/user_margin_right"
+        android:layout_marginRight="@dimen/user_margin_right"
+        android:layout_marginTop="@dimen/password_margin_top"
+        android:background="@drawable/selector_main_btn_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="@string/sure_register"
+        android:textSize="@dimen/password_large_tx_size"
+         />
+    
+</LinearLayout>
+    

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/photoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_margin"
+        android:visibility="visible" >
+
+        <TextView
+            style="@style/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:text="头像"
+            android:textColor="@color/dark_black" />
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/doc_img_width_normal"
+            android:layout_height="@dimen/doc_img_width_normal"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/userdefault"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称" />
+
+        <EditText
+            android:id="@+id/neck"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:maxLength="5"
+            android:paddingRight="@dimen/user_margin_right"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" >
+        </EditText>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/userdetail_info" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

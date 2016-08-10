@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:text="@string/delete_patient"
+                android:textSize="@dimen/large_size_18"
+                android:textColor="@color/main_color"
+                android:gravity="center"
+                />
+    <include layout="@layout/hor_line" ></include>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/large_size_18"
+            android:text="@string/cancel"
+            android:textColor="@color/main_color"
+            android:background="@drawable/group_label_bg"
+            />
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/userBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_user_base" />
+
+                <include
+                    android:id="@+id/userlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_user_login"
+                    android:visibility="gone" />
+
+                <include layout="@layout/hor_line" />
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/sdaDiagnose"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:paddingLeft="@dimen/large_margin" >
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_user_ask" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img1"
+                        android:text="我的记录"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/hor_line" />
+
+                <RelativeLayout
+                    android:id="@+id/myWatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:paddingLeft="@dimen/large_margin" >
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_user_money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img3"
+                        android:text="我的手表"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/hor_line" />
+
+                <RelativeLayout
+                    android:id="@+id/user_doc_route"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:layout_marginLeft="@dimen/large_margin"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_user_route" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img2"
+                        android:text="就医行程"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/myWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:paddingLeft="@dimen/large_margin" >
+
+                    <ImageView
+                        android:id="@+id/img13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_user_money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img13"
+                        android:text="我的钱包"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/memberCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:visibility="gone" >
+
+                    <include layout="@layout/hor_line" />
+
+                    <ImageView
+                        android:id="@+id/img33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:src="@drawable/ic_user_health_book" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img33"
+                        android:text="会员中心"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/healthbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:layout_marginTop="@dimen/more_large_margin"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:paddingLeft="@dimen/large_margin" >
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_user_health_book" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img4"
+                        android:text="我的病历"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <!-- 导医 -->
+
+                <RelativeLayout
+                    android:id="@+id/guideDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:layout_marginTop="@dimen/more_large_margin"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:paddingLeft="@dimen/large_margin" >
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_fdept" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img6"
+                        android:text="邀请码"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height_mediue"
+                    android:layout_marginTop="@dimen/more_large_margin"
+                    android:background="@drawable/selector_setting_item_bg"
+                    android:paddingLeft="@dimen/large_margin" >
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_user_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_margin"
+                        android:layout_toRightOf="@+id/img5"
+                        android:text="设置"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+<!--         <ImageView -->
+<!--             android:id="@+id/didi_img" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="bottom|right" -->
+<!--             android:layout_marginBottom="@dimen/large_margin" -->
+<!--             android:layout_marginRight="@dimen/medium_margin" -->
+<!--             android:src="@drawable/ic_launcher" -->
+<!--             android:visibility="visible" /> -->
+    </FrameLayout>
+
+</LinearLayout>

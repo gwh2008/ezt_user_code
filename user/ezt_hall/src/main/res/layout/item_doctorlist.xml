@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_setting_item_bg"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/doctor_img"
+            android:layout_width="@dimen/doc_img_width_normal"
+            android:layout_height="@dimen/doc_img_width_normal"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_doc_img"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:text="名称"
+                    android:textColor="@color/dark_black"
+                    android:textSize="@dimen/medium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doc_hos_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/doc_name"
+                    android:layout_below="@+id/doc_name"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/large_margin"
+                    android:layout_toLeftOf="@+id/doc_ranking"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="医院"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/doc_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/doc_name"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_toRightOf="@+id/doc_name"
+                    android:text="职位"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/doc_ranking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:gravity="center"
+                    android:text="5星"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/doc_dept_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/doc_position"
+                    android:layout_toLeftOf="@+id/doc_ranking"
+                    android:layout_toRightOf="@+id/doc_position"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="科室"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/layout_info"
+                android:background="@color/light_main_color" />
+
+            <LinearLayout
+                android:id="@+id/doc_visit_form_alllayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_bt_height"
+                android:layout_below="@+id/hor_line"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:id="@+id/doc_visit_form_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/doc_visit_form_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_visit_form_gray"
+                        android:drawablePadding="@dimen/small_margin"
+                        android:gravity="center"
+                        android:text="出诊表"
+                        android:textColor="@color/dark_gray2"
+                        android:textSize="@dimen/small_size" />
+                </LinearLayout>
+
+                <include
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    layout="@layout/ver_line" />
+
+                <LinearLayout
+                    android:id="@+id/doc_tel_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_listitem_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/phoneDoctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_tel2_gray"
+                        android:drawablePadding="@dimen/medium_margin"
+                        android:gravity="center"
+                        android:text="电话医生"
+                        android:textColor="@color/dark_gray2"
+                        android:textSize="@dimen/small_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/doc_visitform_line"
+        layout="@layout/hor_line"
+        android:visibility="gone" />
+
+    <com.eztcn.user.eztcn.customView.HorizontalListView
+        android:id="@+id/doc_visitform_hor_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:visibility="gone" >
+    </com.eztcn.user.eztcn.customView.HorizontalListView>
+
+</LinearLayout>

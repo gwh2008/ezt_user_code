@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/medium_margin" >
+
+    <ImageView
+        android:id="@+id/patientPhoto"
+        android:layout_width="@dimen/doc_img_width_small"
+        android:layout_height="@dimen/doc_img_height_small"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/userman" />
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_toRightOf="@+id/patientPhoto" >
+
+        <TextView
+            android:id="@+id/userName"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/evaluateType"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:text="预约挂号"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/evaluateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameLayout"
+        android:layout_below="@+id/nameLayout"
+        android:layout_marginTop="@dimen/medium_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="综合评价:"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/totalStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="星"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医术疗效:"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/effectStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="星"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务态度:"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/serverStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="星"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/evaluateContent"
+        style="@style/smallText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/evaluateLayout"
+        android:layout_below="@+id/patientPhoto"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/treatmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/evaluateContent"
+        android:layout_below="@+id/evaluateContent"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/small_size" />
+
+</RelativeLayout>

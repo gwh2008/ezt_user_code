@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="服务"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/discovery_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_forget_tx_margin_top"
+        android:background="@color/main_bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/service_order_check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_setting_item_bg" >
+
+        <ImageView
+            android:id="@+id/order_check_icon"
+            android:layout_width="@dimen/login_button_top"
+            android:layout_height="@dimen/login_button_top"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:src="@drawable/home_service_order_check_circle_icon" />
+
+        <TextView
+            android:id="@+id/order_check_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen15"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/order_check_icon"
+            android:text="预约检查"
+            android:textColor="@color/drug_deep_tx_color"
+            android:textSize="@dimen/drug_text_large_size" />
+
+        <TextView
+            android:id="@+id/order_check_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_check_title"
+            android:layout_below="@id/order_check_title"
+            android:layout_marginTop="5dp"
+            android:text="线上预支付，检查不耗时"
+            android:textColor="@color/drug_light_tx_color"
+            android:textSize="@dimen/drug_text_small_size" />
+
+        <TextView
+            android:id="@+id/order_check_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_check_hint"
+            android:layout_below="@id/order_check_hint"
+            android:layout_marginTop="5dp"
+            android:text="免费"
+            android:textColor="@color/wait_pay"
+            android:textSize="17sp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:src="@drawable/user_arrow_icon_gray" />
+        <!-- android:layout_alignLeft="@id/order_check_charge" -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_line_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/service_order_hospital_bed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_setting_item_bg" >
+
+        <ImageView
+            android:id="@+id/order_bed_icon"
+            android:layout_width="@dimen/login_button_top"
+            android:layout_height="@dimen/login_button_top"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:src="@drawable/home_service_order_bed_circle_icon" />
+
+        <TextView
+            android:id="@+id/order_bed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen15"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/order_bed_icon"
+            android:text="预约病床"
+            android:textColor="@color/drug_deep_tx_color"
+            android:textSize="@dimen/drug_text_large_size" />
+
+        <TextView
+            android:id="@+id/order_bed_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_bed_title"
+            android:layout_below="@id/order_bed_title"
+            android:layout_marginTop="5dp"
+            android:text="病床提前约，住院不再难"
+            android:textColor="@color/drug_light_tx_color"
+            android:textSize="@dimen/drug_text_small_size" />
+
+        <TextView
+            android:id="@+id/order_bed_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_bed_hint"
+            android:layout_below="@id/order_bed_hint"
+            android:layout_marginTop="5dp"
+            android:text="免费"
+            android:textColor="@color/wait_pay"
+            android:textSize="17sp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:src="@drawable/user_arrow_icon_gray" />
+        <!-- android:layout_alignLeft="@id/order_bed_charge" -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_line_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/service_order_drug_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_setting_item_bg" >
+
+        <ImageView
+            android:id="@+id/order_drug_icon"
+            android:layout_width="@dimen/login_button_top"
+            android:layout_height="@dimen/login_button_top"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:src="@drawable/home_service_order_drug_circle_icon" />
+
+        <TextView
+            android:id="@+id/order_drug_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen15"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/order_drug_icon"
+            android:text="预约药品"
+            android:textColor="@color/drug_deep_tx_color"
+            android:textSize="@dimen/drug_text_large_size" />
+
+        <TextView
+            android:id="@+id/order_drug_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_drug_title"
+            android:layout_below="@id/order_drug_title"
+            android:layout_marginTop="5dp"
+            android:text="线上约药品，取药免排队"
+            android:textColor="@color/drug_light_tx_color"
+            android:textSize="@dimen/drug_text_small_size" />
+
+        <TextView
+            android:id="@+id/order_drug_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_drug_hint"
+            android:layout_below="@id/order_drug_hint"
+            android:layout_marginTop="5dp"
+            android:text="免费"
+            android:textColor="@color/wait_pay"
+            android:textSize="17sp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:src="@drawable/user_arrow_icon_gray" />
+        <!-- android:layout_alignLeft="@id/order_drug_charge" -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_line_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/service_guide_service_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_setting_item_bg"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/order_guide_icon"
+            android:layout_width="@dimen/login_button_top"
+            android:layout_height="@dimen/login_button_top"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:src="@drawable/home_service_order_guide_circle_icon" />
+
+        <TextView
+            android:id="@+id/order_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen15"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/order_guide_icon"
+            android:text="导诊服务"
+            android:textColor="@color/drug_deep_tx_color"
+            android:textSize="@dimen/drug_text_large_size" />
+
+        <TextView
+            android:id="@+id/order_guide_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_guide_title"
+            android:layout_below="@id/order_guide_title"
+            android:layout_marginTop="5dp"
+            android:text="专业导医院内就医指导"
+            android:textColor="@color/drug_light_tx_color"
+            android:textSize="@dimen/drug_text_small_size" />
+
+        <TextView
+            android:id="@+id/order_guide_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_guide_hint"
+            android:layout_below="@id/order_guide_hint"
+            android:layout_marginTop="5dp"
+            android:text="￥59"
+            android:textColor="@color/wait_pay"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:src="@drawable/user_arrow_icon_gray" />
+        <!-- android:layout_alignLeft="@id/order_guide_charge" -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_line_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/service_accompany_service_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_setting_item_bg"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/order_accompany_icon"
+            android:layout_width="@dimen/login_button_top"
+            android:layout_height="@dimen/login_button_top"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:src="@drawable/home_service_order_accompany_circle_icon" />
+
+        <TextView
+            android:id="@+id/order_accompany_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen15"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/order_accompany_icon"
+            android:text="陪诊服务"
+            android:textColor="@color/drug_deep_tx_color"
+            android:textSize="@dimen/drug_text_large_size" />
+
+        <TextView
+            android:id="@+id/order_accompany_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_accompany_title"
+            android:layout_below="@id/order_accompany_title"
+            android:layout_marginTop="5dp"
+            android:text="专业导医院内全程陪诊"
+            android:textColor="@color/drug_light_tx_color"
+            android:textSize="@dimen/drug_text_small_size" />
+
+        <TextView
+            android:id="@+id/order_accompany_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_accompany_hint"
+            android:layout_below="@id/order_accompany_hint"
+            android:layout_marginTop="5dp"
+            android:text="￥199"
+            android:textColor="@color/wait_pay"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:src="@drawable/user_arrow_icon_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main_bg_color" />
+
+</LinearLayout>

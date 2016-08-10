@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drug_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/drug_title_bar"
+        layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drug_title_bar"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drug_list_item_height"
+                android:background="@color/bg_white" >
+
+                <ImageView
+                    android:id="@+id/drug_details_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                    android:layout_marginTop="@dimen/drug_imageview_margin_left"
+                    android:src="@drawable/tianjin_first_hospital" />
+
+                <TextView
+                    android:id="@+id/drug_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/drug_details_image"
+                    android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                    android:layout_toRightOf="@id/drug_details_image"
+                    android:textColor="@color/drug_deep_tx_color"
+                    android:textSize="@dimen/drug_text_large_size" />
+
+                <TextView
+                    android:id="@+id/drug_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/drug_name"
+                    android:layout_below="@id/drug_name"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/drug_text_small_size" />
+
+                <TextView
+                    android:id="@+id/drug_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/drug_type"
+                    android:layout_below="@id/drug_type"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/drug_light_tx_color"
+                    android:textSize="@dimen/drug_text_small_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_details_item_height" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                        android:text="@string/drug_order_people"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+
+                    <TextView
+                        android:id="@+id/order_name_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/drug_imageview_margin_left"
+                        android:text="王倩倩"
+                        android:textColor="@color/drug_light_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_details_item_height" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                        android:text="@string/telphone"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+
+                    <TextView
+                        android:id="@+id/telphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/drug_imageview_margin_left"
+                        android:text="15652062328"
+                        android:textColor="@color/drug_light_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_details_item_height" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                        android:text="@string/drug_order_time"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+
+                    <TextView
+                        android:id="@+id/order_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/drug_imageview_margin_left"
+                        android:text="2016-3-22"
+                        android:textColor="@color/drug_light_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_details_item_height" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                        android:text="@string/drug_order_status"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/drug_imageview_margin_left"
+                        android:background="@drawable/selector_main_btn_bg"
+                        android:gravity="center"
+                        android:text="已预约"
+                        android:textColor="@color/bg_white"
+                        android:textSize="@dimen/drug_text_large_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_details_item_height" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                        android:text="@string/drug_order_charge_way"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+
+                    <TextView
+                        android:id="@+id/charge_way_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/drug_imageview_margin_left"
+                        android:text="自费"
+                        android:textColor="@color/drug_light_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drug_details_item_height" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+                        android:text="@string/drug_order_health_type"
+                        android:textColor="@color/drug_deep_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+
+                    <TextView
+                        android:id="@+id/health_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/drug_imageview_margin_left"
+                        android:text="医保"
+                        android:textColor="@color/drug_light_tx_color"
+                        android:textSize="@dimen/drug_text_large_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/title_line_grey" />
+
+        <Button
+            android:id="@+id/cancel_order_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/drug_imageview_margin_left"
+            android:layout_marginRight="@dimen/drug_imageview_margin_left"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="@string/cancel_order"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/drug_text_super_large_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_layout"
+        android:layout_below="@id/scroll_view"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

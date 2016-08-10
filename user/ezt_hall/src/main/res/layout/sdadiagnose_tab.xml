@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/more_light_gray"
+    android:baselineAligned="true"
+    android:fadingEdge="none"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/orderRecord_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="OnBottomClick"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin" >
+
+        <TextView
+            android:id="@+id/orderRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/rorder_focus_icon"
+            android:gravity="center"
+            android:text="预约挂号"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+    <include layout="@layout/ver_line" />
+
+    <FrameLayout
+        android:id="@+id/phoneDoctorRecord_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="OnBottomClick"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:textSize="@dimen/small_size" >
+
+        <TextView
+            android:id="@+id/phoneDoctorRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/rdocphone_normal_icon"
+            android:gravity="center_horizontal|bottom"
+            android:text="电话医生"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+    <include layout="@layout/ver_line" />
+
+    <FrameLayout
+        android:id="@+id/seeDoctorRecord_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="OnBottomClick"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/seeDoctorRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/rseeillr_normal_icon"
+            android:gravity="center_horizontal|bottom"
+            android:text="远程看病历"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+    <include layout="@layout/ver_line" />
+
+    <FrameLayout
+        android:id="@+id/textAskRecord_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="OnBottomClick"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textAskRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/raskdoctor_normal_icon"
+            android:gravity="center_horizontal|bottom"
+            android:text="免费提问"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+    <!-- 检验报告 -->
+
+    <include layout="@layout/ver_line" />
+
+    <FrameLayout
+        android:id="@+id/report_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="OnBottomClick"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:textSize="@dimen/small_size" >
+
+        <TextView
+            android:id="@+id/textReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/report_un"
+            android:gravity="center_horizontal|bottom"
+            android:text="检验报告"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+</LinearLayout>

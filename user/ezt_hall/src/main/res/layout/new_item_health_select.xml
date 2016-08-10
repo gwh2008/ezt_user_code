@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/pop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90.5dp"
+            android:background="@drawable/new_group_time_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/self"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:gravity="center"
+                android:text="自费"
+                android:textColor="@color/new_main_color"
+                android:textSize="18sp" />
+
+            <include layout="@layout/new_space_line"></include>
+
+            <TextView
+                android:id="@+id/health_care"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:gravity="center"
+                android:text="医保"
+                android:textColor="@color/main_color"
+                android:textSize="18sp" />
+
+            <include layout="@layout/new_space_line"></include>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/new_group_time_bg"
+            android:text="取消"
+            android:textColor="@color/main_color"
+            android:textSize="18sp" />
+
+        <include layout="@layout/new_space_line"></include>
+    </LinearLayout>
+</LinearLayout>

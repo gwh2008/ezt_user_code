@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorWhite"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="消息"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/large_size_18"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background"
+        >
+    </View>
+    <com.eztcn.user.eztcn.customView.PullToRefreshListView
+        android:id="@+id/message_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/lt_divider"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="@null"
+        android:visibility="gone" >
+    </com.eztcn.user.eztcn.customView.PullToRefreshListView>
+
+    <FrameLayout
+        android:id="@+id/message_fragment_no_message_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_icon_message_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="暂无消息"
+                android:textSize="16sp"
+                android:textColor="@color/color_999999"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

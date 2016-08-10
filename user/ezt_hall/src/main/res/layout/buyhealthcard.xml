@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin" >
+
+                <TextView
+                    android:id="@+id/mealName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医指通健康卡"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="39元"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="购买数量"
+                    android:textSize="@dimen/medium_size" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/item_hor_bt_width"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@drawable/add_count_icon" >
+
+                    <TextView
+                        android:id="@+id/subtract_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="—"
+                        android:textSize="@dimen/large_size" />
+
+                    <include layout="@layout/ver_line" />
+
+                    <EditText
+                        android:id="@+id/count_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:maxLength="3"
+                        android:numeric="integer"
+                        android:text="1"
+                        android:textSize="@dimen/small_size" >
+                    </EditText>
+
+                    <include layout="@layout/ver_line" />
+
+                    <TextView
+                        android:id="@+id/add_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="@dimen/large_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/medium_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginLeft="@dimen/large_margin"
+                    android:text="使用优惠券"
+                    android:textSize="@dimen/medium_size" />
+
+                <include layout="@layout/hor_line" />
+
+                <com.eztcn.user.eztcn.customView.MyListView
+                    android:id="@+id/lv_coupon"
+                    android:listSelector="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </com.eztcn.user.eztcn.customView.MyListView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/affirmBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large_margin"
+                android:background="@drawable/selector_main_btn_bg"
+                android:text="确认购买"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                android:text="此卡为虚拟卡，购买后您将收到卡号和密码，可直接激活使用"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

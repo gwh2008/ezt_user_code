@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/more_light_gray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/hor_line" />
+
+        <RelativeLayout
+            android:id="@+id/alipay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hor_height_mediue"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingLeft="@dimen/medium_margin" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/alipay_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/imageView1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:text="支付宝支付"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="推荐安装支付宝客户端用户使用"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <TextView
+            android:id="@+id/btn_other"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_hor_height_mediue"
+            android:background="@drawable/selector_setting_item_bg"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/large_margin"
+            android:text="其 他"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/large_size" />
+    </LinearLayout>
+
+</RelativeLayout>

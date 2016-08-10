@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="horizontal" >
+
+    <com.eztcn.user.eztcn.customView.ScrollerNumberPicker
+        android:id="@+id/dateSelecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        spicker:itemNumber="5"
+        spicker:lineColor="@color/main_color"
+        spicker:maskHight="40dp"
+        spicker:noEmpty="true"
+        spicker:normalTextColor="@color/dark_gray"
+        spicker:normalTextSize="@dimen/medium_size"
+        spicker:selecredTextColor="@color/main_color"
+        spicker:selecredTextSize="@dimen/large_size"
+        spicker:unitHight="50dp" />
+
+    <com.eztcn.user.eztcn.customView.ScrollerNumberPicker
+        android:id="@+id/timeSelecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        spicker:itemNumber="5"
+        spicker:lineColor="@color/main_color"
+        spicker:maskHight="40dp"
+        spicker:noEmpty="false"
+        spicker:normalTextColor="@color/dark_gray"
+        spicker:normalTextSize="@dimen/medium_size"
+        spicker:selecredTextColor="@color/main_color"
+        spicker:selecredTextSize="@dimen/large_size"
+        spicker:unitHight="50dp" />
+
+</LinearLayout>

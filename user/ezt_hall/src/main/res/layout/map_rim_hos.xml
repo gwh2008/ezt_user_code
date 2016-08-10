@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/activity_title_bar" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_rim_hos_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/include1"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/medium_margin" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            layout="@layout/hor_line" />
+
+        <TextView
+            android:id="@+id/map_rim_hos_tv"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_toLeftOf="@+id/map_rim_hos_bt"
+            android:paddingRight="@dimen/small_margin"
+            android:text="天津医科大学总医院"
+            android:textColor="@color/dark_black" />
+
+        <Button
+            android:id="@+id/map_rim_hos_bt"
+            android:layout_width="@dimen/rimhos_bt_width"
+            android:layout_height="@dimen/rimhos_bt_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="到这里去"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/map_hos_tel_tv"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/map_rim_hos_tv"
+            android:layout_below="@+id/map_rim_hos_tv"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/map_rim_hos_bt"
+            android:text="电话"
+            android:textColor="@color/main_txt_color" />
+
+        <TextView
+            android:id="@+id/map_hos_ads_tv"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/map_hos_tel_tv"
+            android:layout_below="@+id/map_hos_tel_tv"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/map_rim_hos_bt"
+            android:text="地址"
+            android:textColor="@color/main_txt_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/map_rim_hos_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/small_margin"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/map_rim_hos_walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mode_walk" />
+
+        <Button
+            android:id="@+id/map_rim_hos_driving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/mode_driving" />
+
+        <Button
+            android:id="@+id/map_rim_hos_bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/mode_transit" />
+    </LinearLayout>
+
+</RelativeLayout>

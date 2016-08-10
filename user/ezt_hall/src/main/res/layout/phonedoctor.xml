@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingTop="@dimen/small_margin" >
+
+            <com.eztcn.user.eztcn.customView.RoundImageView
+                android:id="@+id/doctorPhoto"
+                android:layout_width="@dimen/doc_img_width_large"
+                android:layout_height="@dimen/doc_img_width_large"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_doc_img"
+                imagecontrol:border_outside_color="@color/more_light_gray"
+                imagecontrol:border_thickness="1dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_toLeftOf="@+id/money_layout"
+                android:layout_toRightOf="@+id/doctorPhoto" >
+
+                <TextView
+                    android:id="@+id/doctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:text="苏里"
+                    android:textColor="@color/dark_black"
+                    android:textSize="@dimen/medium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doctor_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/doctorName"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_toRightOf="@+id/doctorName"
+                    android:text="副主任医师"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/dept_name"
+                    style="@style/smallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/doctor_level"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_toRightOf="@+id/doctor_level"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="科室名称"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/hos_name"
+                    style="@style/smallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/doctorName"
+                    android:layout_below="@+id/doctorName"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:text="医院名称"
+                    android:textColor="@color/dark_gray" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/money_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/large_margin"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/money"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10个"
+                    android:textColor="@color/main_color" />
+
+                <TextView
+                    android:id="@+id/timeOfminute"
+                    style="@style/smallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="(2个/分钟)"
+                    android:textColor="@color/main_color" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <RelativeLayout
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/large_margin" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="立即通话" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_tel" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <RelativeLayout
+            android:id="@+id/orderCall"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:background="@drawable/selector_setting_item_bg"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/large_margin" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:text="预约通话" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrows" />
+        </RelativeLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="温馨提示"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="1. @个医通币为医生保底收费，可通话*分钟，超过3分钟将按#每分钟收取，不足1分钟按1分钟收取。"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_hint"
+                android:layout_below="@+id/tv_hint"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="2dp"
+                android:text="2. 当医生不在线或者您不想立即通话时，可以选择预约通话。"
+                android:textColor="@color/dark_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

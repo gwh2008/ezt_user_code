@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_title_layout_height"
+        android:background="@color/main_bg_color"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/register"
+            style="@style/largeText"
+            android:layout_width="@dimen/small_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/large_margin"
+            android:background="@drawable/selector_main_color_broder_btn_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="注 册"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:id="@+id/login"
+            style="@style/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:text="登 录"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+</LinearLayout>

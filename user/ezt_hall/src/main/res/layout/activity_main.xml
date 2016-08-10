@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="false"
+        android:orientation="vertical" >
+
+        <com.eztcn.user.eztcn.customView.NoScrollViewPager
+            android:id="@+id/home_view_page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+<!--         <View -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="0.5dp" -->
+<!--             android:background="@color/dark_gray" > -->
+<!--         </View> -->
+
+        <com.eztcn.user.eztcn.customView.tabview.UITabBottom
+            android:id="@+id/home_tab_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_footer_bg" />
+        <!-- android:layout_height="@dimen/footer_height_size" -->
+    </LinearLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/guide_layout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:background="@drawable/guide_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:visibility="gone" > -->
+    <!-- </RelativeLayout> -->
+
+</FrameLayout>

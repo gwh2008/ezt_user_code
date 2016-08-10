@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray" >
+
+    <include
+        android:id="@+id/tilteLayout"
+        layout="@layout/activity_title_bar" />
+    <RelativeLayout
+        android:id="@+id/submitOrderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen65"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/title_line_grey" />
+
+        <Button
+            android:id="@+id/submitOrder"
+            android:layout_width="@dimen/dimen345"
+            android:layout_height="@dimen/dimen45"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_main_btn_bg"
+            android:text="提交订单"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/submitOrderLayout"
+        android:layout_below="@id/tilteLayout"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/choose_check_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_red" >
+
+            <!-- 挂号费用说明 -->
+
+            <TextView
+                android:id="@+id/cost_info"
+                style="@style/mediumText30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:textColor="@android:color/white" 
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/checkItemLv"
+            style="@style/lvStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@color/bg_white"
+            >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

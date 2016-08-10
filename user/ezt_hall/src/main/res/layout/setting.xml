@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <TextView
+        android:id="@+id/accountManager"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin"
+        android:text="帐号管理" />
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="#ffffff"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="新消息提醒" />
+
+        <com.eztcn.user.eztcn.customView.SwitchButton
+            android:id="@+id/switchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="SwitchButton" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="#ffffff"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="清除缓存" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="清除" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/large_margin"
+        layout="@layout/hor_line" />
+
+    <TextView
+        android:id="@+id/statement"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin"
+        android:text="《医指通使用协议和免责声明》" />
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:id="@+id/aboutEZT"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin"
+        android:text="关于医指通" />
+
+    <include layout="@layout/hor_line" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:gravity="center"
+        android:text="退  出" />
+
+</LinearLayout>

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="@dimen/title_height_size" -->
+        <!-- android:layout_marginLeft="@dimen/user_margin_right" -->
+        <!-- android:gravity="center_vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/mediumText" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="真实姓名" /> -->
+
+
+        <!-- <EditText -->
+        <!-- android:id="@+id/name" -->
+        <!-- style="@style/mediumText" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@android:color/transparent" -->
+        <!-- android:enabled="false" -->
+        <!-- android:gravity="center_vertical|right" -->
+        <!-- android:maxLength="5" -->
+        <!-- android:paddingRight="@dimen/user_margin_right" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:textColor="#aaaaaa" > -->
+        <!-- </EditText> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/auth" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:paddingRight="@dimen/small_size" -->
+        <!-- android:paddingLeft="@dimen/small_size" -->
+        <!-- android:layout_marginBottom="@dimen/small_margin" -->
+        <!-- android:layout_marginTop="@dimen/small_margin" -->
+        <!-- android:background="@drawable/selector_main_btn_bg" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="实名认证" -->
+        <!-- android:textColor="@android:color/white" -->
+        <!-- android:textSize="@dimen/small_size" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <View -->
+        <!-- android:layout_width="@dimen/user_margin_right" -->
+        <!-- android:layout_height="1dp" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <include layout="@layout/hor_line" /> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="@dimen/title_height_size" -->
+        <!-- android:layout_marginLeft="@dimen/user_margin_right" -->
+        <!-- android:gravity="center_vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/mediumText" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="昵称" /> -->
+
+
+        <!-- <EditText -->
+        <!-- android:id="@+id/neck" -->
+        <!-- style="@style/mediumText" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@android:color/transparent" -->
+        <!-- android:gravity="center_vertical|right" -->
+        <!-- android:maxLength="5" -->
+        <!-- android:paddingRight="@dimen/user_margin_right" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:textColor="#aaaaaa" > -->
+        <!-- </EditText> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="@dimen/title_height_size" -->
+        <!-- android:layout_marginLeft="@dimen/user_margin_right" -->
+        <!-- android:gravity="center_vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/mediumText" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="真实姓名" /> -->
+
+
+        <!-- <EditText -->
+        <!-- android:id="@+id/name" -->
+        <!-- style="@style/mediumText" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@android:color/transparent" -->
+        <!-- android:enabled="false" -->
+        <!-- android:gravity="center_vertical|right" -->
+        <!-- android:maxLength="5" -->
+        <!-- android:paddingRight="@dimen/user_margin_right" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:textColor="#aaaaaa" > -->
+        <!-- </EditText> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/auth" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_marginBottom="@dimen/small_margin" -->
+        <!-- android:layout_marginTop="@dimen/small_margin" -->
+        <!-- android:background="@drawable/selector_main_btn_bg" -->
+        <!-- android:gravity="center" -->
+        <!-- android:paddingLeft="@dimen/small_size" -->
+        <!-- android:paddingRight="@dimen/small_size" -->
+        <!-- android:text="实名认证" -->
+        <!-- android:textColor="@android:color/white" -->
+        <!-- android:textSize="@dimen/small_size" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <View -->
+        <!-- android:layout_width="@dimen/user_margin_right" -->
+        <!-- android:layout_height="1dp" /> -->
+        <!-- </LinearLayout> -->
+        <!-- </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical" 
+            >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="真实姓名" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center_vertical|right"
+                android:maxLength="5"
+                android:paddingRight="@dimen/user_margin_right"
+                android:singleLine="true"
+                android:textColor="#aaaaaa" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/auth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/selector_main_btn_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/small_size"
+                android:paddingRight="@dimen/small_size"
+                android:text="实名认证"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_size"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="@dimen/user_margin_right"
+                android:layout_height="1dp" 
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+<!--     android:layout_marginTop="@dimen/more_large_margin" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/idCard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号" />
+
+            <EditText
+                android:id="@+id/idCard"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center_vertical|right"
+                android:hint="未实名认证"
+                android:paddingRight="@dimen/user_margin_right"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/sex"
+                style="@style/mediumText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/user_margin_right"
+                android:text="男"
+                android:textColor="@color/dark_gray" >
+            </TextView>
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center_vertical|right"
+                android:hint="请填写"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingRight="@dimen/user_margin_right"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="婚姻状况" />
+
+            <TextView
+                android:id="@+id/wedLock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/user_margin_right"
+                android:text="未婚"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" >
+            </TextView>
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:id="@+id/medicalNo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医保号" />
+
+            <EditText
+                android:id="@+id/medicalNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:hint="请填写"
+                android:inputType="numberSigned"
+                android:maxLength="20"
+                android:paddingRight="@dimen/user_margin_right"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" >
+            </EditText>
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职业" />
+
+            <TextView
+                android:id="@+id/profession"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_setting_item_bg"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/user_margin_right"
+                android:text="请选择"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学历" />
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_setting_item_bg"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/user_margin_right"
+                android:text="请选择"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:id="@+id/ads_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系地址" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:hint="请填写"
+                android:paddingRight="@dimen/user_margin_right"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" >
+            </EditText>
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height_size"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center|right"
+                android:inputType="phone"
+                android:paddingRight="@dimen/user_margin_right"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/medium_size" />
+
+            <TextView
+                android:id="@+id/bindPhone"
+                style="@style/mediumText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:background="@drawable/selector_main_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/medium_margin"
+                android:text="绑定手机"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

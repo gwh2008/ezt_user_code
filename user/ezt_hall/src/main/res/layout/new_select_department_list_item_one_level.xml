@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_56"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginBottom="@dimen/margin_top_8"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/department_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血管科"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_left_12"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_16"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/search_margin_top_7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="月预约量"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/text_color_gray"/>
+            <TextView
+                android:id="@+id/remain_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:text="180"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/border_line"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="年放号量"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:textColor="@color/text_color_gray"/>
+            <TextView
+                android:id="@+id/all_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="58"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:textColor="@color/border_line"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/margin_left_16"
+        android:visibility="gone"
+        android:src="@drawable/new_down_arrow" />
+
+
+</LinearLayout>

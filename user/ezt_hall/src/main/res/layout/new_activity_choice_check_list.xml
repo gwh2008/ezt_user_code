@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <com.eztcn.user.eztcn.customView.PullToRefreshListView
+        android:id="@+id/choice_check_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_white"
+        android:dividerHeight="@dimen/lt_divider"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="@null" >
+    </com.eztcn.user.eztcn.customView.PullToRefreshListView>
+
+</LinearLayout>

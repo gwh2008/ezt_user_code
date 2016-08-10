@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ads_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_footer_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/home_loading_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic01" />
+
+        <com.eztcn.user.eztcn.customView.MyImgScroll
+            android:id="@+id/home_img_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.eztcn.user.eztcn.customView.MyImgScroll>
+
+        <LinearLayout
+            android:id="@+id/home_point_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ads_point_layout_height"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

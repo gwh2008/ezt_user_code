@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 深蓝色 -->
+    <color name="dark_blue_color">#2d70d4</color>
+    <!-- 蓝色 -->
+    <color name="blue_color">#27a8fc</color>
+    <!-- 淡蓝色 -->
+    <color name="light_main_color">#74c6fc</color>
+
+    <!-- 主体背景色 -->
+    <color name="main_bg_color">#f3f4f6</color>
+
+    <!-- 顶部导航栏背景颜色 -->
+    <color name="title_bar_bg">#189068</color>
+
+    <!-- 顶部返回按钮点击颜色 -->
+    <color name="title_bar_back_bg">#28a077</color>
+
+    <!-- 主要字体颜色 (灰) -->
+    <color name="main_txt_color">#a1a1a1</color>
+    
+     <!-- 淡灰色 -->
+    <color name="light_gray">#E0E0E0</color>
+    
+  
+    <color name="green">#5ACA62</color>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <com.eztcn.user.eztcn.customView.MyScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingLeft="@dimen/more_large_margin"
+                android:paddingRight="@dimen/more_large_margin"
+                android:paddingTop="@dimen/medium_margin" >
+
+                <ImageView
+                    android:id="@+id/hosPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/hosAddr"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ads_default"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:drawableLeft="@drawable/hh_yyjsdh"
+                        android:drawablePadding="@dimen/more2_large_margin"
+                        android:gravity="center_vertical"
+                        android:text="电话:"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_size" />
+
+                    <TextView
+                        android:id="@+id/hosTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:textColor="@color/main_txt_color"
+                        android:textSize="@dimen/medium_size" />
+                </LinearLayout>
+
+                <include layout="@layout/hor_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:drawableLeft="@drawable/hh_yyjsdw"
+                        android:drawablePadding="@dimen/more2_large_margin"
+                        android:gravity="center_vertical"
+                        android:text="地址:"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_size" />
+
+                    <TextView
+                        android:id="@+id/hosAddr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:textColor="@color/main_txt_color"
+                        android:textSize="@dimen/medium_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/large_margin"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/more_large_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:drawableLeft="@drawable/hh_yyjs"
+                    android:drawablePadding="@dimen/large_margin"
+                    android:gravity="center_vertical"
+                    android:text="医院简介"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_size" />
+
+                <include layout="@layout/hor_line" />
+
+                <TextView
+                    android:id="@+id/intro_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:hint="暂无介绍"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.eztcn.user.eztcn.customView.MyScrollView>
+
+</LinearLayout>

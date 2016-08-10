@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <include layout="@layout/new_activity_title_bar"></include>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/imageView_width_61"
+            android:layout_height="@dimen/imageView_width_61"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top_138"
+            android:src="@drawable/new_change_hook" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_left_15"
+            android:text="恭喜您注册成功"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/big_size_16" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top_13"
+            android:text="@string/five_second"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/big_size_16" />
+
+        <Button
+            android:id="@+id/complete_user_info_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:text="去完善个人信息"
+            android:textColor="@color/white"
+            android:background="@drawable/new_contact_service_bt_bg"
+            android:textSize="@dimen/large_size_18"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginTop="33dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left_15"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+            android:text="@string/register_declare_text"
+            android:lineSpacingExtra="7dp"
+            android:textSize="@dimen/normal_size_14"
+            android:textColor="@color/text_color_deep_gray"
+            />
+    </LinearLayout>
+</LinearLayout>

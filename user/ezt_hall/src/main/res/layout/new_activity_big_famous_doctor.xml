@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical" >
+
+        <include layout="@layout/activity_title_bar" />
+
+        <LinearLayout
+            android:id="@+id/bt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/Layout_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen40"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/docs_choice_tv1"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="第一个按钮" />
+
+                <ImageView
+                    android:id="@+id/downBtn_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/more2_large_margin"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/docs_choice_tv1"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:src="@drawable/arrowdown" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/line2"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                layout="@layout/ver_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/Layout_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen40"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/large_margin" >
+
+                <TextView
+                    android:id="@+id/docs_choice_tv2"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="第二个按钮" />
+
+                <ImageView
+                    android:id="@+id/downBtn_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/more2_large_margin"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/docs_choice_tv2"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:src="@drawable/arrowdown" />
+            </RelativeLayout>
+
+            <include layout="@layout/ver_line" />
+
+            <RelativeLayout
+                android:id="@+id/Layout_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen40"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/large_margin" >
+
+                <TextView
+                    android:id="@+id/docs_choice_tv3"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="第三个按钮" />
+
+                <ImageView
+                    android:id="@+id/downBtn_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/more2_large_margin"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/docs_choice_tv3"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:src="@drawable/arrowdown" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+        <!-- android:dividerHeight="@dimen/lt_divider" -->
+
+        <com.eztcn.user.eztcn.customView.PullToRefreshListView
+            android:id="@+id/docs_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="@null"
+            android:visibility="gone" >
+        </com.eztcn.user.eztcn.customView.PullToRefreshListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        ></View>
+
+    </LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="@dimen/small_margin" >
+
+        <ImageView
+            android:id="@+id/doctorPhoto"
+            android:layout_width="@dimen/doc_img_width_normal"
+            android:layout_height="@dimen/doc_img_height_normal"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_doc_img" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin" >
+
+            <TextView
+                android:id="@+id/doctorName"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王小飞"
+                android:textColor="@color/dark_black" />
+
+            <TextView
+                android:id="@+id/d_title"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/doctorName"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/doctorName"
+                android:text="主任医师"
+                android:textColor="@color/dark_black" />
+
+            <TextView
+                android:id="@+id/hos_name"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctorName"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:singleLine="true"
+                android:text="天津第一人民医院"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/dept"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/hos_name"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/hos_name"
+                android:minWidth="30dp"
+                android:singleLine="true"
+                android:text="内科"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/money"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/doctorName"
+                android:layout_alignParentRight="true"
+                android:text="10元"
+                android:textColor="@color/light_main_color" />
+
+            <TextView
+                android:id="@+id/buy"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hos_name"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_small_button_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:text="购买"
+                android:textColor="@color/dark_black" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/smallText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="@dimen/medium_margin"
+        android:text="购买后只能咨询2条问题"
+        android:textColor="@color/dark_gray" />
+
+    <include layout="@layout/hor_line" />
+
+    <ListView
+        android:id="@+id/askList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

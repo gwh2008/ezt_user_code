@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingLeft="@dimen/more_large_margin"
+        android:paddingRight="@dimen/more_large_margin"
+        android:paddingTop="@dimen/medium_margin" >
+
+        <ImageView
+            android:id="@+id/hosPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/hosName"
+            android:scaleType="fitXY"
+            android:src="@drawable/ads_default" />
+
+        <TextView
+            android:id="@+id/hosName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/hosAddr"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="医院："
+            android:textSize="@dimen/large_size" />
+
+        <TextView
+            android:id="@+id/hosAddr"
+               android:layout_above="@+id/tvPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地址："
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/medium_size" />
+            <!-- 2015-12-18 医院对接提示 -->
+
+        <TextView
+            android:id="@+id/tvPrompt"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/red"
+            android:textSize="@dimen/medium_size" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/hospitaldetail_bottomlayout" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5" >
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_weight="1"
+        android:text="服务标题"
+        android:textColor="@color/dark_black"
+        android:textSize="@dimen/medium_size" />
+
+    <TextView
+        android:id="@+id/card_nums_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="次数"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/medium_size" />
+
+    <TextView
+        android:id="@+id/used_state_tv"
+        style="@style/smallText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/light_main_color"
+        android:gravity="center"
+        android:paddingBottom="@dimen/more_large_margin"
+        android:paddingTop="@dimen/more_large_margin"
+        android:text="使用状态"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

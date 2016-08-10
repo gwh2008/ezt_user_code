@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color" >
+
+    <include
+        android:id="@+id/tit"
+        layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backHomeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="返回首页"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_size" >
+        </Button>
+
+        <View
+            android:layout_width="@dimen/medium_margin"
+            android:layout_height="1dip" />
+
+        <Button
+            android:id="@+id/myServerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="我的服务"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_size" >
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/upLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomLayout"
+        android:layout_below="@id/tit"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:src="@drawable/suclogo" />
+
+                <TextView
+                    android:id="@+id/prompt"
+                    style="@style/morelargeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:text="恭喜您预约成功！"
+                    android:textColor="@color/main_color" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/hintText"
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prompt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:text="请30分钟内完成支付，逾时该号自动作废"
+                    android:textColor="@color/main_txt_color"
+                    android:visibility="gone" >
+                </TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_margin"
+                    android:layout_below="@id/hintText" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊人"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/personTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/telTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="预约时间"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/regTimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="主诊医生"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/docNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/deptLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊科室"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/deptTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:maxEms="10"
+                    android:ellipsize="end"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/hospitalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊医院"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:maxEms="10"
+                    android:ellipsize="end"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/hor_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/costLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="挂号费用"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="xx医院"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hor_height"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="温馨提示"
+                        android:textSize="@dimen/medium_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray" >
+                </View>
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_margin"
+                    android:text="@string/regsuctxt"
+                    android:textColor="@color/main_txt_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

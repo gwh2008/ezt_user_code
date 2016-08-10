@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/allLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/moneyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item_bg"
+            android:padding="@dimen/large_margin" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额" />
+
+            <TextView
+                android:id="@+id/money"
+                style="@style/largeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/right_arrows"
+                android:gravity="center_vertical|right"
+                android:text="0 医通币"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:id="@+id/couponLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_setting_item_bg"
+            android:padding="@dimen/large_margin"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券" />
+
+            <TextView
+                android:id="@+id/coupon_num"
+                style="@style/largeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/right_arrows"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/large_margin"
+            layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/tradeDetail"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableTop="@drawable/wallet_icon1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/medium_margin"
+                android:text="交易明细"
+                android:textColor="@color/main_txt_color" />
+
+            <include layout="@layout/ver_line" />
+
+            <TextView
+                android:id="@+id/myOrderForm"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableTop="@drawable/wallet_icon2"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/medium_margin"
+                android:text="我的订单"
+                android:textColor="@color/main_txt_color" />
+
+            <include layout="@layout/ver_line" />
+
+            <TextView
+                android:id="@+id/myHealthCard"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableTop="@drawable/wallet_icon3"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/medium_margin"
+                android:text="我的服务"
+                android:textColor="@color/main_txt_color" />
+        </LinearLayout>
+
+        <include layout="@layout/hor_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/health_dragon"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableTop="@drawable/wallet_icon1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/medium_margin"
+                android:text="建行医指通龙卡"
+                android:textColor="@color/main_txt_color" />
+
+            <include layout="@layout/ver_line" />
+
+            <TextView
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableTop="@drawable/wallet_icon2"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/medium_margin"
+                android:textColor="@color/main_txt_color"
+                android:visibility="invisible" />
+
+<!--             <include layout="@layout/ver_line" /> -->
+
+            <TextView
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_setting_item_bg"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableTop="@drawable/wallet_icon3"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/medium_margin"
+                android:textColor="@color/main_txt_color"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_weight="1"
+                layout="@layout/hor_line"
+                android:visibility="visible" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_weight="1"
+                layout="@layout/hor_line"
+                android:visibility="invisible" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_weight="1"
+                layout="@layout/hor_line"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

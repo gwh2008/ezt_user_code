@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/eManageTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="医管家"
+             android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/discovery_size"
+             />
+
+        <TextView
+            android:id="@+id/eManageMyEManage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:background="@drawable/selector_back_btn_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="我的医管家"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/more_large_size" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/eManageAdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eManageTitleLayout" >
+
+        <RelativeLayout
+            android:id="@+id/layout_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.eztcn.user.eztcn.customView.MyViewPager
+                android:id="@+id/eManageMsgVP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.eztcn.user.eztcn.customView.MyViewPager>
+
+            <ImageView
+                android:id="@+id/eManageAdImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ebanner" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_below="@id/eManageAdLayout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/eMangeEHelpLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_em_eh"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+<!--             <ImageView -->
+<!--                 android:scaleType="fitXY" -->
+<!--                 android:src="@drawable/ehelp_icon" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" /> -->
+        </LinearLayout>
+
+        <View
+            android:id="@+id/leftLine"
+            android:layout_width="@dimen/small_margin"
+            android:layout_height="match_parent"
+         />
+
+        <LinearLayout
+            android:id="@+id/eMangeRenrenLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+      		android:background="@drawable/selector_em_bank"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+<!--           <ImageView -->
+<!--                 android:scaleType="fitXY" -->
+<!--                 android:src="@drawable/renrenmanage" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" /> -->
+
+        
+        </LinearLayout>
+
+        <View
+            android:id="@+id/rightLine"
+            android:layout_width="@dimen/small_margin"
+            android:layout_height="match_parent" />
+        <!-- <include layout="@layout/ver_line"/> -->
+
+        <LinearLayout
+            android:id="@+id/eMangeBankLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_em_renren"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+<!--            <ImageView -->
+<!--                 android:scaleType="fitXY" -->
+<!--                 android:src="@drawable/bankmanage" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" /> -->
+
+       
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

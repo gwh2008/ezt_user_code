@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+            android:id="@+id/item_search_hos_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天津市第一中心医院" />
+
+        <TextView
+            android:id="@+id/item_search_hos_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电  话： 022-23626048" />
+
+        <TextView
+            android:id="@+id/item_search_hos_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址：天津市南开区复康路24号" />
+
+        <TextView
+            android:id="@+id/item_search_hos_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医院简介：我是简介我是简介我是简介简介我是简介" />
+    
+
+</LinearLayout>

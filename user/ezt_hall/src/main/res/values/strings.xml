@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">门诊大厅</string>
+    <string name="eztcn_app_update">门诊大厅</string>
+    <string name="yy_mm_dd_hh_mm">yyyy-MM-dd HH:mm</string>
+    <string name="tab_home_page">首页</string>
+    <string name="tab_send_medicine">药给送</string>
+    <string name="tab_fdoctor_page">找医</string>
+    <string name="tab_discover_page">发现</string>
+    <string name="tab_user_page">我</string>
+    <string name="home_child_reg">妇幼挂号</string>
+    <string name="home_fam_doc">电话医生</string>
+    <string name="home_free_consult">症状自查</string>
+    <string name="home_country_reg">全国挂号</string>
+    <string name="home_case_con">病例会诊</string>
+    <string name="home_child_vaccine">宝宝疫苗</string>
+    <string name="home_home_doc">家庭医生</string>
+    <string name="home_mine_server">我的服务</string>
+    <string name="home_usurl_question">常见问题</string>
+    <string name="home_micro_msg">微资讯</string>
+    <string name="none_data">暂无消息</string>
+    <string name="network_hint">暂无网络，请稍后再试！</string>
+    <string name="function_hint">即将上线，敬请期待...</string>
+    <string name="request_fail">获取数据失败，请稍后再试！</string>
+    <string name="service_error">服务器繁忙，请重试！</string>
+    <string name="default_string">default</string>
+    <string name="search_empty">请输入要搜索的关键字</string>
+    <string name="app_share_info">app分享内容测试</string>
+    <string name="aboutezt_intro">\t\t医指通（中国网上三甲医院），始创于2009年，是国内首家“智慧医疗”综合体运营服务商，也是国家卫计委全国推广就医平台，目前是国内唯一获得卫计委官方认证的全网预约挂号平台，经过4年的发展，现在已成为中国移动医疗的领军企业之一。</string>
+    <string name="register_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="id_card_limit">0123456789Xx</string>
+    <string name="guideDoc_card_limit">0123456789</string>
+    <string name="scanner_hint">扫一扫功能需要开启拍照功能：\n请修改拍照权限！</string>
+    <!-- 下拉刷新，上拉加载 -->
+    <string name="p2refresh_foot_finish">已加载完所有数据</string>
+    <string name="p2refresh_head_load_more">加载更多...</string>
+    <string name="p2refresh_end_click_load_more">点击加载更多</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新...</string>
+    <string name="p2refresh_doing_end_refresh">加载中...</string>
+    <string name="p2refresh_doing_end_load_more">上拉加载更多</string>
+    <string name="p2refresh_release_load_more">松开加载更多</string>
+    <!-- 健康专线电话 -->
+    <string name="health_tel_num">4006511869</string>
+
+    <!-- 滴滴优惠券分享 内容、标题 -->
+    <string name="didi_share_title">医指通送超大滴滴礼包啦，送给您！快来领！</string>
+    <string name="didi_share_msg">关爱您的出行，医指通奉上滴滴礼包，让你出行更方便，更舒适！</string>
+
+    <!-- 正则表达式判断消息中是否有表情 -->
+    <string name="validate_is_exist_expression">f0[0-9]{2}|f1[0-4][0-9]</string>
+    <string name="validate_mobile">^((13[0-9])|(15[^4,\\D])|(18[0-9])|(14[57]))\\d{8}$</string>
+    <string name="validate_email">^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$</string>
+    <string name="autonymString">1.手持身份证原件正面进行合影，要求本人面部清晰和识别、身份证原件信息清晰可识别;\n2.如患者是儿童，请监护人提供身份证正面照片+患儿户口本页照片+监护人与患儿合影，要求证件及本人面部、文字信息等清晰可识别。</string>
+    <string name="copyright">Copyright © 2000-2015,eztcn.com. All right reserved</string>
+    <string name="pool">{"data":{"2014-12-21":[{"deptId":543,"doctorId":3067,"endDate":"1970-01-01 18:00:00","isAmPm":1,"isRemain":1,"pfId":351,"poolId":540,"regDate":"2014-12-21 00:00:00","regDateWeek":7,"regMark":401,"registerPoolId":339,"startDate":"1970-01-01 17:00:00"}]},"detailMsg":"成功","flag":true,"msg":"成功","number":"2000"}</string>
+
+    <!-- ezt chat list -->
+    <string name="chat_list_title">医指通</string>
+    <!-- ezt chat manage -->
+    <string name="chat_manage_title">医指通</string>
+    <string name="chat_manage_hospital">智慧医院</string>
+    <string name="chat_manage_hos_below">移动支付，就医免排队~</string>
+    <string name="chat_manage_mine_group">我的群</string>
+    <string name="chat_manage_mine_friends">我的好友</string>
+    <string name="chat_manage_new_in">最新加入</string>
+    <!--
+     String stringTest=getResources().getString(R.string.chat_manage_mine_doctors);
+     String stringResult=String.format(stringTest, 3);
+    -->
+    <string name="chat_manage_mine_doctors">我的医生（%d）</string>
+    <string name="chat_manage_user_login">您还没有登陆，请登陆后再进行操作</string>
+    <string name="User_already_exists">聊天系统用户名已存在请重新注册</string>
+    <string name="registration_failed_without_permission">聊天系统注册失败，没有用户权限</string>
+    <string name="illegal_user_name">用户名不规范，请重新注册聊天系统</string>
+    <string name="Registration_failed">聊天系统注册失败</string>
+    <string name="friends">好友</string>
+    <string name="expert">专家</string>
+    <string name="tumor_intro">1.  请保证已经与医生沟通，确定病例已经写完并且归档到病案室，否则会出现无法复印的情况。\n\n2. 可预约时间定为25天以后（以输入的出院时间为准）。\n\n3. 请正确输入出院时间。</string>
+    <!-- <string name="sorry_pool_wrong">很抱歉，此号只能现场预约。</string> -->
+    <string name="couldnotreg">该医生暂无号池</string>
+    <string name="orderRegister">预约挂号</string>
+    <string name="bigDoctor">大牌名医</string>
+    <string name="todayRegister">当日挂号</string>
+    <string name="orderCheck">预约检查</string>
+    <string name="orderBed">预约病床</string>
+    <string name="orderdrugs">预约药品</string>
+    <string name="onLineQuestion">在线咨询</string>
+    <string name="dragonCardZone">龙卡专区</string>
+    <string name="eHelp">医护帮</string>
+    <string name="new_orderReg">医指通挂号</string>
+    <!-- 个人中心 -->
+    <string name="user_mine_attention">我的关注</string>
+    <string name="user_mine_consultation">我的咨询</string>
+    <string name="user_mine_service">我的服务</string>
+    <string name="user_mine_case">我的病历</string>
+    <string name="user_mine_coupon">我的优惠券</string>
+    <string name="coupon">优惠券</string>
+    <string name="user_mine_managemen_patient">管理就诊人</string>
+    <string name="user_mine_help">帮助</string>
+    <string name="user_invite_code">邀请码</string>
+    <string name="user_onclick_login">点击登录</string>
+
+    <!-- 发现 -->
+    <string name="discovery">发现</string>
+    <string name="discovery_help_support">E护帮</string>
+    <string name="discovery_help_support_hint_tx">专业优质陪诊导服务</string>
+    <string name="discovery_financial_medical_service">金融医疗服务</string>
+    <string name="discovery_financial_medical_service_hint_tx">医指通龙卡天津工会卡医疗VIP服务</string>
+    <string name="discovery_medical_ask_for_doctor">寻医问药</string>
+    <string name="discovery_ask_for_doctor_hint_tx">第一时间帮您答疑解惑</string>
+    <string name="regsuctxt">1.请在当日预约时间段前30分钟打印预约凭条挂号就诊;过号后系统将不予保留，此号将列入爽号处理！\n2.如有未尽事宜，请拨打服务热线400-0800-666咨询，祝您早日康复！</string>
+    <string name="regdrugsuctxt">1.请在当日预约时间内挂号缴费取药;过号后系统将不予保留，此号将列入爽号处理！\n2.如有未尽事宜，请拨打服务热线400-0800-666咨询，祝您早日康复！</string>
+
+    <!-- 设置 -->
+
+    <string name="account_management">帐号管理</string>
+    <string name="exit_current_account">退出当前账号</string>
+    <string name="check_update">检查更新</string>
+    <string name="ezt_statement">《医指通使用协议和免责声明》</string>
+    <string name="about_ezt">关于医指通</string>
+    <string name="exit">退出</string>
+
+    <!-- 帮助界面 -->
+
+    <string name="customer_service_hotline">客服热线</string>
+    <string name="hotline_telphone">400-0800-666</string>
+    <string name="suggest_feedback">意见反馈</string>
+    <string name="function_introduction">功能介绍</string>
+    <string name="suggest_feedback_number_word">10-200个字</string>
+    <string name="suggest_feedback_hint">您的意见和建议</string>
+
+    <!-- 修改手机号 -->
+
+    <string name="input_telphone">请输入您手机号</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="obtain_verification_code">获取验证码</string>
+    <string name="verification_code">验证码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="please_sure__password">请确认密码</string>
+    <string name="new_telphone">新手机号</string>
+    <string name="password">密码</string>
+    <string name="sure_modify">确认修改</string>
+    <!-- 绑定邮箱 -->
+    <string name="email">邮箱</string>
+    <string name="input_email">请输入您的邮箱</string>
+    <string name="sure_binding">确认绑定</string>
+    <!-- 修改密码 -->
+    <string name="old_password">旧密码</string>
+    <string name="input_old_password">请输入旧密码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="new_password">新密码</string>
+    <string name="sure_new_password">确认新密码</string>
+    <string name="sure_password">确认密码</string>
+    <string name="input_sure_password">输入确认密码</string>
+    <string name="input_new_password_again">请再次填写新密码</string>
+    <!-- 注册 -->
+    <string name="telphone">手机号</string>
+    <string name="sure_register">确认注册</string>
+    <string name="register">注册</string>
+    <!-- 登录 -->
+
+    <string name="input_account">请输入账号</string>
+    <string name="other_login_way">使用其他方式登录</string>
+    <string name="wechat_login">微信登录</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码|</string>
+    <string name="title_DocIndex_Wheel_day">当天剩余可预约时间</string>
+    <string name="title_DocIndex_Wheel">剩余可预约时间</string>
+    <string name="auto_login">自动登录</string>
+
+    <!-- 我的服务 -->
+    <string name="reservation_form">预约单</string>
+    <string name="medical_help">医护帮</string>
+    <string name="about_check">约检查</string>
+    <string name="about_ward">预病床</string>
+
+    <!-- 预约 -->
+    <string name="back_number">退号</string>
+    <string name="cancel_order">取消订单</string>
+    <!-- 提示 -->
+    <string name="hint">提示</string>
+    <!-- 约检查 -->
+    <string name="waiting_pay">待支付</string>
+    <string name="back_home">返回首页</string>
+    <string name="see_details">查看详情</string>
+    <string name="patient">就  诊  人</string>
+    <string name="contact_telphone">联系电话</string>
+    <string name="order_require">预约要求</string>
+    <string name="order_attention">检查当天您需要注意以下事项：</string>
+    <!-- order_details -->
+
+    <string name="order_details_hint">您的专职健康秘书</string>
+    <string name="check_service">检查服务</string>
+    <!-- 预约订单的状态 -->
+
+    <string name="request_order">申请预约</string>
+    <string name="order_pay">订单支付</string>
+    <string name="order_check">订单审核</string>
+    <string name="order_succeed">预约成功</string>
+    <!-- 邀请码 -->
+
+    <string name="input_invite_code">请输入邀请码</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <!-- 服务 -->
+    <string name="free">免费</string>
+    <string name="appoint_doctor">预约检查</string>
+    <string name="appoint_doctor_hint">专职导医为您办理预约检查，提前预约快人一步</string>
+    <string name="appoint_doctor_details_hint">专业导医为您办理,提前预约快人一步</string>
+    <string name="appoint_hospital_bed">预约病床</string>
+    <string name="appoint_hospital_bed_hint">服务全面升级，专业解决患者住院难题</string>
+    <string name="appoint_drug">预约药品</string>
+    <string name="appoint_drug_hint">预约药品，全面解决取药难题，取药排队耗时</string>
+    <string name="appoint_guidance_service">导诊服务</string>
+    <string name="appoint_guidance_service_hint">代取号，专业院内就医指导</string>
+    <string name="appoint_accompany_service">陪诊服务</string>
+    <string name="appoint_accompany_service_hint">全程陪诊，代排队，代缴费</string>
+    <string name="five_star_service">五星服务</string>
+    <string name="platform_authentication">平台认证</string>
+    <string name="full_time_man">专职人员</string>
+    <string name="service_introduce_one">1、“预约病床”是医指通门诊大厅为患者提供的一项便捷入院服务，可帮助患者与医院进行沟通安排病床预订；</string>
+    <string name="service_introduce_two">2、医指通门诊大厅不收取预约服务费，所产生的费用均为医院标准收费项，具体可查询所预约医院收费标准；</string>
+    <string name="service_introduce_three">3、请您尽量上传完整电子病例、扫描件、诊断证书等可判断病情的相关凭证；</string>
+    <string name="service_introduce_four">4、“预约病床”订单信息提交后，请您保持手机畅通，医指通客服将于1-2个工作日内与您沟通联络；</string>
+    <string name="service_introduce_five">5、患者信息确认后，会有医指通健康秘书医院进行病床咨询；</string>
+    <string name="service_introduce_six">6、符合住院条件的患者，医指通会协助办理住院。</string>
+    <string name="order_check_at_once">马上预约检查</string>
+    <string name="order_bed_at_once">马上预约病床</string>
+    <string name="order_check_status_one">您的申请预约检查订单，需要提前支付检查费用</string>
+    <string name="order_check_status_two">检查订单，进入审核阶段，客服会联系您核实信息，请保持手机畅通</string>
+    <string name="order_check_status_three">健康秘书正在为您办理预约手续，完成后通知预约结果，请保持手机畅通。</string>
+    <string name="order_check_status_four">您申请的预约检查订单，已经办理完成，点击查看预约详情。</string>
+    <string name="order_check_status_five">因为不合某些审核条件，您的申请订单被拒绝，订单1~3工作日完成退款。</string>
+    <string name="order_check_status_six">正在为您办理退款。</string>
+    <string name="order_check_status_senven">您的申请的预约检查订单，下单后未在30分钟内完成支付，请重新下单办理。</string>
+    <string name="order_hintstr">您的预约检查共计需要支付\n¥%1$s</string>
+
+    <!-- 预约drug -->
+    <string name="drug_order_people">预约人</string>
+    <string name="drug_order_time">预约时间</string>
+    <string name="drug_order_status">预约状态</string>
+    <string name="drug_order_charge_way">缴费方式</string>
+    <string name="drug_order_health_type">医保类型</string>
+    <string name="title_Drug_Wheel">可预约药品时间</string>
+    <!-- order病床 -->
+    <string name="orderbedhint">预约该科室病床需要提前支付\n%1$s元咨询挂号费用\n(该费用由医院收取)</string>
+    <string name="orderbedphotohint">手写病历，电子病历，处方，检验报告，影响报告最多\n上传5张图片，至少上传一张</string>
+    <string name="orderbedprompt">备注：单张图片容量最多不超过5兆</string>
+    <string name="case_info">病历信息</string>
+    <string name="symptom_describe">症状描述</string>
+    <string name="please_describe_state_illness">请您详细描述患者病情</string>
+    <string name="special_requirements">特殊要求</string>
+    <string name="special_requirements_hint">例如希望在10点前进行进行进行检查等</string>
+    <string name="order_bed_status_hint">您提供病患信息越完善，有效提高预约病床成功率</string>
+    <string name="order_bed_hint">预约病床</string>
+
+    ////////////////////////////////////////////////3.0的string
+    <string name="new_hello_blank_fragment">Hello blank fragment</string>
+    <string name="tianjin">天津</string>
+    <string name="location_ing">定位中</string>
+    <string name="search_text">搜索您要查询的医院</string>
+    <string name="see_patient">就诊人</string>
+    <string name="in_hospital_number">住院号</string>
+    <string name="in_hospital_digital">请输入住院号</string>
+    <string name="rl_in_date">选择入院日期</string>
+    <string name="rl_out_date">选择出院日期</string>
+    <string name="fill_in_number">填写复印病历的份数</string>
+    <string name="save_case">保存病历</string>
+    <string name="take_case_date">选择取病历日期</string>
+    <string name="choose_time">选择时间段</string>
+    <string name="copy_case_text">*您只能选择出院25天后取复印病历</string>
+    <string name="audit">订单审核中</string>
+    <string name="text_name">天津肿瘤医院</string>
+    <string name="first_hospital">天津市第一医院</string>
+    <string name="case_text">您的订单已交给医务人员进行住院信息真实性审核,我们会尽快给您答复,请关注订单信息.</string>
+    <string name="text">我们还为你提供以下服务</string>
+    <string name="order_drug">预约药品</string>
+    <string name="order_copy_case">预约复印病历</string>
+    <string name="check">预约检查</string>
+    <string name="order_bed">预约病床</string>
+    <string name="order_registered">预约挂号</string>
+    <string name="order_hospital">预约医院</string>
+    <string name="order_office">预约科室</string>
+    <string name="big_famous_doctor">大牌名医</string>
+    <string name="order_drug_text">线上约药品 取药免排队</string>
+    <string name="check_text">线上预支付 检查不耗时</string>
+    <string name="order_bed_text">病床提前约 住院不再难</string>
+    <string name="one_case">第一组病历</string>
+    <string name="two_case">第二组病历</string>
+    <string name="order_time">预约时间</string>
+    <string name="text_person">预约人</string>
+    <string name="pay_way">缴费方式</string>
+    <string name="health_type">医保类型</string>
+    <string name="order_text">请在当日预约时间内挂号缴费取药,过号系统将不予保留,此号将列入爽约处理!</string>
+    <string name="order_success">恭喜您,药品预约成功!</string>
+    <string name="tel_phone">联系电话</string>
+
+    <string name="apply_time">申请时间:</string>
+    <string name="be_good_at">擅长:</string>
+    <string name="my_attention">我的关注</string>
+    <string name="patient_manager">就诊人管理</string>
+    <string name="my_registration">我的挂号</string>
+    <string name="my_reservation_service">预约服务</string>
+    <string name="my_reservation_drug">预约药品</string>
+    <string name="my_photo_copying_case">复印病例</string>
+    <string name="new_patient">就   诊   人</string>
+    <string name="hospital_number">住 院 号</string>
+    <string name="at_hospital">就诊医院</string>
+    <string name="contact_customer_service">联系客服</string>
+    <string name="cancel_order_hint">取消预约</string>
+    <string name="head">头像</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="region">所在地区</string>
+    <string name="address_details">详细地址</string>
+    <string name="id_number">身份证号</string>
+    <string name="telephone_number">手机号</string>
+    <string name="email_address">邮箱</string>
+    <string name="input_hint">请输入</string>
+    <string name="choose_hint">请选择</string>
+    <string name="id_number_hint">证件号码:</string>
+    <string name="new_title_Drug_Wheel">可预约药品时间</string>
+    <string name="found">发现</string>
+    <string name="health_insurance_id">医保卡号</string>
+    <string name="social_security_region">社保所在地</string>
+    <string name="telephone">手机</string>
+    <string name="verify_code">验证码</string>
+    <string name="patient_details_hint">温馨提示：姓名和身份证为必填项，请填写正确的就诊人信息，否则无法就诊。</string>
+    <string name="message_details_text">您已成功提交专属医生指导挂号订单! 请您保持电话畅通!</string>
+    <string name="bl">复印病历</string>
+    <string name="order_people">预  约  人</string>
+    <string name="tel_number">电话号码</string>
+    <string name="order_details_hint_info">您已经成功预约，请在就诊当日准时到院就诊！</string>
+    <string name="telephone_number_gap">手  机  号</string>
+    <string name="attend_doctor">主诊医生</string>
+    <string name="attend_department">就诊科室</string>
+    <string name="payment_way">支付方式</string>
+    <string name="registration_free">挂号费用</string>
+    <string name="waiting_doctor_time">候诊时间</string>
+    <string name="warm_prompt">温馨提示</string>
+    <string name="name_gap">姓     名</string>
+    <string name="my_special_rights">我的特权</string>
+    <string name="my_special_discount">我的专享折扣</string>
+    <string name="customer_service_hotLine">客服热线</string>
+    <string name="hotLine_telephone">400-0800-666</string>
+    <string name="suggestFeedback">意见反馈</string>
+    <string name="functionIntroduction">功能介绍</string>
+    <string name="account_manage">账号管理</string>
+    <string name="message_Notification">新消息提醒</string>
+    <string name="wipe_cache">清除缓存</string>
+    <string name="about_ez_t">关于医指通</string>
+    <string name="help">帮助</string>
+    <string name="ez_t_statement">医指通使用协议和负责声明</string>
+    <string name="change_success">恭喜您更改帐号成功!</string>
+    <string name="use_new_account">请使用新帐号进行登录.</string>
+    <string name="five_second">5S</string>
+    <string name="about_ezt_text">感谢您使用门诊大厅APP。门诊大厅APP为医指通移动医疗科技（北京）有限公司旗下产品。
+
+　　医指通创始于2009年，是当前国内最具影响力的预约诊疗统一平台，专注精准医疗服务。针对全国每年80亿人次门诊量的庞大就医需求，医指通门诊大厅聚合了全国重点公立医院在线网约业务，全面推出“约专家、约检查、约病床、约手术、约药品”五约服务，引入全国基层医生和公立医院医生参与市场化分诊和转诊服务，开创互联网医疗分享经济模式，打造国内最大规模的互联网医院集团和医生集团。医指通精准医疗服务平台已经经覆盖天津、北京、广东、沈阳、贵州等六省七市700多家公立医院，开放预约科室15873个、医疗专家43269名，全国公立医院年专家放号量达2600多万，并成为全国首家开放国内三甲医院“五约服务”的全预约平台。医指通目前日均为超过3万名用户成功预约，累计电话咨询总量达9000多万人次。实现"先登记先排队"、“急慢分治”的就医原则，对群众就医带来极大的便利。医指通凭借创新的医疗服务获得国家卫计委、天津卫计委、贵州卫计委、广东卫计委的大力支持和推广应用，并两度荣获中央电视台《新闻联播》报道，创始人李浩获张德江、张高丽、汪洋等多位国家领导人接见和赞扬。</string>
+    <string name="complete_text">请完善您的个人信息, 以便遇到帐号变更时方便找回帐号信息,身份证号和邮箱可选填.</string>
+    <string name="exit_login">退出登录</string>
+    <string name="accept_user_agreement">我同意《用户服务协议》</string>
+    <string name="next_step">下一步</string>
+    <string name="have_account">已有账号？</string>
+    <string name="login_account_hint">请输入手机号</string>
+    <string name="password_tx">密码</string>
+    <string name="login_hint">请输入手机号</string>
+    <string name="password_hint">6-20位字母、数字或符号的密码</string>
+    <string name="register_account">注册账号</string>
+    <string name="contact_customer_service_hint">遇到问题请联系我们的客服</string>
+    <string name="cancel_tx">取消</string>
+    <string name="customer_service_hint">客服电话：400-0800-666</string>
+    <string name="customerService_hotLine">400-0800-666</string>
+    <string name="new_register_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="new_login_digits">0123456789</string>
+    <string name="take_picture">拍照</string>
+    <string name="choose_from_the_album">从相册选择</string>
+    <string name="removeItem">删除</string>
+    <string name="about_ours">关于我们</string>
+    <string name="register_declare_text">说明：完善个人信息后，如遇到账号变更，忘记注册密码时，可通过个人信息找回密码</string>
+    <string name="order_details_warm_hint">请在当日预约时间段前30分钟打印预约挂号凭条 挂号就诊，过号后系统将不予为您保留号源，此号源将作为爽约处理，当月爽约三次，将不能在平台上进行预约挂号等操作。</string>
+    <string name="delete_patient">删除就诊人</string>
+
+
+</resources>

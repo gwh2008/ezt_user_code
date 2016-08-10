@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <TextView 
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:text="服务介绍"
+            />
+        <TextView 
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:text="服务介绍"
+            />
+        <View 
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="@color/main_color"
+            android:layout_below="@id/one"
+            android:layout_alignLeft="@id/one"
+            android:layout_alignRight="@id/one"
+            />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="@color/main_color"
+            android:layout_alignLeft="@id/two"
+            android:layout_alignRight="@id/two"
+            />
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

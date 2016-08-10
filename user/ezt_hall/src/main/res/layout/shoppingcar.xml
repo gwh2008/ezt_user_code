@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/activity_title_bar" />
+
+    <ListView
+        android:id="@+id/productList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/titleLayout" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/allSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/check_off"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+
+        <TextView
+            android:id="@+id/recharge"
+            android:layout_width="@dimen/rimhos_bt_width"
+            android:layout_height="@dimen/rimhos_bt_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="结 算"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_toLeftOf="@+id/recharge"
+            android:layout_toRightOf="@+id/count"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/totalCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="总计：0元"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/transportWay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮费到付"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

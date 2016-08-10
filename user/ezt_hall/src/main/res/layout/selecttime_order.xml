@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/more2_large_margin"
+    android:paddingRight="@dimen/more2_large_margin" >
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/more_light_gray"
+        android:padding="@dimen/medium_margin" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/arrows_bottom_white" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin"
+        android:weightSum="2" >
+
+        <com.eztcn.user.eztcn.customView.ScrollerNumberPicker
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            spicker:itemNumber="3"
+            spicker:lineColor="@color/main_color"
+            spicker:maskHight="80dp"
+            spicker:noEmpty="true"
+            spicker:normalTextColor="@color/dark_gray"
+            spicker:normalTextSize="@dimen/medium_size"
+            spicker:selecredTextColor="@color/main_color"
+            spicker:selecredTextSize="@dimen/large_size"
+            spicker:unitHight="50dp" />
+
+        <include layout="@layout/ver_line" />
+
+        <com.eztcn.user.eztcn.customView.ScrollerNumberPicker
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            spicker:itemNumber="3"
+            spicker:lineColor="@color/main_color"
+            spicker:maskHight="32dp"  
+            spicker:noEmpty="true"
+            spicker:normalTextColor="@color/dark_gray"
+            spicker:normalTextSize="@dimen/medium_size"
+            spicker:selecredTextColor="@color/main_color"
+            spicker:selecredTextSize="@dimen/large_size"
+            spicker:unitHight="50dp" />
+    </LinearLayout>
+	
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:id="@+id/affirm"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/more_light_gray"
+        android:gravity="center"
+        android:paddingBottom="@dimen/large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="确  定"
+        android:textColor="@android:color/background_dark" />
+
+</LinearLayout>

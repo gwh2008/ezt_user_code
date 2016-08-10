@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/medium_margin" >
+
+    <ImageView
+        android:id="@+id/item_evaluate_img"
+        android:layout_width="@dimen/doc_img_width_small"
+        android:layout_height="@dimen/doc_img_height_small"
+        android:src="@drawable/default_doc_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/item_evaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="名称"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/item_evaluate_time"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_evaluate_name"
+            android:layout_below="@+id/item_evaluate_name"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/item_evaluate_content"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_evaluate_time"
+            android:layout_below="@+id/item_evaluate_time"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:text="利好消息啊，我们都可以去看看，这是给广大屌丝的福利，大家快去利好消息啊，我们都可以去看看，这是给广大屌丝的福利，大家快去"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/item_evaluate_reply"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_evaluate_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:visibility="gone"
+            android:background="@drawable/selector_listitem_bg"
+            android:text="回复" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/item_evaluate_reply"
+            android:layout_marginTop="@dimen/small_margin"
+            layout="@layout/hor_line" />
+    </RelativeLayout>
+
+</LinearLayout>

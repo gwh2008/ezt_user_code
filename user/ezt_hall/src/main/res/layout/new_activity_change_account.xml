@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/new_activity_title_bar"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_color_gray" />
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:gravity="left"
+            android:text="账   号"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/big_size_16"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/telephone_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_30"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/colorDark"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/big_size_16"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:background="@color/white"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="密   码"
+            android:textColor="@color/text_color_deep_gray"
+            android:textColorHint="@color/text_color_gray"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/password_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_30"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:textColor="@color/text_color_gray"
+            android:textColorHint="@color/colorDark"
+            android:textSize="@dimen/big_size_16"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:background="@color/white"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="身份证号"
+            android:textColor="@color/text_color_deep_gray"
+            android:textColorHint="@color/text_color_gray"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/id_number_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_30"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入身份证号"
+            android:textColor="@color/text_color_gray"
+            android:textColorHint="@color/colorDark"
+            android:textSize="@dimen/big_size_16"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+        <Button
+            android:id="@+id/next_step_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:layout_marginTop="@dimen/margin_top_25"
+            android:background="@drawable/new_oval_button_commit_blue"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_size_18" />
+    </RelativeLayout>
+</LinearLayout>

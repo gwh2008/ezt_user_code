@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/small_margin" >
+
+                <com.eztcn.user.eztcn.customView.RoundImageView
+                    android:id="@+id/head_pic"
+                    android:layout_width="@dimen/doc_img_width_normal"
+                    android:layout_height="@dimen/doc_img_height_normal"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/userman"
+                    imagecontrol:border_outside_color="@color/more_light_gray"
+                    imagecontrol:border_thickness="1dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="@dimen/medium_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/name_tv"
+                        android:layout_marginTop="@dimen/medium_margin" >
+
+                        <TextView
+                            android:id="@+id/sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/small_size" />
+
+                        <TextView
+                            android:id="@+id/age"
+                            style="@style/mediumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/medium_margin"
+                            android:text="7"
+                            android:textColor="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/mediumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="岁"
+                            android:textColor="@color/dark_gray"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/marryStatus"
+                            style="@style/mediumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/medium_margin"
+                            android:text="未婚"
+                            android:textColor="@color/dark_gray"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+            <TextView
+                android:id="@+id/disease_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="top|left"
+                android:hint="所犯疾病"
+                android:lines="2"
+                android:padding="@dimen/medium_margin"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size"
+                android:visibility="visible" />
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/allergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="top|left"
+                android:hint="药物过敏史"
+                android:lines="4"
+                android:padding="@dimen/medium_margin"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size"
+                android:visibility="visible" />
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_margin"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin"
+                android:text="就医就诊情况"
+                android:textColor="@color/main_color" />
+
+            <include layout="@layout/hor_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/small_margin"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="@dimen/medium_margin" >
+
+                    <com.eztcn.user.eztcn.customView.RoundImageView
+                        android:id="@+id/item_doc_img"
+                        android:layout_width="@dimen/doc_img_width_normal"
+                        android:layout_height="@dimen/doc_img_height_normal"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_doc_img"
+                        imagecontrol:border_outside_color="@color/more_light_gray"
+                        imagecontrol:border_thickness="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:gravity="center_vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/medium_margin" >
+
+                            <TextView
+                                android:id="@+id/item_doc_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:text="医生名称"
+                                android:textColor="@color/dark_black"
+                                android:textSize="@dimen/medium_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/item_attent_pos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/item_doc_name"
+                                android:layout_marginLeft="@dimen/medium_margin"
+                                android:layout_toRightOf="@+id/item_doc_name"
+                                android:text="职位"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="@dimen/small_size"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/item_hos_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/item_doc_name"
+                                android:layout_marginTop="@dimen/medium_margin"
+                                android:text="所属医院"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="@dimen/small_size" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/medium_margin" >
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="就诊时间"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/small_size" />
+
+                    <TextView
+                        android:id="@+id/clinical_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:text="2015/"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/small_size" />
+                </LinearLayout>
+
+                <include layout="@layout/hor_line" />
+
+                <TextView
+                    android:id="@+id/illness_desribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="病情描述(所犯疾病，症状描述，医生诊断)"
+                    android:lines="4"
+                    android:padding="@dimen/medium_margin"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/drug_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="top"
+                android:hint="用药描述"
+                android:lines="4"
+                android:padding="@dimen/medium_margin"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size" />
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/diagnosis_detial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="top"
+                android:hint="检验报告、数据"
+                android:lines="4"
+                android:padding="@dimen/medium_margin"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_size" />
+
+            <include layout="@layout/hor_line" />
+
+            <com.eztcn.user.eztcn.customView.MyListView
+                android:id="@+id/imgs_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" >
+            </com.eztcn.user.eztcn.customView.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

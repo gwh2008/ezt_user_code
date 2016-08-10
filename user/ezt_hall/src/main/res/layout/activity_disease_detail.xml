@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/intro_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/small_margin"
+                    android:text="概述"
+                    android:textSize="@dimen/medium_size" />
+
+                <include
+                    android:id="@+id/v_buttom_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/intro_txt"
+                    layout="@layout/hor_line" />
+
+                <TextView
+                    android:id="@+id/intro_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_buttom_line"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="详情描述"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/about_dept_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/intro_tv"
+                    android:layout_marginTop="@dimen/large_margin"
+                    android:text="相关科室"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/zhenduan_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_title_bar_size"
+                    android:background="@color/more_light_gray"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="诊断与鉴别"
+                        android:textSize="@dimen/medium_size" />
+
+                    <ImageView
+                        android:id="@+id/zhenduan_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrows_bottom" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/zhenduan_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_margin"
+                    android:text="诊断与鉴别"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/baojian_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_title_bar_size"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/more_light_gray"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="预防保健"
+                        android:textSize="@dimen/medium_size" />
+
+                    <ImageView
+                        android:id="@+id/baojian_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrows_bottom" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/baojian_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_margin"
+                    android:text="预防保健"
+                    android:textColor="@color/main_txt_color"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/more_light_gray"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/more_light_gray"
+                        android:paddingBottom="@dimen/small_margin"
+                        android:paddingLeft="@dimen/medium_margin"
+                        android:paddingTop="@dimen/small_margin"
+                        android:text="推荐医生"
+                        android:textSize="@dimen/medium_size" />
+
+                    <include layout="@layout/hor_line" />
+
+                    <com.eztcn.user.eztcn.customView.MyListView
+                        android:id="@+id/detail_doc_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white" >
+                    </com.eztcn.user.eztcn.customView.MyListView>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:visibility="gone"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/large_margin"
+                    android:layout_marginTop="@dimen/large_margin" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

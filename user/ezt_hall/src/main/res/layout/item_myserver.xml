@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/selector_setting_item_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/medium_margin" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/myserver_icon" />
+
+    <TextView
+        android:id="@+id/serverName"
+        style="@style/mediumText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_weight="1"
+        android:text="养老服务卡A类服务" />
+
+    <TextView
+        style="@style/mediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/medium_margin"
+        android:text="|"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/orderServer"
+        style="@style/mediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预约服务"
+        android:textColor="@color/dark_gray" />
+
+</LinearLayout>

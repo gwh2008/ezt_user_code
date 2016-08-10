@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@color/main_bg_color"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/filter_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/editText_height"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingRight="@dimen/small_margin" >
+
+        <com.eztcn.user.eztcn.customView.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/choice_city_cancel_bt"
+            android:background="@drawable/selector_sorlistview_search_bar_edit"
+            android:drawableLeft="@drawable/ic_search_small"
+            android:hint="请输入关键字"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@+id/choice_city_cancel_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="取消"
+            android:textColor="@color/main_color"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/clear_edit_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bbbbbb" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:background="@android:color/white"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:listSelector="@drawable/selector_listitem_bg"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/city_show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.eztcn.user.eztcn.customView.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

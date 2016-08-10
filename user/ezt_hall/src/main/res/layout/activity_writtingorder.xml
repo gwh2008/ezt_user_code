@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed" >
+
+    <RelativeLayout
+        android:id="@id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@color/user_name_color" >
+
+        <TextView
+            android:id="@+id/left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_back_btn_bg"
+            android:drawableLeft="@drawable/back_icon"
+            android:drawablePadding="@dimen/small_margin"
+            android:gravity="center"
+            android:paddingLeft="@dimen/more_large_margin"
+            android:paddingRight="@dimen/more_large_margin"
+            android:textColor="@android:color/black"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxEms="8"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen17sp" />
+
+        <ImageView
+            android:id="@+id/right_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/right_btn"
+            android:background="@drawable/selector_back_btn_bg"
+            android:paddingLeft="@dimen/more_large_margin"
+            android:paddingRight="@dimen/more_large_margin"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/small_margin"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/user_name_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/commitCheckLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drug_btn_bg_h"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white" >
+
+        <!--
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/title_line_grey" />
+
+        -->
+
+        <Button
+            android:id="@+id/commitCheckOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/search_height_30"
+            android:layout_marginRight="@dimen/search_height_30"
+            android:layout_height="@dimen/drug_w_item_height"
+            android:layout_centerInParent="true"
+            android:text="提交订单"
+            android:textSize="@dimen/drug_text_super_large_size"
+            android:background="@color/new_orange"
+            android:textColor="@color/colorWhite"
+            >
+        </Button>
+    </RelativeLayout>
+
+    <!-- <ScrollView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_above="@id/commitCheckOrderBtn" -->
+    <!-- android:layout_below="@id/tilteLayout" -->
+    <!-- android:layout_marginBottom="@dimen/medium_margin" -->
+    <!-- android:visibility="visible" > -->
+
+    <LinearLayout
+        android:id="@+id/contentLLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/commitCheckLayout"
+        android:layout_below="@id/titleLayout"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="#ededed"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/orderDetailLLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:id="@+id/detail"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/more_large_margin"
+                android:text="订单明细" />
+
+            <ImageView
+                android:id="@+id/downBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/more2_large_margin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:src="@drawable/arrowdown" />
+
+            <TextView
+                android:id="@+id/costTv"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/downBtn"
+                android:text="实付总额"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/orderCostRLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail"
+            android:background="@color/bg_white"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/orderCostLv"
+                style="@style/lvStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:divider="@color/light_gray"
+                android:fadingEdge="vertical"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:scrollingCache="false" >
+            </ListView>
+        </RelativeLayout>
+
+        <ScrollView
+            android:scrollbars="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/more2_large_margin"
+                    android:text="就诊当天需要您注意以下事项：" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/noticeItemTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:singleLine="false"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/careMoreTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/noticeItemTv"
+                        android:layout_marginRight="@dimen/medium_margin"
+                        android:background="@drawable/conners_w_button"
+                        android:padding="@dimen/small_margin"
+                        android:text="更多"
+                        android:textColor="@color/main_color" >
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/light_gray" >
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/patientRLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg" >
+
+                    <TextView
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/more_large_margin"
+                        android:text="就诊人" />
+
+                    <TextView
+                        android:id="@+id/patientTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/medium_margin"
+                        android:drawablePadding="@dimen/medium_margin"
+                        android:drawableRight="@drawable/czt"
+                        android:text="必选"
+                        android:textColor="@color/main_txt_color" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:background="@color/light_gray" >
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white" >
+
+                    <TextView
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/more_large_margin"
+                        android:text="联系电话" />
+
+                    <EditText
+                        android:id="@+id/mobileTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/medium_margin"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:gravity="right"
+                        android:hint="请输入您的联系电话（必填）"
+                        android:imeOptions="actionDone"
+                        android:numeric="integer"
+                        android:textColorHint="@color/main_txt_color" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:background="@color/light_gray"
+                    android:paddingLeft="@dimen/large_margin" >
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white" >
+
+                    <TextView
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/more_large_margin"
+                        android:text="预约要求" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hopeRLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/more2_large_margin"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@drawable/conners_w_txt" >
+
+                    <TextView
+                        android:id="@+id/hopeHintTv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:drawableLeft="@drawable/check_edit"
+                        android:text="例如希望在上午10点前进行检查等"
+                        android:textColor="@color/main_txt_color"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/hopeEt"
+                        style="@style/mediumText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:minLines="5"
+                        android:padding="@dimen/medium_margin"
+                        android:singleLine="false"
+                        android:textColor="@color/main_txt_color"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</RelativeLayout>

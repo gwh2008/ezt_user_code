@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bar_size"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bar_bg"
+        android:gravity="center"
+        android:text="选择时间"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_size" />
+
+    <include
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/title"
+        layout="@layout/hor_line" />
+
+    <ListView
+        android:id="@+id/dialog_lt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hor_line"
+        android:layout_below="@+id/line"
+        android:background="@android:color/white"
+        android:listSelector="@drawable/selector_setting_item_bg"
+        android:scrollbars="none" >
+    </ListView>
+
+    <include
+        android:id="@+id/hor_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/cancel_tv"
+        layout="@layout/hor_line" />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bar_size"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_setting_item_bg"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/large_size" />
+
+</RelativeLayout>

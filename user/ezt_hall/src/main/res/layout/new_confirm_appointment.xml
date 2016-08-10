@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="就诊医院"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/new_confirm_appointment_select_hospital_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="北京东直门医院"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:maxEms="13"
+                    android:singleLine="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="就诊科室"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_confirm_appointment_select_department_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="血管科"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="就诊医生"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_confirm_appointment_select_doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="张医生"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="挂号费用"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_confirm_appointment_select_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="¥26.00"
+                    android:textColor="@color/apply_success"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="候诊时间"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_confirm_appointment_select_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="2016年4月45号 周一 8:00-9:00"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_confirm_appointment_select_person"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="就诊人"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_confirm_appointment_select_patient_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_10"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:src="@drawable/new_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_activity_confirm_appointment_healthCare_status"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="就诊状态"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_activity_confirm_appointment_healthCare_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_10"
+                    android:gravity="center_vertical"
+                    android:text="初诊"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:src="@drawable/new_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_activity_confirm_appointment_healthCare_cardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                 android:visibility="gone"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="就诊卡号"
+
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/new_activity_confirm_appointment_healthCare_cardNumber_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_activity_confirm_appointment_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="缴费方式"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_activity_confirm_appointment_pay_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_10"
+                    android:gravity="center_vertical"
+                    android:text="自费"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:src="@drawable/new_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_activity_confirm_appointment_medical_cardNumber"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:visibility="gone"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="医保卡号"
+
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/new_activity_confirm_appointment_medical_cardNumber_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_gray"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="支付方式"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:gravity="center_vertical"
+                    android:text="到院缴费"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:visibility="gone"
+                    android:src="@drawable/new_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="温馨提示"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height_0.5"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_left_15"
+                android:text="如果专家停诊，您的预约将会被取消，我们会以短信通知您，请保持手机畅通，并及时关注订单预约动态。"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_layout_height_65"
+        android:layout_marginTop="@dimen/line_height_0.5"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/new_activity_confirm_appointment_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:background="@drawable/new_oval_button_commit_orange"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_size_18" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <!-- 广告滚动圆点View -->
+<!--             android:background="@drawable/shape_point_normal" -->
+    <View
+        android:id="@+id/point_view"
+        android:layout_width="7dip"
+        android:layout_height="7dip"
+        android:background="@drawable/home_potint_grey"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        />
+
+</LinearLayout>

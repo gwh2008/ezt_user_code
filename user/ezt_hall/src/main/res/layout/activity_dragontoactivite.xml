@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/not_activite_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/large_margin"
+                        android:layout_marginTop="@dimen/more_large_margin"
+                        android:src="@drawable/dragon_card" />
+
+                    <TextView
+                        android:id="@+id/title_tv"
+                        style="@style/largeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="各建行网点均可办理此卡"
+                        android:textColor="@color/main_color" />
+
+                    <TextView
+                        android:id="@+id/info_tv"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/large_margin"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:maxEms="15"
+                        android:text="您还没有激活绑定建行医指通龙卡，一旦绑定即可享受医指通龙卡服务"
+                        android:textColor="@color/main_txt_color" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/activate_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large_margin"
+                    android:layout_marginRight="@dimen/large_margin"
+                    android:layout_marginTop="@dimen/more_large_margin"
+                    android:background="@drawable/selector_main_btn_bg"
+                    android:text="马上激活绑定"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/large_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

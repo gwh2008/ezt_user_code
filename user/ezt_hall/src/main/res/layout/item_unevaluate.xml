@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_setting_item_bg"
+    android:paddingLeft="@dimen/medium_margin" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height_size"
+        android:gravity="center_vertical"
+        android:text="就诊时间："
+        android:textSize="@dimen/medium_size" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_size" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/title_bar"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_margin" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务内容" />
+
+            <TextView
+                android:id="@+id/service_intro_tv"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:lineSpacingExtra="5dp"
+                android:lineSpacingMultiplier="1"
+                android:padding="@dimen/small_margin"
+                android:textColor="@color/font_unclick_color" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/medium_margin"
+                layout="@layout/hor_line" />
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务须知" />
+
+            <TextView
+                android:id="@+id/service_know_tv"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:lineSpacingExtra="5dp"
+                android:lineSpacingMultiplier="1"
+                android:padding="@dimen/small_margin"
+                android:textColor="@color/font_unclick_color" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/medium_margin"
+                layout="@layout/hor_line" />
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务流程" />
+
+            <TextView
+                android:id="@+id/service_flow_tv"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:lineSpacingExtra="5dp"
+                android:lineSpacingMultiplier="1"
+                android:padding="@dimen/small_margin"
+                android:textColor="@color/font_unclick_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/bottom_layout"
+        layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="@dimen/large_margin"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/used_tv"
+            style="@style/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_main_btn_bg"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="使用服务"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/num_tv"
+            style="@style/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/main_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

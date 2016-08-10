@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/small_margin" >
+
+    <com.eztcn.user.eztcn.customView.RoundImageView
+        android:id="@+id/head_pic"
+        android:layout_width="@dimen/doc_img_width_normal"
+        android:layout_height="@dimen/doc_img_width_normal"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/new_default_doctor_head_man"
+        imagecontrol:border_outside_color="@color/more_light_gray"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        imagecontrol:border_thickness="1dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="2014-12-11"
+            android:textColor="@color/main_txt_color" />
+
+        <TextView
+            android:id="@+id/d_name"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="王小飞"
+            android:textColor="@color/dark_black"
+            android:textStyle="bold"
+            android:layout_below="@id/time"
+            />
+
+        <TextView
+            android:id="@+id/d_title"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@+id/d_name"
+            android:background="@drawable/item_attent_pos_bg"
+            android:padding="@dimen/small_margin"
+            android:text="主任医师"
+            android:textColor="@color/main_txt_color"
+            android:layout_below="@id/time"
+             />
+        
+        <TextView 
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@+id/d_name"
+            android:layout_alignTop="@id/d_name"
+            android:textColor="@color/drug_light_tx_color"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_alignTop="@id/d_name"
+            android:id="@+id/stateTv"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/large_margin"
+            android:textColor="@color/bg_white"
+            android:background="@drawable/selector_main_btn_bg"
+            android:padding="2dp"
+            />
+        <TextView
+            android:id="@+id/hos_name"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/d_name"
+            android:layout_alignRight="@+id/d_title"
+            android:layout_below="@+id/d_name"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="天津第一人民医院"
+            android:textColor="@color/main_txt_color" />
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/cancel"
+                style="@style/mediumText"
+                android:layout_width="@dimen/small_btn_width"
+                android:layout_height="@dimen/small_btn_height"
+                android:background="@drawable/selector_small_button_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/medium_margin"
+                android:text="退号"
+                android:textColor="@color/dark_black"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/user_arrow_icon_gray"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/thankLetter"
+                style="@style/mediumText"
+                android:layout_width="@dimen/small_btn_width"
+                android:layout_height="@dimen/small_btn_height"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@drawable/shape_lightgreen_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:text="感谢信"
+                android:textColor="@color/dark_black"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dept"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/time"
+            android:layout_toRightOf="@id/hos_name"
+            android:paddingRight="@dimen/medium_margin"
+            android:singleLine="true"
+            android:text="内科"
+            android:textColor="@color/main_txt_color"
+            android:layout_marginLeft="5dp"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

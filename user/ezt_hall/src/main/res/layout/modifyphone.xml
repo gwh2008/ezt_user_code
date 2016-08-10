@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <include layout="@layout/activity_view_margin_bar" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin"
+        android:weightSum="13"
+         >
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新手机号" />
+
+        <EditText
+            android:id="@+id/newPhone"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|left"
+            android:hint="@string/input_telphone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/medium_margin"
+            android:layout_weight="9"
+            >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin"
+        android:weightSum="13" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/securityCode"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="number" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/getSecurityCode"
+            style="@style/smallText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码" />
+<!--  android:inputType="numberPassword" 2015-12-25 密码不能只是纯数字-->
+        <EditText
+            android:id="@+id/vPassword"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:digits="@string/register_digits"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+           
+            android:maxLength="20"
+            android:paddingRight="@dimen/medium_margin" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/affirmModify"
+        style="@style/largeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:gravity="center"
+        android:text="确认修改"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

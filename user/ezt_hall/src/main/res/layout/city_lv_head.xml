@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/choice_location_cityhint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="定位到的城市"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/choice_location_city_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="正在定位..."
+        android:listSelector="@drawable/selector_listitem_bg"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:textSize="@dimen/medium_size"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/choice_common_cityhint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:text="经常选择的城市"
+        android:visibility="visible" />
+
+    <com.eztcn.user.eztcn.customView.MyListView
+        android:id="@+id/choice_common_city_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@drawable/selector_listitem_bg"
+        android:visibility="visible" />
+
+</LinearLayout>

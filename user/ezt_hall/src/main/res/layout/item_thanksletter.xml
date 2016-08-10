@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/patientPhoto"
+            android:layout_width="@dimen/doc_img_width_small"
+            android:layout_height="@dimen/doc_img_height_small"
+            android:scaleType="centerInside"
+            android:src="@drawable/userman"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+
+        <LinearLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin" >
+
+            <TextView
+                android:id="@+id/patientName"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李响"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/evaluateType"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_margin"
+                android:text="预约挂号"
+                android:textColor="@color/dark_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/alignLabel"
+            android:layout_width="@dimen/doc_img_width_small"
+            android:layout_height="@dimen/doc_img_height_small" />
+
+        <TextView
+            android:id="@+id/evaluateContent"
+            style="@style/smallText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_toRightOf="@+id/alignLabel"
+            android:text="谢谢王医生，谢谢王医生谢谢王医生谢谢王医生谢谢王医生谢谢王医生谢谢王医生谢谢王医生谢谢王。"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/treatmentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/evaluateContent"
+            android:layout_below="@+id/evaluateContent"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="就诊于2014-12-21 12：00"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+    </RelativeLayout>
+
+</LinearLayout>

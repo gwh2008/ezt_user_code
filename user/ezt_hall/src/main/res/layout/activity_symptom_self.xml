@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/part_bg"
+            android:visibility="visible" >
+
+            <com.eztcn.user.eztcn.customView.PersonPartView
+                android:id="@+id/person_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/person_sex_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:drawablePadding="@dimen/medium_margin"
+                android:drawableTop="@drawable/selector_man_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/medium_margin"
+                android:text="男"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/medium_size" />
+
+            <TextView
+                android:id="@+id/person_position_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/person_view"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:drawablePadding="@dimen/medium_margin"
+                android:drawableTop="@drawable/selector_rotation_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/medium_margin"
+                android:text="正面"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/medium_size" />
+        </RelativeLayout>
+
+        <!-- The navigation drawer -->
+
+        <LinearLayout
+            android:id="@+id/hide_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/main_bg_color"
+            android:drawSelectorOnTop="false"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <ListView
+                android:id="@+id/hide_part_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/more_light_gray"
+                android:choiceMode="singleChoice"
+                android:scrollbars="none" >
+            </ListView>
+
+            <include layout="@layout/ver_line" />
+
+            <ListView
+                android:id="@+id/hide_Symptom_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:choiceMode="singleChoice"
+                android:listSelector="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/margin_bottom_16"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:textSize="@dimen/big_size_16"
+        android:textColor="@color/text_color_deep_gray"
+        android:text="张大大"
+        />
+    <ImageView
+        android:id="@+id/sex"
+        android:layout_width="@dimen/icon_size_18"
+        android:layout_height="@dimen/icon_size_18"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:src="@drawable/new_girl_icon"
+        />
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:textSize="@dimen/big_size_16"
+        android:textColor="@color/text_color_gray"
+        android:text="27岁"
+        />
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_8"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_size_16"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:textColor="@color/text_color_gray"
+            android:text="北京东直门第三医院"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:textSize="@dimen/big_size_16"
+            android:textColor="@color/border_line"
+            android:text="审核中"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_top_8"
+        android:layout_marginBottom="@dimen/margin_bottom_16"
+        >
+        <TextView
+            android:id="@+id/apply_for_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:textSize="@dimen/big_size_16"
+            android:textColor="@color/text_color_deep_gray"
+            android:text="@string/apply_time"
+            />
+        <TextView
+            android:id="@+id/apply_for_time_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_size_16"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:text="2016/09/12"
+            />
+    </LinearLayout>
+
+</LinearLayout>

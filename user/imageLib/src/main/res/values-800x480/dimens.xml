@@ -1,0 +1,18 @@
+
+<!-- 480*800 -->
+<resources>
+
+    <!-- 顶部栏高度 -->
+    <dimen name="title_height_size">43dp</dimen>
+
+    <!-- +大字体 -->
+    <dimen name="more_large_size">18sp</dimen>
+    <!-- 大字体 -->
+    <dimen name="large_size">16sp</dimen>
+    <!-- 中字体 -->
+    <dimen name="medium_size">14sp</dimen>
+    <!-- 小字体 -->
+    <dimen name="small_size">12sp</dimen>
+
+   
+</resources>

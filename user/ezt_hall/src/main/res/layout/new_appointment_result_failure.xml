@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_115"
+        android:src="@drawable/new_appointment_failure"/>
+    <TextView
+        android:id="@+id/error_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_left_15"
+        android:text="很遗憾，该专家号源已被抢完，"
+        android:textColor="@color/text_color_deep_gray"
+        android:textSize="@dimen/text_size_16" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/search_margin_top_7"
+        android:text="给您带来的不便敬请谅解！"
+        android:textColor="@color/text_color_deep_gray"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_16" />
+
+
+</LinearLayout>

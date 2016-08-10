@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+    <!-- 购买服务 -->
+
+    <RelativeLayout
+        android:id="@+id/buyServer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@null"
+            android:drawablePadding="@dimen/more2_large_margin"
+            android:gravity="center"
+            android:padding="@dimen/medium_margin"
+            android:text="服务购买"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+    <!-- 激活绑定 -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/activateServer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:drawableLeft="@null"
+            android:drawablePadding="@dimen/more2_large_margin"
+            android:gravity="center"
+            android:padding="@dimen/medium_margin"
+            android:text="激活绑定"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <!-- 查找手表 -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/searchWatch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:layout_marginTop="@dimen/more2_large_margin" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dip"
+            android:layout_alignParentTop="true"
+            layout="@layout/hor_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           android:drawableLeft="@null"
+            android:drawablePadding="@dimen/more2_large_margin"
+            android:gravity="center"
+            android:padding="@dimen/medium_margin"
+            android:text="查找手表"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+
+        <include
+            android:layout_width="wrap_content"
+           android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            layout="@layout/hor_line" />
+    </RelativeLayout>
+
+</LinearLayout>

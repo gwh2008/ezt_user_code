@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/orderbed_hintLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bed_hint_height"
+        android:background="@color/main_color" >
+
+        <View
+            android:id="@+id/ckline"
+            android:layout_width="1dip"
+            android:layout_height="@dimen/bed_hint_line_heigt"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/bedHintTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ckline"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="办理预约病床需"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/drug_text_small_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ckline"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="该费用由医院收取"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/drug_text_small_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/deptList"
+        android:divider="@color/line_margin_widget_color"
+        android:dividerHeight="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/selector_listitem_bg" >
+    </ListView>
+
+</LinearLayout>

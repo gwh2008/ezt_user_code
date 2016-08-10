@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_bg_color" >
+    </View>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/service_order_check_layout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:layout_marginTop="@dimen/head_icon_name_margin_left" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_service_order_check_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center"
+                        android:text="@string/appoint_doctor"
+                        android:textColor="@color/user_item_tx_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/appoint_doctor_hint"
+                        android:textColor="@color/font_unclick_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--
+             <com.eztcn.user.eztcn.customView.RotateTextView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/free"
+            android:textColor="@color/bg_white"
+            android:gravity="center"
+            custom:rotate="45"
+            custom:translateX="1" 
+            android:visibility="gone"
+            />
+                -->
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_service_right_corner_red" />
+
+                    <com.eztcn.user.eztcn.customView.MyTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|right"
+                        android:text="免费"
+                        android:textColor="@color/bg_white"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_order_hospital_bed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:layout_marginTop="@dimen/head_icon_name_margin_left" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_service_order_bed_icon" />
+                <!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_service_right_corner_red"
+            android:layout_alignParentRight="true"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/large_size"
+            android:text="@string/free"
+            />
+                -->
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_service_right_corner_red" />
+
+                    <com.eztcn.user.eztcn.customView.MyTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|right"
+                        android:text="免费"
+                        android:textSize="12sp"
+                        android:textColor="@color/bg_white" >
+                    </com.eztcn.user.eztcn.customView.MyTextView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center"
+                        android:text="@string/appoint_hospital_bed"
+                        android:textColor="@color/user_item_tx_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/appoint_hospital_bed_hint"
+                        android:textColor="@color/font_unclick_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_order_drug_layout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:layout_marginTop="@dimen/head_icon_name_margin_left" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_service_order_drug_icon" />
+                <!--
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_service_right_corner_red"
+            android:layout_alignParentRight="true"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/large_size"
+            android:text="¥59"
+            />
+                -->
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_service_right_corner_red" />
+
+                    <com.eztcn.user.eztcn.customView.MyTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|right"
+                        android:text="免费"
+                        android:textSize="12sp"
+                        android:textColor="@color/bg_white" >
+                    </com.eztcn.user.eztcn.customView.MyTextView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center"
+                        android:text="@string/appoint_drug"
+                        android:textColor="@color/user_item_tx_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/appoint_drug_hint"
+                        android:textColor="@color/font_unclick_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_guide_service_layout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:layout_marginTop="@dimen/head_icon_name_margin_left" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_service_guidance_order" />
+                <!--
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_service_right_corner_red"
+            android:layout_alignParentRight="true"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/large_size"
+            android:text="¥59"
+            />
+                -->
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_service_right_corner_green" />
+
+                    <com.eztcn.user.eztcn.customView.MyTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|right"
+                        android:text="¥59"
+                        android:textSize="12sp"
+                        android:textColor="@color/bg_white" >
+                    </com.eztcn.user.eztcn.customView.MyTextView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center"
+                        android:text="@string/appoint_guidance_service"
+                        android:textColor="@color/user_item_tx_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/appoint_guidance_service_hint"
+                        android:textColor="@color/font_unclick_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_accompany_service_layout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="@dimen/user_margin_right"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:layout_marginTop="@dimen/head_icon_name_margin_left" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_service_accompany_icon" />
+                <!--
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_service_right_corner_red"
+            android:layout_alignParentRight="true"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/large_size"
+            android:text="¥59"
+            />
+                -->
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_service_right_corner_green" />
+
+                    <com.eztcn.user.eztcn.customView.MyTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|right"
+                        android:text="¥199"
+                        android:textSize="10sp"
+                        android:textColor="@color/bg_white" >
+                    </com.eztcn.user.eztcn.customView.MyTextView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center"
+                        android:text="@string/appoint_accompany_service"
+                        android:textColor="@color/user_item_tx_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/appoint_accompany_service_hint"
+                        android:textColor="@color/font_unclick_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

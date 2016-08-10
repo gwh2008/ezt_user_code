@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <stroke
+        android:width="2dp"
+        android:color="#ffffff" /> <!-- 定义描边的宽度和描边的颜色值 -->
+    <!--实线颜色-->
+    <solid
+        android:color="#ffffff"/>
+
+
+
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="4dp"
+        android:bottomRightRadius="4dp"
+        android:topLeftRadius="4dp"
+        android:topRightRadius="4dp" /> <!-- 设置四个角的半径 -->
+
+
+</shape>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- http://blog.csdn.net/beiminglei/article/details/9317997 -->
+
+    <TextView
+        android:id="@+id/orderHintTv"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen15"
+        android:gravity="center"
+        android:singleLine="false" />
+
+</LinearLayout>

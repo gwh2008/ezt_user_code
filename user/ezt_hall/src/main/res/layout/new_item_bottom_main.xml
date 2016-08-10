@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/rg_content_bottom"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/new_bottomTheme"
+            android:drawableTop="@drawable/new_home_defau"
+            android:text="门诊大厅" />
+
+        <RadioButton
+            android:id="@+id/rb_newscenter"
+            style="@style/new_bottomTheme"
+            android:drawableTop="@drawable/new_message_defau"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/rb_smartservice"
+            style="@style/new_bottomTheme"
+            android:drawableTop="@drawable/new_find_deafau"
+            android:text="发现" />
+
+
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/new_bottomTheme"
+            android:drawableTop="@drawable/new_my_defau"
+            android:text="我" />
+    </RadioGroup>
+
+
+
+</LinearLayout>

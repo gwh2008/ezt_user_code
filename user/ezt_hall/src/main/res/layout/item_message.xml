@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg" >
+
+        <ImageView
+            android:id="@+id/msgIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen15"
+            android:layout_marginTop="@dimen/drug_type_margin_top"
+            android:src="@drawable/msg_dzxy" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_toRightOf="@id/msgIcon"
+            android:singleLine="true"
+            android:text="月月挂号"
+            android:textColor="@color/drug_black"
+            android:textSize="@dimen/dimen16sp" />
+
+        <TextView
+            android:id="@+id/contentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/titleTv"
+            android:layout_below="@id/titleTv"
+            android:layout_marginTop="@dimen/dimen6"
+            android:maxEms="18"
+            android:singleLine="false"
+            android:text="您已成功提交专属医生指导挂号订单！请您保持电话畅通！"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/drug_grey"
+            android:textSize="@dimen/dimen14sp" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen15"
+            android:layout_marginTop="@dimen/dimen25"
+            android:text="2016年4月1日"
+            android:textColor="@color/msg_grey"
+            android:textSize="@dimen/hall_home_mid_font" />
+    </RelativeLayout>
+
+</RelativeLayout>

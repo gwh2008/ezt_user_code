@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+    <com.eztcn.user.eztcn.customView.RoundImageView
+        android:id="@+id/user_head"
+        android:layout_width="@dimen/head_icon_size"
+        android:layout_height="@dimen/head_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/user_margin_right"
+        android:src="@drawable/userman"
+        imagecontrol:border_outside_color="@color/more_light_gray"
+        imagecontrol:border_thickness="1dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/user_head"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+             <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"
+            android:textColor="@color/user_item_tx_color"
+            android:textStyle="bold"
+            android:text="分泌物"
+            />
+             <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:textSize="11sp"
+            android:textColor="@color/discovery_title_little_tx_color"
+            android:text="2016年2月30号22日16:33"
+            />
+        </RelativeLayout>
+        
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/font_unclick_color"
+            android:text="门诊大楼三层501"
+            />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/font_unclick_color"
+            android:text="检查费"
+            />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/order_details_money_icon"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:textColor="#ef5d71"
+            android:text="26.00"
+            />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <CheckBox
+            android:id="@+id/automatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:background="@drawable/selector_check_style"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="2sp"
+             />
+
+</RelativeLayout>

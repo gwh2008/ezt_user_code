@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/medium_margin" 
+    android:paddingBottom="@dimen/medium_margin">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智慧体验"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/small_size" />
+
+    <ImageView
+        android:id="@+id/micro_hm_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:scaleType="centerInside"
+        />
+<!--  android:src="@drawable/micro_server_2" -->
+</LinearLayout>

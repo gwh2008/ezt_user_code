@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/noopsyche_threehos_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="三甲医院：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_threehos_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:text="否"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/dimen16sp" />
+
+                    <!-- <CheckBox -->
+                    <!-- android:id="@+id/noopsyche_threehos_cb" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_alignParentRight="true" -->
+                    <!-- android:layout_centerVertical="true" -->
+                    <!-- android:layout_marginRight="@dimen/more_large_margin" /> -->
+
+                </RelativeLayout>
+
+              <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/title_line_grey" />
+                <!-- <include -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="0.5dp" -->
+                <!-- android:layout_gravity="bottom" -->
+                <!-- android:layout_marginLeft="@dimen/large_margin" -->
+                <!-- android:layout_marginRight="@dimen/large_margin" -->
+                <!-- layout="@layout/hor_line" > -->
+                <!-- </include> -->
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_num_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/noopsyche_appoint_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="预约有号" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_appoint_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:text="否"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/dimen16sp" />
+
+                    <!-- <CheckBox -->
+                    <!-- android:id="@+id/noopsyche_appoint_cb" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_alignParentRight="true" -->
+                    <!-- android:layout_centerVertical="true" -->
+                    <!-- android:layout_marginRight="@dimen/more_large_margin" /> -->
+                </RelativeLayout>
+ <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/title_line_grey" />
+<!--                 <include -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="0.5dp" -->
+<!--                     android:layout_gravity="bottom" -->
+<!--                     android:layout_marginLeft="@dimen/large_margin" -->
+<!--                     android:layout_marginRight="@dimen/large_margin" -->
+<!--                     layout="@layout/hor_line" > -->
+<!--                 </include> -->
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_rate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/noopsyche_rate_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="预约率较高" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_rate_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:text="否"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/dimen16sp" />
+                    <!-- <CheckBox -->
+                    <!-- android:id="@+id/noopsyche_rate_cb" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_alignParentRight="true" -->
+                    <!-- android:layout_centerVertical="true" -->
+                    <!-- android:layout_marginRight="@dimen/more_large_margin" /> -->
+                </RelativeLayout>
+ <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/title_line_grey" />
+<!--                 <include -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="0.5dp" -->
+<!--                     android:layout_gravity="bottom" -->
+<!--                     android:layout_marginLeft="@dimen/large_margin" -->
+<!--                     android:layout_marginRight="@dimen/large_margin" -->
+<!--                     layout="@layout/hor_line" > -->
+<!--                 </include> -->
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height" >
+
+                <RelativeLayout
+                    android:id="@+id/noopsyche_evaluate_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="评价较高" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_evaluate_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:text="否"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/dimen16sp" />
+                    <!-- <CheckBox -->
+                    <!-- android:id="@+id/noopsyche_evaluate_cb" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_alignParentRight="true" -->
+                    <!-- android:layout_centerVertical="true" -->
+                    <!-- android:layout_marginRight="@dimen/more_large_margin" /> -->
+                </RelativeLayout>
+  <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/title_line_grey" />
+<!--                 <include -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="0.5dp" -->
+<!--                     android:layout_gravity="bottom" -->
+<!--                     android:layout_marginLeft="@dimen/large_margin" -->
+<!--                     android:layout_marginRight="@dimen/large_margin" -->
+<!--                     layout="@layout/hor_line" > -->
+<!--                 </include> -->
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_level_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/noopsyche_level_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="级别高到低" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_level_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:text="否"
+                        android:textColor="@color/drug_black"
+                        android:textSize="@dimen/dimen16sp" />
+                    <!-- <CheckBox -->
+                    <!-- android:id="@+id/noopsyche_level_cb" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_alignParentRight="true" -->
+                    <!-- android:layout_centerVertical="true" -->
+                    <!-- android:layout_marginRight="@dimen/more_large_margin" /> -->
+                </RelativeLayout><View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/title_line_grey" >
+                </View>
+
+<!--                 <include -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="0.5dp" -->
+<!--                     android:layout_gravity="bottom" -->
+<!--                     layout="@layout/hor_line" > -->
+<!--                 </include> -->
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/pop_bt"
+                style="@style/largeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_setting_item_bg"
+                android:gravity="center"
+                android:text="确 定" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

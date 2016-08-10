@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/reservation_form_relayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:background="@drawable/selector_setting_item_bg"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:text="预约单"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/user_name_size"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:src="@drawable/user_arrow_icon_gray"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_line"
+        android:background="@color/line_margin_widget_color"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/order_check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:background="@drawable/selector_setting_item_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:text="预约检查"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/user_name_size"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:src="@drawable/user_arrow_icon_gray"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_line"
+        android:background="@color/line_margin_widget_color"/>
+
+    <RelativeLayout
+        android:id="@+id/order_bed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:background="@drawable/selector_setting_item_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:text="预约病床"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/user_name_size"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:src="@drawable/user_arrow_icon_gray"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_line"
+        android:background="@color/line_margin_widget_color"/>
+
+    <RelativeLayout
+        android:id="@+id/medical_help_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:background="@drawable/selector_setting_item_bg"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:text="@string/medical_help"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/user_name_size"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:src="@drawable/user_arrow_icon_gray"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/view_margin_widget_color"/>
+
+</LinearLayout>

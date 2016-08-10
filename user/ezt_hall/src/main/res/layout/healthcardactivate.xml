@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <EditText
+        android:id="@+id/healthcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:ems="10"
+        android:hint="请输入卡号"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="numberPassword"
+        android:singleLine="true" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/affirmActivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more2_large_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:text="确认激活"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_size" />
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@color/title_bar_bg" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxEms="6"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/more_large_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discover_shopping_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="@drawable/selector_setting_item_bg"
+        android:paddingLeft="@dimen/large_margin"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/found_icon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_toRightOf="@+id/imageView11"
+            android:text="微商城"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:id="@+id/discover_information_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="@drawable/selector_setting_item_bg"
+        android:paddingLeft="@dimen/large_margin" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/found_icon2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="微资讯"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:id="@+id/discover_rim_hos_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:background="@drawable/selector_setting_item_bg"
+        android:paddingLeft="@dimen/large_margin" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/found_icon3" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="周边医院"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discover_scan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height_mediue"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="@drawable/selector_setting_item_bg"
+        android:paddingLeft="@dimen/large_margin" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/found_icon4" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="扫一扫"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/read_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_title_layout_height"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher" />
+
+</LinearLayout>

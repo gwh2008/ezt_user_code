@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:paddingRight="@dimen/user_margin_right" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旧密码" />
+
+        <EditText
+            android:id="@+id/oldPassword"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|left"
+            android:hint="@string/input_old_password"
+            android:inputType="textPassword"
+            android:digits="@string/register_digits"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" 
+            android:paddingLeft="@dimen/user_margin_right"
+            >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:paddingRight="@dimen/user_margin_right" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码" />
+
+        <EditText
+            android:id="@+id/newPassword"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|left"
+            android:hint="@string/input_new_password"
+            android:digits="@string/register_digits"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#aaaaaa"
+            android:paddingLeft="@dimen/user_margin_right"
+             >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:paddingRight="@dimen/user_margin_right" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认新密码" />
+
+        <EditText
+            android:id="@+id/affirmPassword"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|left"
+            android:hint="@string/input_new_password_again"
+            android:digits="@string/register_digits"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#aaaaaa" 
+            android:paddingLeft="@dimen/user_margin_right"
+            >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/user_margin_right"
+        android:layout_marginRight="@dimen/user_margin_right"
+        android:layout_marginTop="@dimen/more_large_margin"
+       >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_size"
+            android:visibility="gone"
+             />
+
+        <Button
+            android:id="@+id/affirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:text="确认修改"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_size"
+            android:layout_marginTop="@dimen/password_margin_top"
+            
+             />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_footer_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:orientation="horizontal" >
+
+        <!-- 哪个城市 -->
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="18dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/homeLocationTV"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/location_image"
+            android:ellipsize="end"
+            android:ems="2"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="天津"
+            android:textColor="@color/main_txt_color" />
+        <!-- 中间搜索 -->
+        <!-- android:background="@android:color/transparent" -->
+        <!-- 右边弹窗 -->
+
+        <ImageView
+            android:id="@+id/homeRMenuIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/more2_large_margin"
+            android:src="@drawable/scan"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/message_remind_layout"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/user_item_padding"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/message_remind_icon" />
+
+            <ImageView
+                android:id="@+id/msgRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:src="@drawable/red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homeImgSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/message_remind_layout"
+            android:layout_toRightOf="@id/homeLocationTV"
+            android:background="@drawable/selector_home_search_bg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/eztsearch" />
+            <!-- android:text="医院/科室/专家..." -->
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/large_margin"
+                android:gravity="center"
+                android:text="医指通为您搜索"
+                android:textColor="@color/main_txt_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_bg_color" >
+    </View>
+
+    <com.eztcn.user.eztcn.customView.PullToRefreshView
+        android:id="@+id/pullRootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tab_footer_bg"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/layout_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <com.eztcn.user.eztcn.customView.MyImgScroll
+                            android:id="@+id/homeMsgViewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                        </com.eztcn.user.eztcn.customView.MyImgScroll>
+
+
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/medium_margin"
+                            android:id="@+id/home_point_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/ads_point_layout_height"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                        
+                        
+                        
+                        <!-- <com.eztcn.user.eztcn.customView.MyViewPager -->
+                        <!-- android:id="@+id/homeMsgViewPager" -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="wrap_content" > -->
+                        <!-- </com.eztcn.user.eztcn.customView.MyViewPager> -->
+
+<!--                         <LinearLayout -->
+<!--                             android:id="@+id/imgParent" -->
+<!--                             android:layout_width="match_parent" -->
+<!--                             android:layout_height="wrap_content" > -->
+
+                            <ImageView
+                                android:id="@+id/homeMsgLoadingImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/logo"
+                                android:scaleType="centerInside" >
+                            </ImageView>
+<!--                         </LinearLayout> -->
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/homeMsgText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_search_height"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:background="@drawable/selector_bg"
+                        android:gravity="center"
+                        android:src="@drawable/msglastest"
+                        android:visibility="gone" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/homeMsgTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/homeMsgText"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@id/homeMsgText"
+                        android:gravity="center"
+                        android:src="@drawable/red"
+                        android:visibility="visible"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_search_height"
+                        android:layout_alignBottom="@id/layout_pager"
+                        android:background="#33000000"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/homeMsgTitle"
+                            style="@style/smallText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/medium_margin"
+                            android:text="数据加载中..."
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/homeMsgPage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/medium_margin"
+                            android:text="2e2r"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <!-- 功能模块 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <!-- 预约挂号开始 -->
+
+                    <RelativeLayout
+                        android:id="@+id/orderRegLayout"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="35dip"
+                        android:paddingTop="33dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_bg" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/registerIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/recordreg" />
+                            <!--
+						 <ImageView
+                            android:id="@+id/registerImg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/medium_margin"
+                             android:gravity="center_horizontal"
+                            android:src="@drawable/homezi1" />
+                            -->
+
+                            <TextView
+                                android:id="@+id/registerTv"
+                                style="@style/hallHomeBig"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/medium_margin"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="医指通挂号" />
+
+                            <TextView
+                                style="@style/hallHomeSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/medium_margin"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="全平台8种在线挂号"
+                                android:textColor="@color/dark_gray" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- 预约挂号结束 -->
+
+                    <include layout="@layout/ver_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical" >
+
+                        <!-- 大牌名医开始 -->
+
+                        <RelativeLayout
+                            android:id="@+id/bigDocLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_bg" >
+
+                            <View
+                                android:id="@+id/dpmyimgLayout1"
+                                android:layout_width="@dimen/bigdoc_margin"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/bigdoc_margin"
+                                android:layout_toRightOf="@id/dpmyimgLayout1"
+                                android:gravity="left"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/bigDoctorTv"
+                                    style="@style/hallHomeBig"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/bigDoctor" />
+
+                                <TextView
+                                    style="@style/hallHomeSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@id/bigDoctorTv"
+                                    android:layout_below="@id/bigDoctorTv"
+                                    android:layout_marginTop="@dimen/small_margin"
+                                    android:gravity="center_horizontal"
+                                    android:text="国医大师顶级专家号"
+                                    android:textColor="@color/dark_gray" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/dpmyimgLayout"
+                                android:layout_width="@dimen/more2_large_margin"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true" />
+
+                            <ImageView
+                                android:id="@+id/dpmyimg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/bigdoc_Icon_margin"
+                                android:layout_toRightOf="@id/dpmyimgLayout"
+                                android:src="@drawable/bigdoc" />
+                        </RelativeLayout>
+                        <!-- 大牌名医结束 -->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_margin_widget_color" />
+
+                        <!-- 当日挂号开始 -->
+
+                        <RelativeLayout
+                            android:id="@+id/todayRegLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_bg" >
+
+                            <View
+                                android:id="@+id/dpmyimgLayout2"
+                                android:layout_width="@dimen/bigdoc_margin"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/bigdoc_margin"
+                                android:layout_toRightOf="@id/dpmyimgLayout2"
+                                android:gravity="left"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/todayRegisterTv"
+                                    style="@style/hallHomeBig"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/todayRegister" />
+
+                                <TextView
+                                    style="@style/hallHomeSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/small_margin"
+                                    android:gravity="center_horizontal"
+                                    android:text="提前2小时约当天号"
+                                    android:textColor="@color/dark_gray" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/drghivLayout"
+                                android:layout_width="@dimen/more2_large_margin"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true" />
+
+                            <ImageView
+                                android:id="@+id/drghiv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/bigdoc_Icon_margin"
+                                android:layout_toRightOf="@+id/drghivLayout"
+                                android:src="@drawable/todayreg" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    android:background="@color/title_bar_bg_grey"
+                    android:visibility="visible" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <!-- 预约检查开始 -->
+
+                            <LinearLayout
+                                android:id="@+id/orderCheckLayout"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_bg"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/recordcheck" />
+
+                                <TextView
+                                    android:id="@+id/tvordercheck"
+                                    style="@style/hallHomeMid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/medium_margin"
+                                    android:gravity="center"
+                                    android:text="@string/orderCheck" />
+                            </LinearLayout>
+
+                            <!-- 预约检查结束 -->
+
+                            <include layout="@layout/ver_line" />
+                            <!-- 预约病床开始 -->
+
+                            <LinearLayout
+                                android:id="@+id/orderBedLayout"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_bg"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/recordbed" />
+
+                                <TextView
+                                    android:id="@+id/tvorderbed"
+                                    style="@style/hallHomeMid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/medium_margin"
+                                    android:gravity="center"
+                                    android:text="@string/orderBed" />
+                            </LinearLayout>
+                            <!-- 预约病床结束 -->
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_margin_widget_color" >
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <!-- 预约药品开始 -->
+
+                            <LinearLayout
+                                android:id="@+id/orderdrugsTv"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_bg"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/recordmed" />
+
+                                <TextView
+                                    android:id="@+id/tvorderdrug"
+                                    style="@style/hallHomeMid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/medium_margin"
+                                    android:gravity="center"
+                                    android:text="@string/orderdrugs" />
+                            </LinearLayout>
+
+                            <!-- 预约药品结束 -->
+
+                            <include layout="@layout/ver_line" />
+                            <!-- 症状自查开始 -->
+
+                            <LinearLayout
+                                android:id="@+id/symCheckTv"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_bg"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/self_check" />
+
+                                <TextView
+                                    android:id="@+id/tvselfcheck"
+                                    style="@style/hallHomeMid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/medium_margin"
+                                    android:gravity="center"
+                                    android:text="@string/home_free_consult" />
+                            </LinearLayout>
+                            <!-- 症状自查结束 -->
+                        </LinearLayout>
+                        <!-- 预约药品开始 -->
+
+
+                        <!-- <RelativeLayout -->
+                        <!-- android:id="@+id/orderMedLayout" -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="0dip" -->
+                        <!-- android:layout_marginTop="@dimen/small_margin" -->
+                        <!-- android:layout_weight="1" -->
+                        <!-- android:background="@drawable/selector_bg" > -->
+
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/orderMedIv" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_marginLeft="@dimen/more2_large_margin" -->
+                        <!-- android:layout_marginTop="@dimen/large_margin" -->
+                        <!-- android:paddingBottom="@dimen/large_margin" -->
+                        <!-- android:src="@drawable/recordmed" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/orderdrugsTv" -->
+                        <!-- style="@style/mediumText" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_marginLeft="@dimen/more2_large_margin" -->
+                        <!-- android:layout_marginTop="@dimen/small_margin" -->
+                        <!-- android:layout_toRightOf="@id/orderMedIv" -->
+                        <!-- android:gravity="center_horizontal" -->
+                        <!-- android:text="@string/orderdrugs" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/little_size" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_alignLeft="@id/orderdrugsTv" -->
+                        <!-- android:layout_below="@id/orderdrugsTv" -->
+                        <!-- android:layout_marginTop="@dimen/small_margin" -->
+                        <!-- android:gravity="center_horizontal" -->
+                        <!-- android:text="小字文案介绍" -->
+                        <!-- android:textColor="@color/dark_gray" /> -->
+                        <!-- </RelativeLayout> -->
+                        <!-- 预约药品结束 -->
+                    </LinearLayout>
+
+                    <include layout="@layout/ver_line" />
+                    <!-- 在线咨询开始 -->
+
+                    <RelativeLayout
+                        android:id="@+id/onlineQLayout"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="40dip"
+                        android:paddingTop="40dip"
+                        android:layout_weight="2"
+                        android:background="@drawable/selector_bg" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/onlineQIv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/onlineq" />
+
+                            <TextView
+                                android:id="@+id/onLineQTv"
+                                style="@style/hallHomeBig"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/medium_margin"
+                                android:gravity="center_horizontal"
+                                android:text="@string/onLineQuestion" />
+
+                            <TextView
+                                style="@style/hallHomeSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/medium_margin"
+                                android:gravity="center_horizontal"
+                                android:text="诊前诊中快速咨询"
+                                android:textColor="@color/dark_gray" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!-- 在线咨询结束 -->
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    android:background="@color/title_bar_bg_grey"
+                    android:visibility="visible" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/dargonIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/newlongka" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    android:background="@color/title_bar_bg_grey"
+                    android:visibility="visible" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <!-- 龙卡专区开始 -->
+
+                    <RelativeLayout
+                        android:id="@+id/dargonCardLayout"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/medium_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_bg" >
+
+                        <ImageView
+                            android:id="@+id/dargonCardIv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/more_large_margin"
+                            android:layout_marginTop="@dimen/large_margin"
+                            android:paddingBottom="@dimen/large_margin"
+                            android:src="@drawable/dargoncard" />
+
+                        <TextView
+                            android:id="@+id/dargonCardTv"
+                            style="@style/mediumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/small_margin"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            android:layout_toRightOf="@id/dargonCardIv"
+                            android:gravity="center_horizontal"
+                            android:text="@string/dragonCardZone"
+                            android:textColor="@color/orange" />
+
+                        <TextView
+                            style="@style/little_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/dargonCardTv"
+                            android:layout_below="@id/dargonCardTv"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:gravity="left"
+                            android:text="小字文案介绍"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line_margin_widget_color" >
+                    </View>
+                    <!-- 医护帮开始 -->
+
+                    <RelativeLayout
+                        android:id="@+id/eHelpLayout"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_bg" >
+
+                        <ImageView
+                            android:id="@+id/eHelpIv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/large_margin"
+                            android:layout_marginTop="@dimen/large_margin"
+                            android:paddingBottom="@dimen/large_margin"
+                            android:src="@drawable/ehelp" />
+
+                        <TextView
+                            android:id="@+id/eHelpTv"
+                            style="@style/mediumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/small_margin"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            android:layout_toRightOf="@id/eHelpIv"
+                            android:gravity="center_horizontal"
+                            android:text="@string/eHelp"
+                            android:textColor="@color/green" />
+
+                        <TextView
+                            style="@style/little_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/eHelpTv"
+                            android:layout_below="@id/eHelpTv"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:gravity="left"
+                            android:text="小字文案介绍"
+                            android:textColor="@color/dark_gray" />
+                    </RelativeLayout>
+                    <!-- 医护帮结束 -->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.eztcn.user.eztcn.customView.PullToRefreshView>
+
+</LinearLayout>

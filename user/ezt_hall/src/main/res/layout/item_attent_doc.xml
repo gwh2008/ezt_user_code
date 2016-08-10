@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/medium_margin" >
+
+    <com.eztcn.user.eztcn.customView.RoundImageView
+        android:id="@+id/item_attent_img"
+        android:layout_width="@dimen/doc_img_width_normal"
+        android:layout_height="@dimen/doc_img_height_normal"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_doc_img"
+        imagecontrol:border_outside_color="@color/more_light_gray"
+        imagecontrol:border_thickness="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin" >
+
+            <TextView
+                android:id="@+id/item_attent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="医生名称"
+                android:textColor="@color/user_item_tx_color"
+                android:textSize="@dimen/medium_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_attent_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_toRightOf="@+id/item_attent_name"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/little_size" 
+                android:background="@drawable/item_attent_pos_bg"
+                android:paddingLeft="@dimen/item_attent_pos_tx_padding"
+                android:paddingRight="@dimen/item_attent_pos_tx_padding"
+                android:layout_alignBaseline="@id/item_attent_name"
+                android:gravity="center"
+                android:text="职位"
+                />
+            <TextView
+                android:id="@+id/item_attent_hos_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/item_attent_name"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxEms="6"
+                android:text="所属医院"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="@dimen/small_size" />
+            <TextView
+                android:id="@+id/item_attent_dept_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_toRightOf="@+id/item_attent_hos_name"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_below="@+id/item_attent_name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLength="8"
+                android:text="所属科室"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/item_doc_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:text="预约率"
+                android:visibility="gone" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/user_margin_right"
+                android:src="@drawable/user_arrow_icon_gray"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

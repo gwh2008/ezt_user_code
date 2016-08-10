@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_main_color"
+        android:padding="@dimen/more2_large_margin" >
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="132****5652"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+    </FrameLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_main_color" >
+
+        <TextView
+            android:id="@+id/mIntegral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:text="会员积分 5000"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/mGrowthValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:text="成长值 1000"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lookPrivilege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@drawable/selector_setting_item_bg"
+        android:padding="@dimen/large_margin" >
+
+        <TextView
+            android:id="@+id/levelLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="等级："
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/levelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/levelLabel"
+            android:layout_toRightOf="@+id/levelLabel"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin"
+            android:text="LV1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableRight="@drawable/right_arrows"
+            android:text="查看特权"
+            android:textSize="@dimen/small_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:id="@+id/earnIntegral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_setting_item_bg"
+        android:padding="@dimen/large_margin" >
+
+        <TextView
+            android:id="@+id/integralLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="积分："
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/integralLabel"
+            android:layout_toRightOf="@+id/integralLabel"
+            android:text="220"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableRight="@drawable/right_arrows"
+            android:text="赚取积分"
+            android:textSize="@dimen/small_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:id="@+id/exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_setting_item_bg"
+        android:drawablePadding="@dimen/small_margin"
+        android:drawableRight="@drawable/right_arrows"
+        android:padding="@dimen/large_margin"
+        android:text="积分兑换" />
+
+</LinearLayout>

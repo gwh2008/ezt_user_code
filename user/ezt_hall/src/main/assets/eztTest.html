@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>医指通首页</title>
+            <style>
+                body{
+                    margin: 0px;
+                }
+            #container{
+                width: 100%;
+                height: 600px;
+                background-color: white;
+            }
+            #headImg{
+                width: 100%;
+                height: 20%;
+                background-color: aqua;
+            }
+            #HosAdd{
+                width: 100%;
+                height: 5%;
+                background-color: white;
+            }
+            #BtnArea{
+                width: 100%;
+                height: 75%;
+                background-color: lightgray;
+            }
+            </style>
+    </head>
+    <body>
+        <script>
+            function connectWebViewJavascriptBridge(callback) {
+                if (window.WebViewJavascriptBridge) {
+                    callback(WebViewJavascriptBridge);
+                } else {
+                    document.addEventListener('WebViewJavascriptBridgeReady', function() {callback(WebViewJavascriptBridge);}, false);
+                }
+            }
+        connectWebViewJavascriptBridge(function(bridge) {
+                                       bridge.init(function(message, responseCallback) {
+                                                   log('JS got a message', message)
+                                                   var data = { 'Javascript Responds':'Wee!' }
+                                                   log('JS responding with', data)
+                                                   responseCallback(data)
+                                                   })
+                                       });
+                                       
+                                       function DayRegister(hosId,hosName){
+                                           try{
+                                           		var hosNameStr=encodeURI(hosName); 	
+                                               var requestData = {'hosId':hosId,'hosName':hosNameStr};
+                                               //IOS
+                                               if(window.WebViewJavascriptBridge){
+                                                   window.WebViewJavascriptBridge.callHandler('DayRegister',requestData, function(response) {
+                                                                                              
+                                                                                              });
+                                               }
+                                               
+                                           }catch(e){
+                                               console.log(e);
+                                           }
+                                       }
+        
+                                    function SignInHos(hosId){
+                                        try{
+                                            var responseData = {'signInHos':hosId};
+                                            //IOS
+                                            if(window.WebViewJavascriptBridge){
+                                                window.WebViewJavascriptBridge.callHandler('signInHos',responseData, function(response) {
+                                                                                           
+                                                                                           });
+                                            }
+                                            
+                                        }catch(e){
+                                            console.log(e);
+                                        }
+                                    }
+        
+        
+            </script>
+        <div id="container">
+            <div id="headImg">
+                <img src="hoslog.jpg" width="100%" height="100%">
+                    </div>
+            <div id="HosAdd">
+                天津市南开区复康路24号
+            </div>
+            <div id="BtnArea">
+                <table width="100%" height="70%" cellspacing="5px">
+                    <tr>
+                        <td  bgcolor="white">
+                            <button id="buttons" style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;" onclick="DayRegister('21','天津市第一中心医院')" >当日挂号</button>
+                        </td>
+                        <!--<td id="buttons" align="center" bgcolor="white"></td>-->
+                        <td  bgcolor="white">
+                            <button  style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;">到院签到</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  bgcolor="white">
+                            <button  style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;">诊间支付</button>
+                        </td>
+                        <td  bgcolor="white">
+                            <button  style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;" onclick="SignInHos('21')">医院简介</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  bgcolor="white">
+                            <button  style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;">排队查询</button>
+                        </td>
+                        <td  bgcolor="white">
+                            <button  style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;">报告查询</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  bgcolor="white">
+                            <button  style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;">预约检查</button>
+                        </td>
+                        <td  bgcolor="white">
+                            <button  style="width: 100%; height: 100%; background-color: white; border: none;font-size: 20px;">预约病床</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </body>
+</html>

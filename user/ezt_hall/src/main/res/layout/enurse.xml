@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <com.eztcn.user.eztcn.customView.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/medium_margin" >
+
+            <ImageView
+                android:id="@+id/adImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/enurse_ad_1" />
+
+            <Button
+                android:id="@+id/call_Nurse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/more2_large_margin"
+                android:layout_marginRight="@dimen/more2_large_margin"
+                android:layout_marginTop="@dimen/more2_large_margin"
+                android:background="@drawable/selector_main_btn_bg"
+                android:text="我 要 医 护 帮"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:gravity="center"
+                android:text="全国首家一站式医疗服务平台"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/small_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="------------------------------"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="服务之星"
+                    android:textColor="@color/font_unclick_color"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="------------------------------"
+                    android:textColor="@color/dark_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/small_margin"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <ImageView
+                    android:layout_width="@dimen/doc_img_width_normal"
+                    android:layout_height="@dimen/doc_img_height_normal"
+                    android:layout_weight="1"
+                    android:src="@drawable/hosguide_2" />
+
+                <ImageView
+                    android:layout_width="@dimen/doc_img_width_normal"
+                    android:layout_height="@dimen/doc_img_height_normal"
+                    android:layout_weight="1"
+                    android:src="@drawable/hosguide_1" />
+
+                <ImageView
+                    android:layout_width="@dimen/doc_img_width_normal"
+                    android:layout_height="@dimen/doc_img_height_normal"
+                    android:layout_weight="1"
+                    android:src="@drawable/hosguide_3" />
+            </LinearLayout>
+            <!-- android:paddingTop="@dimen/medium_margin" -->
+
+
+            <!-- 2016-1-8 设计要求2.6版本毙掉 银行功能 -->
+
+            <com.eztcn.user.eztcn.customView.MyViewPager
+                android:id="@+id/content_vPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/large_margin"
+                android:persistentDrawingCache="animation"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/point_layout"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/small_margin"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+            </LinearLayout>
+        </LinearLayout>
+    </com.eztcn.user.eztcn.customView.MyScrollView>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="modules">
+        <item >social.SocialDialog</item>
+        <item >storage.AppDataStorageDialog</item>
+        <item >storage.AppFileStorageDialog</item>
+        <item >storage.PersonalFileStorageDialog</item>
+        <item >push.PushDialog</item>
+        <item>role.RoleUserDialog</item>
+    </string-array>
+    
+</resources>

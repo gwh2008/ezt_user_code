@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/activity_title_bar" />
+
+    <include layout="@layout/myrecord_tab" />
+
+    <com.eztcn.user.eztcn.customView.PagerSlidingTobTab
+        android:id="@+id/myRecordPSTT"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_bar_size"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/more_light_gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myRecordVP"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        android:visibility="visible" />
+
+</LinearLayout>

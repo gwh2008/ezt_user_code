@@ -1,0 +1,164 @@
+{
+    "compentParents": [
+        {
+            "compentType": "0",
+            "compentChildren": [
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.QuickAppointActivity",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2339034146,1194298783&fm=116&gp=0.jpg",
+                    "compentParams": [
+                        {
+                            "key": "isWomenBaby",
+                            "value": "1"
+                        }
+                    ]
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.QuickAppointActivity",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2339034146,1194298783&fm=116&gp=0.jpg"
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.TelDoctorListActivity",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2339034146,1194298783&fm=116&gp=0.jpg"
+                }
+            ]
+        },
+        {
+            "compentType": "1",
+            "row": "4",
+            "compentChildren": [
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.DoctorIndexActivity",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1510346474,2893060953&fm=21&gp=0.jpg",
+                    "name1": "肿瘤科",
+                    "name2": "贾英杰",
+                    "compentParams": [
+                        {
+                            "key": "docId",
+                            "value": "6198"
+                        },
+                        {
+                            "key": "deptId",
+                            "value": "806"
+                        },
+                        {
+                            "key": "deptDocId",
+                            "value": "6198"
+                        }
+                    ]
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.DoctorIndexActivity",
+                    "imgUrl": "http://img1.imgtn.bdimg.com/it/u=1334518639,3269146066&fm=23&gp=0.jpg",
+                    "name1": "特需专家",
+                    "name2": "石学敏",
+                    "compentParams": [
+                        {
+                            "key": "docId",
+                            "value": "68175"
+                        },
+                        {
+                            "key": "deptId",
+                            "value": "929"
+                        },
+                        {
+                            "key": "deptDocId",
+                            "value": "79632"
+                        }
+                    ]
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.DoctorIndexActivity",
+                    "imgUrl": "http://img5.imgtn.bdimg.com/it/u=1058074467,3918071070&fm=21&gp=0.jpg",
+                    "name1": "心血管科",
+                    "name2": "张伯礼",
+                    "compentParams": [
+                        {
+                            "key": "docId",
+                            "value": "3295"
+                        },
+                        {
+                            "key": "deptId",
+                            "value": "718"
+                        },
+                        {
+                            "key": "deptDocId",
+                            "value": "3295"
+                        }
+                    ]
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.DoctorIndexActivity",
+                    "imgUrl": "http://img5.imgtn.bdimg.com/it/u=1058074467,3918071070&fm=21&gp=0.jpg",
+                    "name1": "肾病科",
+                    "name2": "张大宁",
+                    "compentParams": [
+                        {
+                            "key": "docId",
+                            "value": "5458"
+                        },
+                        {
+                            "key": "deptId",
+                            "value": "1090"
+                        },
+                        {
+                            "key": "deptDocId",
+                            "value": "5458"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "compentType": "1",
+            "row": "3",
+            "compentChildren": [
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.QuickAppointActivity",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1510346474,2893060953&fm=21&gp=0.jpg",
+                    "name1": "妇幼挂号",
+                    "compentParams": [
+                        {
+                            "key": "isWomenBaby",
+                            "value": "1"
+                        }
+                    ]
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.TelDoctorListActivity",
+                    "imgUrl": "http://img3.imgtn.bdimg.com/it/u=3738322358,3767495849&fm=21&gp=0.jpg",
+                    "name1": "电话医生"
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.fdoc.SymptomSelfActivity",
+                    "imgUrl": "http://img5.imgtn.bdimg.com/it/u=1058074467,3918071070&fm=21&gp=0.jpg",
+                    "name1": "症状自查"
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.QuickAppointActivity",
+                    "imgUrl": "http://img5.imgtn.bdimg.com/it/u=1058074467,3918071070&fm=21&gp=0.jpg",
+                    "name1": "全国挂号"
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.Home_MyServiceActivity",
+                    "imgUrl": "http://img1.imgtn.bdimg.com/it/u=1334518639,3269146066&fm=23&gp=0.jpg",
+                    "name1": "我的服务"
+                },
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.discover.InformationActivity",
+                    "imgUrl": "http://cdn.duitang.com/uploads/item/201202/09/20120209225205_YzHzr.thumb.200_200_c.jpg",
+                    "name1": "微资讯"
+                }
+            ]
+        },
+        {
+            "compentType": 0,
+            "compentChildren": [
+                {
+                    "jumpLink": "com.eztcn.user.eztcn.activity.home.Activity_Dargon",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2339034146,1194298783&fm=116&gp=0.jpg"
+                }
+            ]
+        }
+    ]
+}

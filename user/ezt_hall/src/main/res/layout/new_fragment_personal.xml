@@ -1,0 +1,378 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                >
+                <ImageView
+                    android:id="@+id/personal_head"
+                    android:layout_width="@dimen/personal_size"
+                    android:layout_height="@dimen/personal_size"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/new_person_default_head_icon"
+                    android:layout_marginTop="@dimen/margin_top_12"
+                    />
+                <TextView
+                    android:id="@+id/personal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personal_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:text="李莫愁"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/big_size_16"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personal_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin_bottom_20"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/person_info_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/personal_name"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/new_personal_point_icon" />
+
+                    <TextView
+                        android:id="@+id/personal_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_4"
+                        android:gravity="center"
+                        android:text="15652062328"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/text_size_12" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/login_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:layout_toLeftOf="@id/personal_head"
+                    android:layout_below="@id/personal_head"
+                    android:textSize="@dimen/big_size_16"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:layout_marginBottom="30dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/register_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_size_16"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:text="@string/register"
+                    android:layout_toRightOf="@id/personal_head"
+                    android:layout_below="@id/personal_head"
+                    android:layout_marginBottom="30dp"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/setting_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_left_15"
+                    android:src="@drawable/new_setting_icon"
+                    android:layout_marginTop="@dimen/margin_top_12"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/new_activity_view_margin_bar"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                >
+                <RelativeLayout
+                    android:id="@+id/my_attention_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_55"
+                    >
+                    <ImageView
+                        android:id="@+id/my_attention_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:src="@drawable/new_my_attention_icon" />
+
+                    <TextView
+                        android:id="@+id/my_attention_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_top_12"
+                        android:layout_toRightOf="@id/my_attention_icon"
+                        android:text="@string/my_attention"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16" />
+
+                    <ImageView
+                        android:id="@+id/my_attention_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_15"
+                        android:src="@drawable/new_next_icon" />
+
+                    <TextView
+                        android:id="@+id/my_attention_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_9"
+                        android:layout_toLeftOf="@id/my_attention_next"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/normal_size_14" />
+                </RelativeLayout>
+
+                <include layout="@layout/new_activity_view_margin_bar"></include>
+
+                <RelativeLayout
+                    android:id="@+id/patient_manager_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_55"
+                    >
+
+                    <ImageView
+                        android:id="@+id/patient_manager_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:src="@drawable/new_patient_manager_icon" />
+
+                    <TextView
+                        android:id="@+id/patient_manager_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_top_12"
+                        android:layout_toRightOf="@id/patient_manager_icon"
+                        android:text="@string/patient_manager"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_15"
+                        android:src="@drawable/new_next_icon" />
+                </RelativeLayout>
+
+                <include layout="@layout/new_activity_view_margin_bar"></include>
+
+                <RelativeLayout
+                    android:id="@+id/my_registration_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_55"
+                    >
+
+                    <ImageView
+                        android:id="@+id/my_registration_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:src="@drawable/new_my_registration_icon" />
+
+                    <TextView
+                        android:id="@+id/my_registration_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_top_12"
+                        android:layout_toRightOf="@id/my_registration_icon"
+                        android:text="@string/my_registration"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_15"
+                        android:src="@drawable/new_next_icon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignLeft="@id/my_registration_tx"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/background"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_reservation_service_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_55"
+                    >
+
+                    <ImageView
+                        android:id="@+id/my_reservation_service_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:src="@drawable/new_my_reservation_service_icon" />
+
+                    <TextView
+                        android:id="@+id/my_reservation_service_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_top_12"
+                        android:layout_toRightOf="@id/my_reservation_service_icon"
+                        android:text="@string/my_reservation_service"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_15"
+                        android:src="@drawable/new_next_icon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignLeft="@id/my_reservation_service_tx"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/background"></View>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/my_reservation_drug_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_55"
+                    >
+
+                    <ImageView
+                        android:id="@+id/my_reservation_drug_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:src="@drawable/new_my_reservation_drug_icon" />
+
+                    <TextView
+                        android:id="@+id/my_reservation_drug_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_top_12"
+                        android:layout_toRightOf="@id/my_reservation_drug_icon"
+                        android:text="@string/my_reservation_drug"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_15"
+                        android:src="@drawable/new_next_icon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignLeft="@id/my_reservation_drug_tx"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/background"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_photo_copying_case_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_55"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/my_photo_copying_case_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left_15"
+                        android:src="@drawable/new_my_photo_copying_case_icon" />
+
+                    <TextView
+                        android:id="@+id/my_photo_copying_case_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_top_12"
+                        android:layout_toRightOf="@id/my_photo_copying_case_icon"
+                        android:text="@string/my_photo_copying_case"
+                        android:textColor="@color/text_color_deep_gray"
+                        android:textSize="@dimen/big_size_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_left_15"
+                        android:src="@drawable/new_next_icon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignLeft="@id/my_photo_copying_case_tx"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/background"></View>
+                </RelativeLayout>
+
+                <include layout="@layout/new_activity_view_margin_bar"></include>
+
+                <ImageView
+                    android:id="@+id/dragonCard_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_left_10"
+                    android:src="@drawable/new_dragon_card"
+                    android:scaleType="fitXY"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

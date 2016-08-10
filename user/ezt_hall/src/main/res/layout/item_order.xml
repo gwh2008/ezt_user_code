@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_setting_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/medium_margin"
+    android:paddingRight="@dimen/medium_margin"
+    android:paddingTop="@dimen/medium_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin" >
+
+        <TextView
+            android:id="@+id/item_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_toLeftOf="@+id/item_order_state"
+            android:text="订单号" />
+
+        <TextView
+            android:id="@+id/item_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="支付状态" />
+    </RelativeLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <com.eztcn.user.eztcn.customView.MyListView
+        android:id="@+id/item_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:listSelector="@android:color/transparent" >
+    </com.eztcn.user.eztcn.customView.MyListView>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/item_create_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_weight="1"
+            android:text="创建时间" />
+
+        <TextView
+            android:id="@+id/item_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="订单数量" />
+
+        <TextView
+            android:id="@+id/item_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/small_margin"
+            android:text="订单总额" />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/item_bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_toLeftOf="@+id/item_bt2"
+            android:background="@drawable/selector_border_small_white"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="撤销订单"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/item_bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:background="@drawable/selector_border_small_white"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="立即支付"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+</LinearLayout>

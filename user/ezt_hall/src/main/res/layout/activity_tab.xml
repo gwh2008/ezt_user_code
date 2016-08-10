@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" >
+
+        <include
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_height_size"
+            android:layout_alignParentBottom="true"
+            layout="@layout/activity_footer_tab" />
+
+        <FrameLayout
+            android:id="@id/layout_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_view" >
+        </FrameLayout>
+    </RelativeLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/guide_layout" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:background="@drawable/guide_bg" -->
+<!--         android:clickable="true" -->
+<!--         android:visibility="gone" > -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/know_bt" -->
+<!--             style="@style/guidance_know_bt" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginBottom="@dimen/large_margin" -->
+<!--             android:layout_marginRight="@dimen/large_margin" -->
+<!--             android:text="知道了" -->
+<!--             android:textColor="@android:color/white" -->
+<!--             android:textSize="@dimen/large_size" /> -->
+<!--     </RelativeLayout> -->
+
+</FrameLayout>

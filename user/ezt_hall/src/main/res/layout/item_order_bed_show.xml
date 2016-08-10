@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <ImageView 
+            android:id="@+id/order_bed_item_image"
+            android:layout_width="73dp"
+            android:layout_height="50dp"
+            android:src="@drawable/order_bed_light_hospital_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_centerVertical="true"
+            />
+        
+        <TextView 
+            android:id="@+id/hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/order_bed_item_image"
+            android:layout_toRightOf="@id/order_bed_item_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            android:text="医院科总医院"
+            />
+        <TextView 
+            android:id="@+id/hospital_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/hospital_name"
+            android:layout_alignBottom="@id/order_bed_item_image"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/drug_grey"
+            android:textSize="14sp"
+            android:text="医院地址："
+            />
+        <TextView 
+            android:id="@+id/hospital_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hospital_address_hint"
+            android:layout_alignBottom="@id/hospital_address_hint"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/drug_grey"
+            android:textSize="14sp"
+            android:text="麻辣隔壁"
+            />
+        <TextView 
+            android:layout_width="61dp"
+            android:layout_height="19dp"
+            android:background="@drawable/selector_main_btn_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:textColor="@color/bg_white"
+            android:layout_marginTop="@dimen/user_margin_right"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="预约成功"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

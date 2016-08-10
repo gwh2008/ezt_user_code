@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height_size" >
+
+        <TextView
+            android:id="@+id/left_btn"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back_icon_down"
+            android:drawablePadding="4dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="评价数"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.eztcn.user.eztcn.customView.gestureimage.MyViewPager
+            android:id="@+id/web_image_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/more2_large_margin"
+            android:layout_marginTop="@dimen/more_large_margin"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_margin"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="@dimen/more_large_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/text_page"
+                android:textSize="@dimen/medium_size" />
+
+            <TextView
+                android:id="@+id/text_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/large_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

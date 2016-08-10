@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_dark_gray_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/more_large_margin">
+    <ImageView
+        android:id="@+id/cardCover"
+        android:layout_width="@dimen/tumour_package_layout_width"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健康助手导诊卡"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/large_size" />
+
+        <TextView
+            android:id="@+id/cardCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="月销量：220"
+            android:textColor="@color/font_unclick_color"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/cardPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 199"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+</LinearLayout>

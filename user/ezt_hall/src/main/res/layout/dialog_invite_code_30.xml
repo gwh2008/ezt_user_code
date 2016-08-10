@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_top"
+        android:background="@color/bg_white"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/large_size"
+            android:text="@string/input_invite_code"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"
+        />
+    
+    <EditText 
+        android:id="@+id/input_invite_code_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="@string/guideDoc_card_limit"
+        android:maxLength="6"
+        android:inputType="number"
+        android:background="@null"
+        android:layout_marginLeft="@dimen/user_margin_right"
+        android:layout_marginRight="@dimen/user_margin_right"
+        android:layout_marginTop="20dp"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_color"
+        android:layout_marginLeft="@dimen/user_margin_right"
+        android:layout_marginRight="@dimen/user_margin_right"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/choice_check_order_button_layout_height"
+        android:layout_marginTop="@dimen/login_button_margin_top"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/head_icon_name_margin_left"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:paddingRight="@dimen/user_margin_right"
+        android:paddingTop="@dimen/head_icon_name_margin_left" >
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/largeText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_button_top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_button_margin_top"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_button_tx_size" />
+
+        <Button
+            android:id="@+id/sure"
+            style="@style/largeText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_button_top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_marginTop="@dimen/login_button_margin_top"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="@string/sure"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_button_tx_size" />
+    </LinearLayout>
+
+</LinearLayout>

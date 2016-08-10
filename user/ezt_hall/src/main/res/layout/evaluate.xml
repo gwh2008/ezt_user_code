@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/medium_margin" >
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/head_pic"
+            android:layout_width="@dimen/doc_img_width_normal"
+            android:layout_height="@dimen/doc_img_width_normal"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_doc_img"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/d_name"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王小飞"
+                android:textColor="@color/dark_black" />
+
+            <TextView
+                android:id="@+id/d_title"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/d_name"
+                android:text="主任医师"
+                android:textColor="@color/dark_black" />
+
+            <TextView
+                android:id="@+id/hos_name"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/d_name"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:singleLine="true"
+                android:text="天津第一人民医院"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/dept"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/hos_name"
+                android:layout_below="@+id/hos_name"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="内科"
+                android:textColor="@color/dark_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="服务态度：" />
+
+        <RatingBar
+            android:id="@+id/serverAttitude"
+            style="@style/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:rating="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="医术/疗效：" />
+
+        <RatingBar
+            android:id="@+id/medicalEffect"
+            style="@style/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:numStars="5"
+            android:rating="0" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="就医体验：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_margin" >
+
+        <EditText
+            android:id="@+id/evaluateContent"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:background="@drawable/shape_edittext_white_bg"
+            android:gravity="top"
+            android:hint="（不超过100字）"
+            android:lines="4"
+            android:maxLength="100"
+            android:padding="@dimen/small_margin"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/largeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="提 交"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/large_margin"
+    android:paddingLeft="@dimen/small_margin"
+    android:paddingTop="@dimen/large_margin" >
+
+    <ImageView
+        android:id="@+id/item_rim_hos_img"
+        android:layout_width="@dimen/doc_img_width_small"
+        android:layout_height="@dimen/doc_img_height_small"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_1" />
+
+    <RelativeLayout
+        android:id="@+id/item_rim_pos_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/item_rim_hos_name"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/item_rim_hos_distance"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="天津医科大学总医院" />
+
+        <TextView
+            android:id="@+id/item_rim_hos_ads"
+            style="@style/smallText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_rim_hos_name"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_toLeftOf="@+id/item_rim_hos_distance"
+            android:singleLine="true"
+            android:text="地址：天津市和平区鞍山道154号"
+            android:textColor="@color/main_txt_color" />
+
+        <TextView
+            android:id="@+id/item_rim_hos_distance"
+            style="@style/smallText"
+            android:layout_width="@dimen/rimhos_tv_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="0m"
+            android:textColor="@color/main_txt_color" />
+    </RelativeLayout>
+
+</LinearLayout>

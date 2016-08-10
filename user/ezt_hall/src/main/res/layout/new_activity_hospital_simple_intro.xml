@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+
+              android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_left_15">
+
+                <TextView
+                    android:id="@+id/phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:drawableLeft="@drawable/new_phone_blue"
+                    android:drawablePadding="@dimen/margin_left_10"
+                    android:gravity="center_vertical"
+                    android:text="022-44984894"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_0.5"
+                android:background="@color/line_color_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_left_15">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/new_location_blue"
+                    android:drawablePadding="@dimen/margin_left_10"
+                    android:gravity="center_vertical"
+                    android:text="天津市南开区复康路88号"
+                    android:textColor="@color/text_color_deep_gray"
+                    android:textSize="@dimen/text_size_16"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_left_10"
+                android:background="@color/line_color_gray"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:drawableLeft="@drawable/new_hospital_intro"
+                android:drawablePadding="@dimen/margin_top_8"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:gravity="center_vertical"
+                android:text="简介"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_0.5"
+                android:background="@color/line_color_gray"/>
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_left_10"
+                android:layout_marginRight="@dimen/margin_left_15"
+                android:layout_marginLeft="@dimen/margin_left_15"
+                android:hint="收到回复是否对生活的看法水电费is红豆饭  说的覅偶哈搜ID覅偶 似乎佛山房熊雄狮佛山发 ISOif噢is熊iOS黄飞鸿iOS回复iOS佛意思哦佛山佛寺就佛山佛山雄狮佛山分行是哦地方hi哦叫金丝猴富哦好雄厚和覅搜狐粉丝会熊  搜覅是哦福建胸肌ios叫叫"
+                android:textColor="@color/text_color_gray"
+                android:paddingBottom="15dp"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

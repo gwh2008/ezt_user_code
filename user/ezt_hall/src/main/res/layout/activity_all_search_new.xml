@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@drawable/shape_border_search_edit"
+        android:gravity="center_vertical"
+        android:weightSum="7" >
+
+        <!-- android:hint="医院/科室/专家/知识库" -->
+        <!-- <AutoCompleteTextView -->
+        <!-- android:id="@+id/all_search_et" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@null" -->
+        <!-- android:completionThreshold="1" -->
+        <!-- android:ems="10" -->
+        <!-- android:hint="医院/科室/专家/知识库" -->
+        <!-- android:paddingBottom="@dimen/medium_margin" -->
+        <!-- android:paddingLeft="@dimen/medium_margin" -->
+        <!-- android:paddingTop="@dimen/medium_margin" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:textSize="@dimen/medium_size" > -->
+
+
+        <!-- <requestFocus /> -->
+        <!-- </AutoCompleteTextView> -->
+
+        <EditText
+            android:id="@+id/all_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="医院/科室/专家/知识库"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" 
+            android:textSize="@dimen/medium_size" >
+            <requestFocus />
+        </EditText>
+
+        <include layout="@layout/ver_line" />
+
+        <LinearLayout
+            android:id="@+id/all_search_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/selector_search_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin"
+                android:src="@drawable/ic_search_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_column_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.eztcn.user.eztcn.customView.PagerSlidingTobTab
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_title_bar_size"
+                android:background="@color/more_light_gray" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/all_search_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"
+            android:visibility="gone" />
+        <!-- 2015-12-29 去除搜索关键字 添加搜索历史 -->
+
+        <LinearLayout
+            android:id="@+id/hot_word_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="热搜词"
+                android:textSize="@dimen/medium_size" />
+
+            <include layout="@layout/hor_line" />
+
+            <GridView
+                android:id="@+id/hot_word_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="auto_fit" >
+            </GridView>
+        </LinearLayout>
+        <!-- 2015-12-29 去除搜索关键字 添加搜索历史 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin" >
+
+            <ListView
+                android:id="@+id/lv_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:scrollbars="@null" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_clearSHistory"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除搜索历史"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@color/title_bar_bg" >
+
+        <TextView
+            android:id="@+id/choice_noopsyche_confirm_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:background="@drawable/selector_title_bar_btn_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="确定"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/small_size"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/choice_noopsyche_close_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:background="@drawable/selector_title_bar_btn_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:text="取消"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/small_size"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxEms="6"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/noopsyche_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="出诊日期：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/imageView1"
+                        android:text="所有时间" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:src="@drawable/right_arrows" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/noopsyche_dept_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/deptLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="@dimen/large_size"
+                    android:text="选择科室：" />
+
+                <Spinner
+                    android:id="@+id/deptSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/deptLabel"
+                    android:background="@drawable/dropdown_disabled_holo_dark"
+                    android:spinnerMode="dialog" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    layout="@layout/hor_line" >
+                </include>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@drawable/selector_setting_item_bg"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="城市：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_city_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/imgs"
+                        android:text="选择城市" />
+
+                    <ImageView
+                        android:id="@+id/imgs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:src="@drawable/right_arrows" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_state_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="可立即通话：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_state_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/noopsyche_state_sb"
+                        android:text="是" />
+
+                    <com.eztcn.user.eztcn.customView.SwitchButton
+                        android:id="@+id/noopsyche_state_sb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_threehos_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="三甲医院：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_threehos_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/noopsyche_threehos_sb"
+                        android:text="是" />
+
+                    <com.eztcn.user.eztcn.customView.SwitchButton
+                        android:id="@+id/noopsyche_threehos_sb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_num_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="预约有号：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_appoint_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/noopsyche_appoint_sb"
+                        android:text="是" />
+
+                    <com.eztcn.user.eztcn.customView.SwitchButton
+                        android:id="@+id/noopsyche_appoint_sb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_rate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="预约率较高：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_rate_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/noopsyche_rate_sb"
+                        android:text="是" />
+
+                    <com.eztcn.user.eztcn.customView.SwitchButton
+                        android:id="@+id/noopsyche_rate_sb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="评价较高：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_evaluate_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/noopsyche_evaluate_sb"
+                        android:text="是" />
+
+                    <com.eztcn.user.eztcn.customView.SwitchButton
+                        android:id="@+id/noopsyche_evaluate_sb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/noopsyche_level_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height_mediue"
+                android:background="@android:color/white"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_size"
+                        android:text="级别高到低：" />
+
+                    <TextView
+                        android:id="@+id/noopsyche_level_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin"
+                        android:layout_toLeftOf="@+id/noopsyche_level_sb"
+                        android:text="是" />
+
+                    <com.eztcn.user.eztcn.customView.SwitchButton
+                        android:id="@+id/noopsyche_level_sb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/more_large_margin" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    layout="@layout/hor_line" >
+                </include>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

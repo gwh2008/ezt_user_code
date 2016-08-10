@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <include layout="@layout/hor_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/password_item_height_mediue"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="@dimen/modify_telphone_tx_length"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/user_margin_right"
+            android:textSize="@dimen/password_large_tx_size"
+            android:text="邮箱"
+            android:textColor="@color/user_item_tx_color"
+            />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/input_email"
+            android:background="@null"
+            android:textColor="@color/user_item_tx_color"
+            android:inputType="textEmailAddress"
+            android:layout_weight="1"
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColorHint="@color/discovery_title_little_tx_color"
+            >
+        </EditText>
+    </LinearLayout>
+     <include layout="@layout/hor_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/password_item_height_mediue"
+        android:orientation="horizontal"
+        android:background="@color/bg_white"
+        >
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="@dimen/modify_telphone_tx_length"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/user_margin_right"
+            android:text="@string/verification_code" 
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColor="@color/user_item_tx_color"
+            />
+        <EditText
+            android:id="@+id/securityCode"
+            style="@style/mediumText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:hint="@string/input_verification_code"
+            android:textColor="@color/user_item_tx_color"
+            android:maxLength="11"
+            android:textSize="@dimen/password_large_tx_size"
+            android:textColorHint="@color/discovery_title_little_tx_color"
+             >
+        </EditText>
+        <View 
+            android:layout_width="@dimen/password_line"
+            android:layout_height="match_parent"
+            android:background="@color/line_margin_widget_color"
+            />
+        <TextView
+            android:id="@+id/getSecurityCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/obtain_verification_code"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:text="@string/obtain_verification_code"
+            android:textSize="@dimen/password_large_tx_size"
+             />
+    </LinearLayout>
+    
+    
+    
+
+    <Button
+        android:id="@+id/affirmModify"
+        style="@style/largeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_main_btn_bg"
+        android:layout_marginTop="@dimen/password_margin_top"
+        android:layout_marginLeft="@dimen/user_margin_right"
+        android:layout_marginRight="@dimen/user_margin_right"
+        android:gravity="center"
+        android:text="确定绑定"
+        android:textColor="@android:color/white"
+        android:visibility="visible" 
+        />
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/new_red" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center"
+            android:text="@string/order_details_hint"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/bg_white"
+        android:visibility="visible"
+         >
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/user_head"
+            android:layout_width="@dimen/head_icon_size"
+            android:layout_height="@dimen/head_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_defalt_head_icon"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+<!--  -->
+        <LinearLayout
+            android:id="@+id/order_details_succeed_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/user_head"
+            android:orientation="vertical"
+            android:background="@color/bg_white"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/order_details_head_icon" />
+
+                <TextView
+                    android:id="@+id/secNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/telphone_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/order_details_tel_icon" />
+
+                <TextView
+                     android:id="@+id/secMobileTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/medium_size" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/order_hintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:layout_toRightOf="@id/user_head"
+            android:text="预约完成后将为安排一位健康秘书专门为您服务"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+  <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_light_gray_height"
+        android:background="@color/main_bg_color" 
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@color/bg_white"
+        >
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/user_margin_right"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="@string/orderBed"
+        android:textColor="@color/user_item_tx_color"
+        android:textSize="@dimen/medium_size" 
+        
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_bg_color" 
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/bg_white"
+        >
+        <ImageView 
+            android:id="@+id/order_bed_item_image"
+            android:layout_width="73dp"
+            android:layout_height="50dp"
+            android:src="@drawable/order_bed_light_hospital_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/user_margin_right"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:id="@+id/hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/order_bed_item_image"
+            android:layout_toRightOf="@id/order_bed_item_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            android:ems="8" 
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+        
+        <TextView 
+            android:id="@+id/hospital_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/hospital_name"
+            android:layout_alignBottom="@id/order_bed_item_image"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/drug_grey"
+            android:textSize="14sp"
+            />
+        <TextView 
+            android:id="@+id/hospital_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hospital_address_hint"
+            android:layout_alignBottom="@id/hospital_address_hint"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/drug_grey"
+            android:textSize="14sp"
+            />
+        <TextView 
+            android:id="@+id/order_status_tx"
+            android:layout_width="61dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/user_margin_right"
+            android:textColor="@color/bg_white"
+            android:layout_marginTop="@dimen/user_margin_right"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main_bg_color" />
+
+</LinearLayout>

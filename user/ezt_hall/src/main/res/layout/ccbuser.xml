@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <ImageView
+        android:id="@+id/img_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/more2_large_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/bank_general" />
+
+    <TextView
+        android:id="@+id/activate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:gravity="center"
+        android:text="激  活"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_size" />
+
+    <LinearLayout
+        android:id="@+id/specialLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tel_icon_1"
+            android:gravity="center_vertical"
+            android:text="健康专席"
+            android:textColor="@android:color/white"
+            android:drawablePadding="@dimen/medium_margin"
+            android:textSize="@dimen/large_size" />
+    </LinearLayout>
+
+</LinearLayout>

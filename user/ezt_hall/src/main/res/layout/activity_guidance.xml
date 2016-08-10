@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/more2_large_margin"
+            android:paddingTop="@dimen/more2_large_margin" >
+
+            <TextView
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border_small_half_tran"
+                android:textColor="#b6b6b6"
+                android:text="跳过"
+                style="@style/guidance_bt"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="176dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/large_margin" >
+
+            
+            <RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" 
+			    android:gravity="center|bottom"
+			    android:paddingBottom="20dp"
+			    android:paddingLeft="40dp"
+	             android:paddingRight="40dp">
+	            <TextView
+	                android:id="@+id/start_Button"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center|center"
+	                android:background="@drawable/shape_border_small_half_tran"
+	                android:padding="@dimen/medium_margin"
+	                android:text="立即体验"
+	                android:textColor="@color/border_line"
+	                android:textSize="@dimen/large_size_18"
+	                android:visibility="invisible" />
+				
+			</RelativeLayout>
+        </LinearLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="43dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

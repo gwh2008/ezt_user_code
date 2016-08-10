@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:id="@+id/close_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_back_btn_bg"
+            android:drawableLeft="@drawable/back_icon"
+            android:drawablePadding="@dimen/small_margin"
+            android:paddingLeft="@dimen/more_large_margin"
+            android:paddingRight="@dimen/more_large_margin" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxEms="6"
+            android:text="医生资料"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+<!--  
+    <include layout="@layout/activity_title_bar" />
+-->    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/medium_margin"
+                android:text="个人简介" />
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/intro"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/small_margin"
+                android:text="天津市肿瘤医院主任医师，教授，特级专家，小儿胸外科专家，毕业于首都医科大学，从事小儿胸外科20余年，是国内为数不多的专业从事小儿胸外科工作的专家之一。"
+                android:textColor="@color/main_txt_color" />
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@android:color/white"
+                android:padding="@dimen/medium_margin"
+                android:text="专业擅长" />
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/goodAt"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/small_margin"
+                android:text="天津市肿瘤医院主任医师，教授，特级专家，小儿胸外科专家，毕业于首都医科大学，从事小儿胸外科20余年"
+                android:textColor="@color/main_txt_color" />
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@android:color/white"
+                android:padding="@dimen/medium_margin"
+                android:text="教育背景" />
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/eduBackground"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/small_margin"
+                android:text="天津市肿瘤医院主任医师，教授，特级专家，小儿胸外科专家，毕业于首都医科大学，从事小儿胸外科20余年"
+                android:textColor="@color/main_txt_color" />
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:background="@android:color/white"
+                android:padding="@dimen/medium_margin"
+                android:text="学术成就" />
+
+            <include layout="@layout/hor_line" />
+
+            <TextView
+                android:id="@+id/scienceSuccess"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/small_margin"
+                android:text="天津市肿瘤医院主任医师，教授，特级专家，小儿胸外科专家，毕业于首都医科大学，从事小儿胸外科20余年"
+                android:textColor="@color/main_txt_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

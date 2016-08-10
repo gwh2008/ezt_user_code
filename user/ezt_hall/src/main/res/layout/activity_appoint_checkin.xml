@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:weightSum="5" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/appoint_checkin_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊人"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/appoint_checkin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/name_text"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:text="选择就诊人"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="visible" >
+                </TextView>
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:id="@+id/appoint_checkin_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="期望就诊时间"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/appoint_checkin_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/time_text"
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:text="请选择"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:id="@+id/appoint_checkin_area_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/area_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="期望就诊地区"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/appoint_checkin_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/area_text"
+                    android:gravity="center|right"
+                    android:hint="请选择"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:id="@+id/appoint_checkin_dept_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@drawable/selector_setting_item_bg"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/dept_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊科室"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/appoint_checkin_dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/dept_text"
+                    android:gravity="center|right"
+                    android:hint="选择科室"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="病案号"
+                    android:textSize="@dimen/medium_size" />
+
+                <EditText
+                    android:id="@+id/illNums"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:hint="选填"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/feetype_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="缴费方式"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/appoint_checkin_feetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/appoint_checkin_feetype_sb"
+                    android:layout_toRightOf="@+id/feetype_text"
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/large_margin"
+                    android:text="自费"
+                    android:textSize="@dimen/medium_size" />
+
+                <com.eztcn.user.eztcn.customView.SwitchButton
+                    android:id="@+id/appoint_checkin_feetype_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/medium_margin" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <LinearLayout
+                android:id="@+id/medicalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医保号"
+                    android:textSize="@dimen/medium_size" />
+
+                <EditText
+                    android:id="@+id/medicalNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入医保号"
+                    android:maxLength="20"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/sd_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="就诊状态"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/sd_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/appoint_sdtype_sb"
+                    android:layout_toRightOf="@+id/sd_label"
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/large_margin"
+                    android:text="初诊"
+                    android:textSize="@dimen/medium_size" />
+
+                <com.eztcn.user.eztcn.customView.SwitchButton
+                    android:id="@+id/appoint_sdtype_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/medium_margin" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <RelativeLayout
+                android:id="@+id/appoint_checkin_case_history_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hor_height"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/case_history_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="上传病历"
+                    android:textSize="@dimen/medium_size" />
+
+                <TextView
+                    android:id="@+id/appoint_checkin_case_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/case_history_text"
+                    android:gravity="center|right"
+                    android:hint="请选择"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/medium_size"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <include layout="@layout/hor_line" />
+
+            <EditText
+                android:id="@+id/appoint_checkin_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请您尽可能详细的描述您的症状、疾病和身体状况"
+                android:padding="@dimen/large_margin"
+                android:textSize="@dimen/medium_size" >
+            </EditText>
+
+            <include layout="@layout/hor_line" />
+
+            <Button
+                android:id="@+id/appoint_checkin_yes_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large_margin"
+                android:background="@drawable/selector_main_btn_bg"
+                android:text="确定登记"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

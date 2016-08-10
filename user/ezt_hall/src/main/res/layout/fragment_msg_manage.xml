@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:id="@+id/msg_manage_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxEms="6"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/user_item_tx_color"
+            android:textSize="@dimen/discovery_size" />
+
+        <TextView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/small_margin"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+  <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/main_bg_color" >
+        </View>
+    <!-- android:background="@drawable/shape_border_search_edit" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:weightSum="7" >
+
+        <EditText
+            android:id="@+id/msg_manage_info_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin" >
+        </EditText>
+
+        <include layout="@layout/ver_line" />
+
+        <LinearLayout
+            android:id="@+id/msg_manage_search_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/selector_search_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin"
+                android:src="@drawable/ic_search_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/none_layout"
+            layout="@layout/item_none_data"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/msg_manage_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/msg_manage_footer"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:listSelector="@drawable/selector_listitem_bg"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/msg_manage_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_gray"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/msg_manage_choiceall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/large_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin"
+                android:text="全选"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+
+            <TextView
+                android:id="@+id/msg_manage_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_del"
+                android:gravity="center"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingRight="@dimen/large_margin"
+                android:paddingTop="@dimen/medium_margin"
+                android:text="    "
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

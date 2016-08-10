@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/new_item_one_thousand_doctor_rv_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="城里人最近也瘦了"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:drawablePadding="5dp"/>
+            <!--android:drawableLeft="@drawable/new_icon_tag_hot"-->
+            <TextView
+                android:id="@+id/new_item_one_thousand_doctor_rv_tv_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="城里人最近也瘦了"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                android:lines="2"
+                android:ellipsize="end"
+                />
+            
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/new_item_one_thousand_doctor_rv_iv_img"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:background="@drawable/new_icon_default_img"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="养生"
+            android:textSize="12sp"
+            android:textColor="@color/color_999999"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/color_999999"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昨天"
+            android:textSize="12sp"
+            android:textColor="@color/color_999999"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="阅读：8888"
+            android:textSize="12sp"
+            android:textColor="@color/color_999999"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tab_footer_bg"
+    android:baselineAligned="true"
+    android:fadingEdge="none"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/more2_large_margin"
+    android:paddingRight="@dimen/more2_large_margin" >
+
+    <FrameLayout
+        android:id="@+id/button_home_page_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="OnBottomClick" >
+
+        <TextView
+            android:id="@+id/title_home_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/icon_home_page_selected"
+            android:gravity="center"
+            android:text="@string/tab_home_page"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_favor_page_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="OnBottomClick"
+        android:orientation="vertical"
+        android:textSize="@dimen/small_size" >
+
+        <TextView
+            android:id="@+id/title_fdoctor_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/icon_fdoc_page"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/tab_fdoctor_page"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_usr_page_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:onClick="OnBottomClick" >
+
+        <TextView
+            android:id="@+id/title_discover_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/icon_discover_page"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/tab_discover_page"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_addition_page_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:onClick="OnBottomClick" >
+
+        <TextView
+            android:id="@+id/title_user_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="0.5dip"
+            android:drawableTop="@drawable/icon_user_page"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/tab_user_page"
+            android:textColor="@color/tab_footer_textcolor"
+            android:textSize="@dimen/small_size" />
+    </FrameLayout>
+
+</LinearLayout>

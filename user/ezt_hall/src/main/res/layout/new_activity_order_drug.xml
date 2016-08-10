@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/new_activity_title_bar"></include>
+    <RelativeLayout
+        android:id="@+id/rl_order_drug"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="天津市第一中心医院"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:id="@+id/img_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right_15"
+            android:src="@drawable/new_order_full" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_de_color"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@color/colorWhite">
+        <TextView
+            android:id="@+id/text_hosiptal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="天津工人医院"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/text_size_15" />
+        <ImageView
+            android:id="@+id/img_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right_15"
+            android:src="@drawable/new_order_full" />
+
+    </RelativeLayout>
+
+</LinearLayout>

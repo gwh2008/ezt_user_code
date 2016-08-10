@@ -1,0 +1,460 @@
+<resources>
+
+    <!-- 大字体 -->
+    <dimen name="large_size">18sp</dimen>
+    <!-- 中字体 -->
+    <dimen name="medium_size">16sp</dimen>
+    <!-- 小字体 -->
+    <dimen name="small_size">14sp</dimen>
+
+    <!-- ++大间距 -->
+    <dimen name="more2_large_margin">24dp</dimen>
+    <!-- +大间距 -->
+    <dimen name="more_large_margin">16dp</dimen>
+    <!-- 大间距 -->
+    <dimen name="large_margin">12dp</dimen>
+    <!-- 中间距 -->
+    <dimen name="medium_margin">8dp</dimen>
+    <!-- 小间距 -->
+    <dimen name="small_margin">4dp</dimen>
+
+    <!-- 线的宽度 -->
+    <dimen name="line_width">0.5dp</dimen>
+
+    <!-- 广告图原点高度 -->
+    <dimen name="ads_point_layout_height">10dp</dimen>
+
+    <!-- 顶部栏高度 -->
+    <dimen name="title_height_size">40dp</dimen>
+
+    <!-- 输入框高度 -->
+    <dimen name="editText_height">45dp</dimen>
+
+    <!-- 周边医院textview宽度 -->
+    <dimen name="rimhos_tv_width">70dp</dimen>
+
+    <!-- item 中按钮高度 -->
+    <dimen name="item_bt_height">35dp</dimen>
+
+    <!-- 横条item高度 -->
+    <dimen name="item_hor_height">45dp</dimen>
+
+    <!-- 左侧滑用到 -->
+    <dimen name="ldrawer_drawableSize">50dp</dimen>
+    <dimen name="ldrawer_barSize">18dp</dimen>
+    <dimen name="ldrawer_topBottomBarArrowSize">11dp</dimen>
+    <dimen name="ldrawer_thickness">2dp</dimen>
+    <dimen name="ldrawer_gapBetweenBars">3dp</dimen>
+    <dimen name="ldrawer_middleBarArrowSize">16dp</dimen>
+    <!-- 聊天管理界面按钮高度 -->
+    <dimen name="chat_manage_btn_height">60dp</dimen>
+    <!-- 修改手机号 -->
+
+    <dimen name="modify_telphone_tx_length">108dp</dimen>
+    <dimen name="password_item_height_mediue">45dp</dimen>
+    <dimen name="password_large_tx_size">16sp</dimen>
+    <dimen name="password_margin_top">25dp</dimen>
+    <dimen name="password_line">0.5dp</dimen>
+    <!--尺寸-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 登陆 -->
+    <dimen name="login_item_width">275dp</dimen>
+    <dimen name="login_margin_top">106dp</dimen>
+    <dimen name="login_forget_tx_margin_top">10dp</dimen>
+    <dimen name="login_button_margin_top">20dp</dimen>
+    <dimen name="login_button_top">50dp</dimen>
+    <dimen name="login_button_register_margin_top">15dp</dimen>
+    <dimen name="login_line_length">119dp</dimen>
+    <dimen name="login_line_margintop">75dp</dimen>
+    <dimen name="login_qq_wechat_margin_left">40dp</dimen>
+    <dimen name="login_qq_wechat_margin_top">30dp</dimen>
+    <dimen name="login_forget_tx_size">14sp</dimen>
+    <dimen name="login_button_tx_size">18sp</dimen>
+    <dimen name="wechat_icon_tx_margin_top">5dp</dimen>
+    <dimen name="wechat_tx_size">12sp</dimen>
+    <dimen name="auto_image_size">2sp</dimen>
+
+    <!-- 我的优惠券 -->
+    <dimen name="coupon_tx_margin_top">38dp</dimen>
+    <dimen name="coupon_tx_margin_left">75dp</dimen>
+    <dimen name="coupon_tx_large_size">26sp</dimen>
+    <dimen name="coupon_tx_big_size">30sp</dimen>
+    <dimen name="coupon_layout_margin_right">31dp</dimen>
+    <dimen name="coupon_free_tx_margin_left">10dp</dimen>
+    <dimen name="coupon_margin_left">57dp</dimen>
+    <dimen name="coupon_is_use_margin_left">9dp</dimen>
+    <dimen name="coupon_is_use_tx_icon_margin_left">5dp</dimen>
+    <dimen name="coupon_time_outof_date_size">12sp</dimen>
+    <!-- 提示对话框 -->
+    <dimen name="hint_dialog_tx_size">18sp</dimen>
+    <!-- 约检查 -->
+    <dimen name="choice_check_item_height">110dp</dimen>
+    <dimen name="head_icon_size">55dp</dimen>
+    <dimen name="head_icon_name_margin_left">10dp</dimen>
+    <dimen name="choice_check_order_status_tx_width">47dp</dimen>
+    <dimen name="choice_check_order_status_tx_height">19dp</dimen>
+    <dimen name="choice_check_order_status_margin_top">14dp</dimen>
+    <dimen name="choice_check_order_status_view_height">10dp</dimen>
+    <dimen name="choice_check_order_status_choose_height">67dp</dimen>
+    <dimen name="choice_check_order_button_layout_height">70dp</dimen>
+    <dimen name="choice_check_order_tx_icon_margin_left">8dp</dimen>
+    <!-- 邀请码 -->
+    <dimen name="invite_code_edittext_margin_top">70dp</dimen>
+    <!-- 服务 -->
+
+    <dimen name="service_hint_tx_margin_top">12dp</dimen>
+
+    <!-- 预约药品列表 -->
+    <dimen name="drug_list_item_height">90dp</dimen>
+    <dimen name="drug_list_item_mid_sp">12sp</dimen>
+    <dimen name="drug_list_item_large_sp">14.5sp</dimen>
+    <dimen name="drug_list_item_top">30dp</dimen>
+
+    <!-- 预约药品填写信息 -->
+    <dimen name="drug_list_item_l1">15dp</dimen>
+    <dimen name="drug_list_item_l2">13dp</dimen>
+    <dimen name="drug_list_item_textmargin">6dp</dimen>
+    <dimen name="drug_w_item_height">45dp</dimen>
+    <dimen name="drug_w_mtline">10dp</dimen>
+    <dimen name="drug_w_text_mt1">15dp</dimen>
+    <dimen name="drug_btn_bg_h">65dp</dimen>
+    <dimen name="drug_btn_w">345dp</dimen>
+    <dimen name="drug_btn_size">18sp</dimen>
+    <!-- 预约药品结果start -->
+    <dimen name="drug_result_iconmt">40dp</dimen>
+    <dimen name="drug_result_iconml">161dp</dimen>
+    <dimen name="drug_result_txtml">89dp</dimen>
+    <dimen name="drug_result_txtsp">21sp</dimen>
+    <dimen name="drug_result_tsmt">14dp</dimen>
+    <dimen name="drug_result_hintmt">9dp</dimen>
+    <dimen name="drug_result_hintheight">95dp</dimen>
+    <dimen name="drug_result_btnheight">45dp</dimen>
+    <dimen name="drug_result_btnjg">14dp</dimen>
+    <dimen name="drug_result_btnpd">13dp</dimen>
+    <dimen name="drug_result_btnbgheight">63dp</dimen>
+    <dimen name="drug_result_tishiheight">141dp</dimen>
+
+    <!-- 预约药品结果end -->
+    <!-- 预约药品尺寸 -->
+    <dimen name="drug_item_height">110dp</dimen>
+    <dimen name="drug_imageview_margin_left">15dp</dimen>
+    <dimen name="drug_imageview_margin_top">35dp</dimen>
+    <dimen name="drug_type_margin_top">13dp</dimen>
+    <dimen name="drug_text_margin_top">6dp</dimen>
+    <dimen name="drug_text_super_large_size">18sp</dimen>
+    <dimen name="drug_text_large_size">16sp</dimen>
+    <dimen name="drug_text_medium_size">14sp</dimen>
+    <dimen name="drug_text_small_size">12sp</dimen>
+    <dimen name="drug_details_item_height">45dp</dimen>
+    <!-- 预约病床 -->
+    <!-- 预约病床科室列表 -->
+    <dimen name="bed_hint_height">55dp</dimen>
+    <dimen name="bed_hint_line_heigt">5dp</dimen>
+    <dimen name="dept_height">45dp</dimen>
+    <!-- 健康龙卡 -->
+    <dimen name="dimen15">15dp</dimen>
+    <dimen name="dimen208">208dp</dimen>
+    <dimen name="dimen345">345dp</dimen>
+    <dimen name="dimen260">260dp</dimen>
+    <dimen name="dimen50">50dp</dimen>
+    <dimen name="dimen311">311dp</dimen>
+    <dimen name="dimen20">20dp</dimen>
+    <dimen name="dimen22">22dp</dimen>
+    <dimen name="dimen18sp">18sp</dimen>
+    <dimen name="dimen14sp">14sp</dimen>
+    <dimen name="dimen10">10dp</dimen>
+    <dimen name="dimen40">40dp</dimen>
+    <dimen name="dimen45">45dp</dimen>
+    <dimen name="dimen16sp">16sp</dimen>
+    <dimen name="dimen80">80dp</dimen>
+    <dimen name="dimen5">5dp</dimen>
+    <!-- 门诊大厅大牌名医缩进/2 -->
+    <dimen name="bigdoc_margin">15dp</dimen>
+
+    <!-- 门诊大厅大牌名医图标缩进/2 -->
+    <dimen name="bigdoc_Icon_margin">28dp</dimen>
+    <dimen name="dimen63">63dp</dimen>
+    <dimen name="dimen30">30dp</dimen>
+    <dimen name="dimen115">115dp</dimen>
+    <dimen name="dimen18">18dp</dimen>
+    <dimen name="dimen65">65dp</dimen>
+    <dimen name="dimen24">24dp</dimen>
+    <dimen name="dimen16">16dp</dimen>
+    <dimen name="dimen6">6dp</dimen>
+    <dimen name="dimen7">7dp</dimen>
+    <dimen name="dimen12sp">12sp</dimen>
+    <dimen name="dimen25">25dp</dimen>
+    <dimen name="discover_image_width">165dp</dimen>
+    <dimen name="discover_image_height">120dp</dimen>
+    <dimen name="dimen118">118dp</dimen>
+    <dimen name="dimen17sp">17sp</dimen>
+
+    <dimen name="dimen60">60dp</dimen>
+    <!-- 修改的dimens-->
+    <!-- 发现 -->
+    <dimen name="discovery_size">20sp</dimen>
+    <dimen name="discovery_gray_view_height">11dp</dimen>
+    <dimen name="discovery_item_height">89dp</dimen>
+
+    <dimen name="discovery_tx_top_margin">5dp</dimen>
+
+    <dimen name="discovery_title_big_tx_size">16sp</dimen>
+    <dimen name="discovery_title_little_tx_size">12sp</dimen>
+
+    <dimen name="discovery_icon_height_width">46dp</dimen>
+
+    <!-- 低部栏高度 -->
+    <dimen name="footer_height_size">50dp</dimen>
+
+    <!-- dialog弹出框标题栏高度 -->
+    <dimen name="dialog_title_bar_size">40dp</dimen>
+
+    <!-- 大横条item高度 -->
+    <dimen name="item_hor_height_large">70dp</dimen>
+    <!-- 中横条item高度 -->
+    <dimen name="item_hor_height_mediue">60dp</dimen>
+
+    <!-- 疾病详情推荐医院 按钮宽 -->
+    <dimen name="item_hor_bt_width">100dp</dimen>
+
+    <!-- 我频道头部高度 -->
+    <dimen name="user_title_layout_height">122dp</dimen>
+
+    <!-- 外患服务套餐item高度 -->
+    <dimen name="tumour_package_layout_height">170dp</dimen>
+
+    <!-- 外患服务套餐item宽度 -->
+    <dimen name="tumour_package_layout_width">140dp</dimen>
+
+    <!-- 我频道头部高度小 -->
+    <dimen name="user_title_layout_height_small">100dp</dimen>
+
+    <!-- 首页大字体 -->
+    <dimen name="home_more_large_size">22sp</dimen>
+    <!-- +大字体 -->
+    <dimen name="more_large_size">20sp</dimen>
+    <dimen name="little_size">10sp</dimen>
+    <!-- 聊天窗口底部高度 -->
+    <dimen name="chat_bottom_height">145dp</dimen>
+    <!-- 进度条外高 -->
+    <dimen name="progressbar_height_outside">110dp</dimen>
+
+    <!-- 进度条外宽 -->
+    <dimen name="progressbar_width_outside">110dp</dimen>
+
+    <!-- 进度条内高 -->
+    <dimen name="progressbar_height_inside">55dp</dimen>
+
+    <!-- 进度条内宽 -->
+    <dimen name="progressbar_width_inside">55dp</dimen>
+
+    <!-- listview加载进度条大小 -->
+    <dimen name="lt_progress_size_head">30dp</dimen>
+    <dimen name="lt_progress_size_footer">22dp</dimen>
+
+    <!-- divider高度 -->
+    <dimen name="lt_divider">10dp</dimen>
+
+    <!-- 首页消息条数字体大小 -->
+    <dimen name="home_msg_size">10sp</dimen>
+
+    <!-- 首页消息条数背景大小 -->
+    <dimen name="home_msg_share">20dp</dimen>
+
+    <!-- 选择医院、科室选择全部高度 -->
+    <dimen name="item_all_height">38dp</dimen>
+
+    <!-- 周边医院bt宽度 -->
+    <dimen name="rimhos_bt_width">87dp</dimen>
+    <dimen name="rimhos_bt_height">37dp</dimen>
+
+    <!-- 医生头像小 -->
+    <dimen name="doc_img_width_small">60dp</dimen>
+    <dimen name="doc_img_height_small">60dp</dimen>
+
+    <!-- 医生头像 -->
+    <dimen name="doc_img_width_normal">60dp</dimen>
+    <dimen name="doc_img_height_normal">60dp</dimen>
+
+    <!-- 医生头像大 -->
+    <dimen name="doc_img_width_large">100dp</dimen>
+    <dimen name="doc_img_height_large">100dp</dimen>
+
+    <!-- 二维码图片大小 -->
+    <dimen name="img_qrcode_width">40dp</dimen>
+    <dimen name="img_qrcode_height">40dp</dimen>
+
+    <!-- 小按钮 -->
+    <dimen name="small_btn_width">64dp</dimen>
+    <dimen name="small_btn_height">25dp</dimen>
+
+    <!-- listview 中矩形宽高 -->
+    <dimen name="img_width_normal">93dp</dimen>
+    <dimen name="img_height_normal">70dp</dimen>
+
+    <!-- 过渡页文字显示位置 -->
+    <dimen name="welcome_txtposition">115dp</dimen>
+
+    <!-- 首页搜索栏高度 -->
+    <dimen name="home_search_height">34dp</dimen>
+    <!-- 首页搜索栏与轮播图间隙 -->
+    <dimen name="home_search_gap">17dp</dimen>
+    <!-- 首页间距 -->
+    <dimen name="home_hor_gap">33dp</dimen>
+    <dimen name="home_ver_gap">27dp</dimen>
+    <!-- 聊天列表界面正文的宽度 -->
+    <dimen name="chat_list_content_width">165dp</dimen>
+
+    <!-- 新的个人中心界面尺寸 -->
+    <dimen name="user_top_height">72dp</dimen>
+    <dimen name="user_margin_right">16dp</dimen>
+    <dimen name="user_margin_top">32dp</dimen>
+    <dimen name="user_margin_bottom">37dp</dimen>
+    <dimen name="user_setting_spacing">28dp</dimen>
+    <dimen name="user_head_margin_bottom">14dp</dimen>
+    <dimen name="user_head_height">58dp</dimen>
+    <dimen name="user_name_margin_left">11dp</dimen>
+    <dimen name="user_name_margin_top">71dp</dimen>
+    <dimen name="user_name_size">16sp</dimen>
+    <dimen name="user_telphone_size">14sp</dimen>
+    <dimen name="user_tel_margin_top">10dp</dimen>
+    <dimen name="user_item_height">58dp</dimen>
+    <dimen name="user_item_padding">10dp</dimen>
+    <dimen name="user_item_padding2">5dp</dimen>
+
+    <!--设置界面  -->
+    <dimen name="view_light_gray_height">11dp</dimen>
+    <dimen name="view_light_gray_large_height">26dp</dimen>
+    <!-- 我的关注界面 -->
+    <dimen name="item_attent_pos_tx_padding">2dp</dimen>
+    <dimen name="item_line">0.5dp</dimen>
+    <!-- 意见反馈 -->
+
+    <dimen name="suggest_feedback_edit_linelayout_height">286dp</dimen>
+    <dimen name="suggest_feedback_edittext_height">240dp</dimen>
+    <dimen name="hint_size">14sp</dimen>
+
+    <!-- 门诊大厅首页大字 -->
+    <dimen name="hall_home_large_font">18sp</dimen>
+    <!-- 门诊大厅首页中字 -->
+    <dimen name="hall_home_mid_font">14sp</dimen>
+    <!-- 门诊大厅首页小字 -->
+    <dimen name="hall_home_small_font">12sp</dimen>
+
+    <!-- 医院首页按钮功能高度 -->
+    <dimen name="func_hos_height">60dp</dimen>
+
+    <!-- 医院详情页擅长、预约时间高度 -->
+    <dimen name="doc_index_height">37dp</dimen>
+    <dimen name="doc_index_attent">12sp</dimen>
+    <dimen name="doc_index_cancelattent">10sp</dimen>
+
+    <!-- 以下是3.0的尺寸增加 ==============================================-->
+
+    <!-- sp====================================-->
+
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="small_size_12">12sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="normal_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="big_size">16sp</dimen>
+    <dimen name="big_size_16">16sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="large_size_18">18sp</dimen>
+    <dimen name="huge_size_20">20sp</dimen>
+
+    <!-- dp==============================================-->
+
+    <!--  高度  从小到大排列-->
+    <dimen name="line_height_0.5">0.5dp</dimen>
+    <dimen name="line_height_1">1dp</dimen>
+    <dimen name="line_height_26">26dp</dimen>
+    <dimen name="textView_height_28">28dp</dimen>
+    <dimen name="search_height_30">30dp</dimen>
+    <dimen name="height_34">34dp</dimen>
+    <dimen name="height_35">35dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="height_45">45dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="view_height_55">55dp</dimen>
+    <dimen name="height_56">56dp</dimen>
+    <dimen name="head_height_60">60dp</dimen>
+    <dimen name="bottom_layout_height_65">65dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+    <dimen name="view_layout_height_70">70dp</dimen>
+    <dimen name="item_height_90">90dp</dimen>
+    <dimen name="item_height_92">92dp</dimen>
+    <dimen name="height_252">252dp</dimen>
+
+
+    <!--  宽度  从小到大排列-->
+    <dimen name="imageView_width_56">56dp</dimen>
+    <dimen name="imageView_width_61">61dp</dimen>
+    <dimen name="textView_width_80">80dp</dimen>
+    <dimen name="line_width_70">70dp</dimen>
+    <dimen name="get_code_width_73">73dp</dimen>
+    <dimen name="listView_width_106">106dp</dimen>
+    <dimen name="width_123">123dp</dimen>
+    <dimen name="width_110">110dp</dimen>
+
+    <!--  间距  从小到大排列-->
+    <dimen name="margin_left_2">2dp</dimen>
+    <dimen name="search_margin_top_3">3dp</dimen>
+    <dimen name="margin_left_4">4dp</dimen>
+    <dimen name="search_margin_top_5">5dp</dimen>
+    <dimen name="margin_left_5">5dp</dimen>
+    <dimen name="margin_left_6">6dp</dimen>
+    <dimen name="search_margin_top_7">7dp</dimen>
+    <dimen name="margin_top_8">8dp</dimen>
+    <dimen name="search_margin_top_8">8dp</dimen>
+    <dimen name="margin_left_9">9dp</dimen>
+    <dimen name="margin_left_10">10dp</dimen>
+    <dimen name="margin_left_11">11dp</dimen>
+    <dimen name="margin_left_12">12dp</dimen>
+    <dimen name="margin_top_12">12dp</dimen>
+    <dimen name="margin_top_13">13dp</dimen>
+    <dimen name="margin_left_14">14dp</dimen>
+    <dimen name="margin_left_15">15dp</dimen>
+    <dimen name="margin_right_15">15dp</dimen>
+    <dimen name="margin_bottom_16">16dp</dimen>
+    <dimen name="margin_left_16">16dp</dimen>
+    <dimen name="margin_right_16">16dp</dimen>
+    <dimen name="margin_top_17">17dp</dimen>
+    <dimen name="margin_top_18">18dp</dimen>
+    <dimen name="margin_top_20">20dp</dimen>
+    <dimen name="margin_bottom_20">20dp</dimen>
+    <dimen name="margin_left_23">23dp</dimen>
+    <dimen name="margin_left_24">24dp</dimen>
+    <dimen name="margin_left_25">25dp</dimen>
+    <dimen name="margin_left_29">29dp</dimen>
+    <dimen name="margin_top_25">25dp</dimen>
+    <dimen name="margin_left_30">30dp</dimen>
+    <dimen name="margin_left_32">32dp</dimen>
+    <dimen name="margin_left_35">35dp</dimen>
+    <dimen name="margin_left_38">38dp</dimen>
+    <dimen name="margin_top_38">38dp</dimen>
+    <dimen name="margin_left_46">46dp</dimen>
+    <dimen name="view_height_64">64dp</dimen>
+    <dimen name="margin_bottom_75">75dp</dimen>
+    <dimen name="margin_top_115">115dp</dimen>
+    <dimen name="margin_top_138">138dp</dimen>
+
+
+    <!--  其它 从小到大排列-->
+    <dimen name="icon_size_18">18dp</dimen>
+    <dimen name="personal_size">100dp</dimen>
+    <dimen name="height_layout_59">59dp</dimen>
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">10dp</dimen>
+
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="expand_tab_item_height">45dp</dimen>
+    <dimen name="expand_tab_eara_height">380dp</dimen>
+    <dimen name="head_bar_height">45dp</dimen>
+
+</resources>

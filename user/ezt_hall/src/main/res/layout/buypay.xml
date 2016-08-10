@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin" >
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="textPersonName"
+            android:maxLength="5"
+            android:paddingRight="@dimen/medium_margin" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="@dimen/medium_margin" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:id="@+id/securityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin"
+        android:visibility="gone"
+        android:weightSum="13" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/securityCode"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:inputType="number"
+            android:paddingRight="@dimen/small_margin" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/getSecurityCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@drawable/selector_main_btn_bg"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:id="@+id/cityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货城市" />
+
+        <EditText
+            android:id="@+id/city"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击选择"
+            android:paddingRight="@dimen/medium_margin" >
+        </EditText>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_margin" >
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址" />
+
+        <EditText
+            android:id="@+id/address"
+            style="@style/mediumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:hint="点击输入"
+            android:paddingRight="@dimen/medium_margin" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/affirmPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:text="确认支付"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_size" />
+
+</LinearLayout>

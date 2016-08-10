@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_left_15"
+    android:layout_marginRight="@dimen/margin_right_15"
+    android:background="@drawable/new_feature_border"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_order_cases"
+        android:layout_width="345dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/margin_left_15"
+        android:layout_marginRight="@dimen/margin_right_15"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cases_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:src="@drawable/new_copy_case" />
+
+        <TextView
+            android:id="@+id/cases_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/cases_iv"
+            android:text="@string/order_copy_case"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/big_size" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

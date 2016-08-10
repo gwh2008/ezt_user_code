@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/medium_margin" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/large_margin"
+        android:text="养老服务套餐"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/medium_size" />
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这里是产品的简单描述这里是产品的简单描述这里是产品的简单描述这里是产品的简单描述这里是产品的简单描述。"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="月销量：222222"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="价格：222/年"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/medium_margin"
+        layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:id="@+id/evaluateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_setting_item_bg"
+        android:padding="@dimen/large_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品评价（"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/evaluateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22222"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="）"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/right_arrows"
+            android:gravity="center_vertical|right"
+            android:text="五星"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:id="@+id/volumeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_setting_item_bg"
+        android:padding="@dimen/large_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交记录（"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22222"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="）"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/right_arrows"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+</LinearLayout>

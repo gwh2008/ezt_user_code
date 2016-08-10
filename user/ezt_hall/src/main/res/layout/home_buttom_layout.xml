@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_footer_bg"
+    android:orientation="vertical" >
+
+    <!-- 医生头像横向滚动条 -->
+
+    <com.eztcn.user.eztcn.customView.HorizontalListView
+        android:id="@+id/docs_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:visibility="gone" >
+    </com.eztcn.user.eztcn.customView.HorizontalListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/center_view"
+            android:layout_width="0dp"
+            android:layout_height="10dip"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_toLeftOf="@id/center_view"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.eztcn.user.eztcn.customView.RoundImageView
+                android:id="@+id/doctor_Image2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_doc_img"
+                imagecontrol:border_outside_color="@color/more_light_gray"
+                imagecontrol:border_thickness="1dp" >
+            </com.eztcn.user.eztcn.customView.RoundImageView>
+
+            <TextView
+                android:id="@+id/doc_Name2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doctor_Image2"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名2"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/doc_Name2_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doc_Name2"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名2"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/more_large_margin"
+            android:layout_toLeftOf="@id/layout2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.eztcn.user.eztcn.customView.RoundImageView
+                android:id="@+id/doctor_Image1"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_doc_img"
+                imagecontrol:border_outside_color="@color/more_light_gray"
+                imagecontrol:border_thickness="1dp" >
+            </com.eztcn.user.eztcn.customView.RoundImageView>
+
+            <TextView
+                android:id="@+id/doc_Name1"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doctor_Image1"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名1"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/doc_Name1_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doc_Name1"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名1"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_toRightOf="@id/center_view"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.eztcn.user.eztcn.customView.RoundImageView
+                android:id="@+id/doctor_Image3"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_doc_img"
+                imagecontrol:border_outside_color="@color/more_light_gray"
+                imagecontrol:border_thickness="1dp" >
+            </com.eztcn.user.eztcn.customView.RoundImageView>
+
+            <TextView
+                android:id="@+id/doc_Name3"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doctor_Image3"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名3"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/doc_Name3_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doc_Name3"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名2"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/more_large_margin"
+            android:layout_toRightOf="@id/layout3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.eztcn.user.eztcn.customView.RoundImageView
+                android:id="@+id/doctor_Image4"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_doc_img"
+                imagecontrol:border_outside_color="@color/more_light_gray"
+                imagecontrol:border_thickness="1dp" >
+            </com.eztcn.user.eztcn.customView.RoundImageView>
+
+            <TextView
+                android:id="@+id/doc_Name4"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doctor_Image4"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名4"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/doc_Name4_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_below="@id/doc_Name4"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="医生姓名4"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_margin"
+        android:background="@color/title_bar_bg_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <!-- 妇幼挂号 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/child_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_child_reg" />
+
+            <TextView
+                android:id="@+id/child_reg_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/home_child_reg"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 名医名家 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/fam_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_fam_doc" />
+
+            <TextView
+                android:id="@+id/fam_doc_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/home_fam_doc"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 免费咨询 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/free_consult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_free_consult" />
+
+            <TextView
+                android:id="@+id/free_consult_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/home_free_consult"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <!-- 全国挂号 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/country_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_country_reg" />
+
+            <TextView
+                android:id="@+id/country_reg_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/home_country_reg"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!-- 我的服务 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mine_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_mine_server" />
+
+            <TextView
+                android:id="@+id/mine_server_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/home_mine_server"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 微资讯 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/usurl_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_usurl_question" />
+
+            <TextView
+                android:id="@+id/usurl_question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/home_micro_msg"
+                android:textColor="@color/font_unclick_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_margin"
+        android:background="@color/title_bar_bg_grey"
+        android:visibility="visible" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/card" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

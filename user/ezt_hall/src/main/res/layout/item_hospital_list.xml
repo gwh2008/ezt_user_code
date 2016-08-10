@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/colorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_setting_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/medium_margin" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/img_width_normal"
+        android:layout_height="@dimen/img_height_normal"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_info_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/item_hos_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天津医科大学总医院"
+            android:textSize="@dimen/large_size" />
+
+        <TextView
+            android:id="@+id/hosLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_hos_name"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="三甲医院"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/countLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/hosLevel"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_toRightOf="@+id/hosLevel"
+            android:text="患者数："
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/patientCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/countLabel"
+            android:layout_toRightOf="@+id/countLabel"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+</LinearLayout>

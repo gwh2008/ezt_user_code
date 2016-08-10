@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'eztcn'
+            keyPassword 'yizhitong'
+            storeFile file('../eztcn.Keystore')
+            storePassword 'yizhitong'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.eztcn.user"
+        minSdkVersion 14
+        targetSdkVersion 19
+        ndk {
+            moduleName "EztSo"			//生成的so名字
+            abiFilters "armeabi", "armeabi-v7a", "x86"	//输出指定三种abi体系结构下的so库。目前可有可无。
+        }
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['src/main/jniLibs']
+        main {
+            jni.srcDir "src/main/jni"
+//            jniLibs.srcDir "src/main/jniLibs"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    useLibrary 'org.apache.http.legacy'
+    productFlavors {
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile project(':newZXingQrCode')
+    compile project(':imageLib')
+    compile files('libs/alipaySdk-20160111.jar')
+    compile files('libs/Baidu_Mtj_3.7.2.0.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/commons-lang-2.1.jar')
+    compile files('libs/fastjson-1.1.37.jar')
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/GetuiSdk2.4.1.0.jar')
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile files('libs/ksoap2-android-assembly-2.5.2-jar-with-dependencies.jar')
+    compile files('libs/SocialSDK_QQZone_1.jar')
+    compile files('libs/SocialSDK_QQZone_2.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/universal-image-loader-1.9.0.jar')
+    // compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.9
+    compile files('libs/bugly_crash_release__2.1.1.jar')
+    compile project(':xutils_db_library')
+    compile project(':FlycoTabLayout_Lib')
+    //    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'io.reactivex:rxjava:1.1.3'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/GifView.jar')
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile files('libs/pinyin4j-2.5.0.jar')
+}

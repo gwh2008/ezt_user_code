@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/colorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/small_margin"
+    android:paddingLeft="@dimen/medium_margin"
+    android:paddingRight="@dimen/medium_margin"
+    android:paddingTop="@dimen/small_margin" >
+<!-- android:layout_centerInParent="true" 2015-12-29-->
+
+
+    <TextView
+        android:id="@+id/item_hot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dialog_title_bar_size"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/more2_large_margin"
+        android:paddingRight="@dimen/more2_large_margin"
+        android:text="症状"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/medium_size" />
+<!-- android:background="@drawable/selector_listitem_bg" -->
+</RelativeLayout>

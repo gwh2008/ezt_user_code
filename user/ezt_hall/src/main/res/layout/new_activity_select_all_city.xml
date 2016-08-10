@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar"/>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:background="@android:color/white"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/city_show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.eztcn.user.hall.views.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_left_32"
+            android:layout_marginBottom="@dimen/margin_left_32"
+            android:layout_marginRight="@dimen/margin_left_5"
+            android:background="@drawable/new_oval_side_bar_black"
+            android:alpha="0.2"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

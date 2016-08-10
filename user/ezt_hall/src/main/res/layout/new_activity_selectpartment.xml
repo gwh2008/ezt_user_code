@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/new_activity_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/new_activity_select_department_hospital_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/new_activity_select_department_hospital_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/new_hospital_default"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_alignBottom="@+id/new_activity_select_department_hospital_pic"
+            android:alpha="0.5"
+            android:background="@color/colorBlack"
+            android:gravity="center_vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_alignBottom="@+id/new_activity_select_department_hospital_pic"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/new_activity_select_department_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_16"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="北京友谊医院国际协和中心"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_left_16"
+                android:src="@drawable/new_right_arrow"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/new_activity_select_department_hospital_expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        />
+</LinearLayout>

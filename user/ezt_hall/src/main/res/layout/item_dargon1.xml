@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/content_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国医专家，亲临指导"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conttent_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_title1"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="国医堂知名中医专家定期举办讲座，教导您中医调养" />
+
+    <TextView
+        android:id="@+id/content_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conttent_content1"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="精准对症，便捷就医"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conttent_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_title2"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="专业导诊提高就诊准确率，优先推送空置专家号，帮您及时准确就医" />
+
+    <TextView
+        android:id="@+id/content_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conttent_content2"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="在线问诊，健康咨询"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conttent_content3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_title3"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="登陆医指通掌上医管家，在线咨询家庭医生" />
+
+    <TextView
+        android:id="@+id/content_title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conttent_content3"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="贴心陪诊，高效专业"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conttent_content4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_title4"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="协助老人提前取号，指导患者取号、候诊、检查、缴费、取药，减少排队候诊时间" />
+
+    <TextView
+        android:id="@+id/content_title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conttent_content4"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="私人定制，医卡无忧"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conttent_content5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_title5"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="私人特需定制服务，约专家、约检查、约病床，一卡约所有" />
+
+    <TextView
+        android:id="@+id/content_title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conttent_content5"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="会员专享，折上再折"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conttent_content6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_title6"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="持有此卡在医指通商城及医管家中心消费可享折上折" />
+
+</RelativeLayout>

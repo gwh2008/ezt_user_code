@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_size"
+        android:background="@color/user_name_color" >
+
+        <TextView
+            android:id="@+id/left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_back_btn_bg"
+            android:drawableLeft="@drawable/back_icon"
+            android:drawablePadding="@dimen/small_margin"
+            android:gravity="center"
+            android:paddingLeft="@dimen/more_large_margin"
+            android:paddingRight="@dimen/more_large_margin"
+            android:textColor="@android:color/black"
+            android:visibility="visible" />
+        <!-- android:marqueeRepeatLimit="marquee_forever"             android:ellipsize="marquee" -->
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxEms="10"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen17sp" />
+
+        <ImageView
+            android:id="@+id/right_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/right_btn"
+            android:background="@drawable/selector_back_btn_bg"
+            android:paddingLeft="@dimen/more_large_margin"
+            android:paddingRight="@dimen/more_large_margin"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_back_btn_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/small_margin"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/user_name_size"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_line_grey" >
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- android:background="@drawable/homeloading" -->
+        <!-- <ImageView -->
+        <!-- android:id="@+id/hosShowView" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:scaleType="fitXY" -->
+        <!-- > -->
+        <!-- </ImageView> -->
+
+        <ImageView
+            android:id="@+id/hosShowView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homeloading"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/hosShowView"
+            android:background="#33000000" >
+
+            <TextView
+                android:id="@+id/hosLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/conners_green"
+                android:padding="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/hosType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/hosLevel"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_toRightOf="@id/hosLevel"
+                android:padding="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/hosAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/hosLevel"
+                android:layout_below="@id/hosLevel"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_size" >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_margin"
+                android:layout_below="@id/hosAddr" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/hosIntroTv"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/item_hor_height"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_hor_height"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/hh_btnyyjj"
+                android:drawablePadding="@dimen/small_margin"
+                android:gravity="center"
+                android:text="医院简介"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_size" />
+        </RelativeLayout>
+
+        <include layout="@layout/ver_line" />
+
+        <RelativeLayout
+            android:id="@+id/deptsTv"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/item_hor_height"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_hor_height"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/hh_btnkslb"
+                android:drawablePadding="@dimen/small_margin"
+                android:gravity="center"
+                android:text="科室列表"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_size" />
+        </RelativeLayout>
+
+        <include layout="@layout/ver_line" />
+
+        <RelativeLayout
+            android:id="@+id/docsTv"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/item_hor_height"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_hor_height"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/hh_btnyslb"
+                android:drawablePadding="@dimen/small_margin"
+                android:gravity="center"
+                android:text="医生列表"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.eztcn.user.eztcn.customView.MyGridView
+        android:id="@+id/hosFunGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="1dip"
+        android:listSelector="@null"
+        android:numColumns="2"
+        android:scrollbars="@null"
+        android:verticalSpacing="1dip" >
+    </com.eztcn.user.eztcn.customView.MyGridView>
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/medium_margin" >
+
+        <com.eztcn.user.eztcn.customView.RoundImageView
+            android:id="@+id/head_pic"
+            android:layout_width="@dimen/doc_img_width_large"
+            android:layout_height="@dimen/doc_img_height_large"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_doc_img"
+            imagecontrol:border_outside_color="@color/more_light_gray"
+            imagecontrol:border_thickness="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/d_name"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_black" />
+
+            <TextView
+                android:id="@+id/d_title"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/d_name"
+                android:textColor="@color/dark_black" />
+
+            <TextView
+                android:id="@+id/hos_name"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/d_name"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/dept"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/hos_name"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_toRightOf="@+id/hos_name"
+                android:textColor="@color/dark_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/hor_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/phoneTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约通话时间："
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/callTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通话时长："
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/timeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moneyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通话费用："
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/callMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接听电话："
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子病历："
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/illrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/illDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/large_margin"
+        android:text="病情描述:"
+        android:visibility="invisible"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/medium_size" />
+
+    <RelativeLayout
+        android:id="@+id/evaluateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:visibility="gone" >
+
+        <include layout="@layout/hor_line" />
+
+        <TextView
+            android:id="@+id/evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:padding="@dimen/medium_margin"
+            android:text="去评价"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/large_size" />
+
+        <TextView
+            android:id="@+id/callAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_setting_item_bg"
+            android:gravity="center"
+            android:padding="@dimen/large_margin"
+            android:text="再次通话"
+            android:textSize="@dimen/medium_size" />
+    </RelativeLayout>
+
+</LinearLayout>

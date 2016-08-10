@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:text="账户余额"
+        android:textColor="@color/main_txt_color"
+        android:textSize="@dimen/medium_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:text="余额"
+            android:textSize="@dimen/medium_size" />
+
+        <TextView
+            android:id="@+id/eztCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:gravity="right"
+            android:text="0 医通币"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:text="充值医通币"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_size" />
+
+</LinearLayout>

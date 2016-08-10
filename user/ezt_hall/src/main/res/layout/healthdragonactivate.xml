@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+    <!-- 包一个布局使之前的布局gone掉，因为业务变量 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/realname_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/more_large_margin"
+            android:hint="请输入真实姓名(全英文/全中文)"
+            android:inputType="textPhonetic"
+            android:maxLength="5"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/idcard_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/more_large_margin"
+            android:digits="@string/id_card_limit"
+            android:hint="身份证号"
+            android:maxLength="18"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/realname_tv"
+        style="@style/largeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/idcard_tv"
+        style="@style/largeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:singleLine="true"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/banknum_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more_large_margin"
+        android:hint="银行卡号"
+        android:numeric="integer"
+        android:singleLine="true" >
+    </EditText>
+
+    <Button
+        android:id="@+id/affirm_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/more2_large_margin"
+        android:background="@drawable/selector_main_btn_bg"
+        android:text="确认激活"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_size" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+<!-- http://blog.csdn.net/beiminglei/article/details/9317997 -->
+    <EditText
+        android:gravity="center"
+        android:id="@+id/guideDocNum"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="@string/guideDoc_card_limit"
+        android:drawablePadding="@dimen/small_margin"
+        android:maxLength="6"
+        android:inputType="number"
+        android:singleLine="true" />
+
+</LinearLayout>

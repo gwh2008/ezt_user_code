@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/new_common_bottom_dialog_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_gray_ground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/new_common_bottom_dialog_textView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:gravity="center"
+            android:background="@drawable/new_white_ground_top"
+            android:text="文本"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/large_size_18"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/new_common_bottom_dialog_textView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginTop="@dimen/line_height_0.5"
+            android:gravity="center"
+            android:background="@drawable/new_white_ground_bottom"
+            android:text="文本"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/large_size_18"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/new_common_bottom_dialog_textView3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginTop="@dimen/line_height_0.5"
+            android:gravity="center"
+            android:background="@drawable/new_white_ground_bottom"
+            android:text="文本"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/large_size_18"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/new_common_bottom_dialog_textView4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginTop="@dimen/line_height_0.5"
+            android:gravity="center"
+            android:background="@drawable/new_white_ground_bottom"
+            android:text="文本"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/large_size_18"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/new_common_bottom_dialog_textView5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginTop="@dimen/line_height_0.5"
+            android:gravity="center"
+            android:background="@drawable/new_white_ground_bottom"
+            android:text="文本"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/large_size_18"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/new_common_bottom_dialog_textViewcancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:layout_marginTop="@dimen/margin_left_10"
+        android:background="@drawable/new_white_ground"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/text_color_deep_gray"
+        android:textSize="@dimen/large_size_18"
+        android:visibility="visible"/>
+
+</LinearLayout>

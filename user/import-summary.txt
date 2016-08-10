@@ -1,0 +1,118 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+ * Project ezt_hall:D:\menzhendating\ezt_hall\proguard-project.txt:
+   Local proguard config file name is not unique
+
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From ImageLib:
+* .gitignore
+* README.md
+* ic_launcher-web.png
+* proguard-project.txt
+From NewZXingQrCode:
+* ic_launcher-web.png
+* proguard-project.txt
+From ezt_hall:
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+gson-2.1.jar => com.google.code.gson:gson:2.1
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.1.jar => version 2.1 in com.google.code.gson:gson:2.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In ImageLib:
+* AndroidManifest.xml => imageLib\src\main\AndroidManifest.xml
+* assets\ => imageLib\src\main\assets
+* libs\nineoldandroids-2.4.0.jar => imageLib\libs\nineoldandroids-2.4.0.jar
+* libs\picasso-2.4.0.jar => imageLib\libs\picasso-2.4.0.jar
+* res\ => imageLib\src\main\res\
+* src\ => imageLib\src\main\java\
+In NewZXingQrCode:
+* AndroidManifest.xml => newZXingQrCode\src\main\AndroidManifest.xml
+* assets\ => newZXingQrCode\src\main\assets
+* libs\zxing.jar => newZXingQrCode\libs\zxing.jar
+* res\ => newZXingQrCode\src\main\res\
+* src\ => newZXingQrCode\src\main\java\
+In ezt_hall:
+* city_show_head_toast_bg.9.PNG => city_show_head_toast_bg.9.png
+* AndroidManifest.xml => ezt_hall\src\main\AndroidManifest.xml
+* assets\ => ezt_hall\src\main\assets\
+* libs\alipaySdk-20160111.jar => ezt_hall\libs\alipaySdk-20160111.jar
+* libs\armeabi\libBaiduMapSDK_v3_3_0_15.so => ezt_hall\src\main\jniLibs\armeabi\libBaiduMapSDK_v3_3_0_15.so
+* libs\armeabi\libgetuiext.so => ezt_hall\src\main\jniLibs\armeabi\libgetuiext.so
+* libs\armeabi\liblocSDK5.so => ezt_hall\src\main\jniLibs\armeabi\liblocSDK5.so
+* libs\Baidu_Mtj_3.7.2.0.jar => ezt_hall\libs\Baidu_Mtj_3.7.2.0.jar
+* libs\BaiduLBS_Android.jar => ezt_hall\libs\BaiduLBS_Android.jar
+* libs\commons-lang-2.1.jar => ezt_hall\libs\commons-lang-2.1.jar
+* libs\fastjson-1.1.37.jar => ezt_hall\libs\fastjson-1.1.37.jar
+* libs\GetuiExt-2.0.3.jar => ezt_hall\libs\GetuiExt-2.0.3.jar
+* libs\GetuiSdk2.4.1.0.jar => ezt_hall\libs\GetuiSdk2.4.1.0.jar
+* libs\httpmime-4.1.3.jar => ezt_hall\libs\httpmime-4.1.3.jar
+* libs\json_simple-1.1.jar => ezt_hall\libs\json_simple-1.1.jar
+* libs\ksoap2-android-assembly-2.5.2-jar-with-dependencies.jar => ezt_hall\libs\ksoap2-android-assembly-2.5.2-jar-with-dependencies.jar
+* libs\SocialSDK_QQZone_1.jar => ezt_hall\libs\SocialSDK_QQZone_1.jar
+* libs\SocialSDK_QQZone_2.jar => ezt_hall\libs\SocialSDK_QQZone_2.jar
+* libs\SocialSDK_QQZone_3.jar => ezt_hall\libs\SocialSDK_QQZone_3.jar
+* libs\SocialSDK_Sina.jar => ezt_hall\libs\SocialSDK_Sina.jar
+* libs\SocialSDK_WeiXin_1.jar => ezt_hall\libs\SocialSDK_WeiXin_1.jar
+* libs\SocialSDK_WeiXin_2.jar => ezt_hall\libs\SocialSDK_WeiXin_2.jar
+* libs\umeng_social_sdk.jar => ezt_hall\libs\umeng_social_sdk.jar
+* libs\universal-image-loader-1.9.0.jar => ezt_hall\libs\universal-image-loader-1.9.0.jar
+* res\ => ezt_hall\src\main\res\
+* src\ => ezt_hall\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

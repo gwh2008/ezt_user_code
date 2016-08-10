@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textView_width_80"
+        >
+
+        <TextView
+            android:id="@+id/drug_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:layout_marginTop="@dimen/margin_bottom_20"
+            android:text="舒经活血"
+            android:textColor="@color/text_color_deep_gray"
+            android:textSize="@dimen/big_size_16"
+            />
+
+        <TextView
+            android:id="@+id/hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/drug_name"
+            android:layout_below="@id/drug_name"
+            android:layout_marginTop="@dimen/margin_top_8"
+            android:text="北京东直门第三社区医院"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/big_size_16"
+            />
+
+        <ImageView
+            android:id="@+id/drug_item_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_15"
+            android:src="@drawable/new_next_icon"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

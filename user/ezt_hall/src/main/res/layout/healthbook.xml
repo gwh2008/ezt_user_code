@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <TextView
+        android:id="@+id/checkout"
+        style="@style/mediumText"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@drawable/selector_setting_item_bg"
+        android:drawableLeft="@drawable/checkout_icon"
+        android:drawablePadding="@dimen/large_margin"
+        android:drawableRight="@drawable/right_arrows"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:text="检验报告" />
+
+    <include layout="@layout/hor_line" />
+
+    <TextView
+        android:id="@+id/emr"
+        style="@style/mediumText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hor_height"
+        android:background="@drawable/selector_setting_item_bg"
+        android:drawableLeft="@drawable/emr_icon"
+        android:drawablePadding="@dimen/large_margin"
+        android:drawableRight="@drawable/right_arrows"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:text="我的病历" />
+
+    <include layout="@layout/hor_line" />
+
+</LinearLayout>
